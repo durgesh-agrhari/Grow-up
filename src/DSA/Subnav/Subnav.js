@@ -10,10 +10,10 @@ const Subnav = () => {
         <nav >
             <ul className='home-links'>
                 <li className='tx'>
-                    <NavLink to='/basicinfo' className={activeLink} >Array [21]</NavLink>
+                    <NavLink to='/array-basic-questions' className={activeLink} >Array [21]</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/basicinfostring' className={activeLink}>String [11] </NavLink>
+                    <NavLink to='/string-basic-questions' className={activeLink}>String [11] </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='/' className={activeLink}>Sorting </NavLink>

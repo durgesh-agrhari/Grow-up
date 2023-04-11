@@ -4,9 +4,17 @@ import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 
+import { Helmet } from 'react-helmet-async'
+
 const A0basicinfostring = () => {
   return (
     <div className='subb'>
+      <Helmet>
+        <title>String Basic Questions</title>
+        <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>
+
+        <link rel='canonical' href='/string-basic-questions' />
+      </Helmet>
      <Subnav/>
     <div className='home-container1'>
      

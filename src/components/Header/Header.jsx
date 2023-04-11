@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import {NavLink } from 'react-router-dom'
 import './Style.css'
 
+import Logo1 from '../.././assets/logo1.png'
 
 const Header = ({ theme, toggleTheme }) => {
 
@@ -30,7 +31,7 @@ const Header = ({ theme, toggleTheme }) => {
         <div className='container'>
             <div className='nav_wrappe'>
                 <div className='logo'>
-                <NavLink to='/' className='menu__link'><h2>Growup Code</h2></NavLink>
+                <NavLink to='/' className='menu__link'><h2> <img src={Logo1} width='40' height='25' className='logo1' alt='logo' /> Growup Code</h2></NavLink>
                 </div>
 
                 {/* ======== navigation ====== */}
@@ -39,7 +40,7 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/' className='menu__link' activeClassName='navactive'  >Home</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/basicinfo' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
+                            <li className='menu__item'><NavLink to='/array-basic-questions' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Web</NavLink></li>
 

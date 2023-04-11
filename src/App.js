@@ -72,7 +72,7 @@ function App() {
           <Route path='/rodemap' element = {<Rodemap /> }/>
 
           {/* ========== Array Routing ============= */}
-          <Route path='/basicinfo' element = {<A1basicinfo /> }/>
+          <Route path='/array-basic-questions' element = {<A1basicinfo /> }/>
           <Route path='/reverseelementinanarray' element = {<A1ReverseArray /> }/>
           <Route path='/bublicateselement' element = {<B2Dublicateselement /> }/>
           <Route path='/frequencyinanarray' element = {<C3frequency /> }/>
@@ -97,7 +97,7 @@ function App() {
 
                  
           {/* ================== String =============== */}
-          <Route path='/basicinfostring' element = {<A0basicinfostring/> }/>
+          <Route path='/string-basic-questions' element = {<A0basicinfostring/> }/>
 
 
           {/* ========== Pages ================== */}

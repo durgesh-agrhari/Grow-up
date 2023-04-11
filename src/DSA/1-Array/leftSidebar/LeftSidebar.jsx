@@ -15,7 +15,7 @@ const Leftsidebar = () => {
     <div className='left-sidebsr' >
         <nav className='side-nav' >
             
-            <NavLink to='/basicinfo' className='side-nav-links' activeClassName='active'>
+            <NavLink to='/array-basic-questions' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>0: Basic Array</p>
             </NavLink>
 

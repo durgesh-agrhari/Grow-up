@@ -87,6 +87,14 @@
     font-weight: bolder;
     color: rgb(14, 107, 238);
 }
+
+.logo1{
+    box-shadow: 3px 2px 14px 8px grey;
+    margin-right: 10px;
+
+}
+
+
 /* ============ Responshie ============== */
 
 @media only screen and (max-width: 992px) {
