@@ -10,7 +10,7 @@ const Oops = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>Rodemap</h3>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
+        <p className='pp'>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
         
         <h4>Concept Array</h4>
         <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>

@@ -5,8 +5,8 @@ import Header from './components/Header/Header';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Homepage from './homepage/Homepage';
 import DataStructure from './courses/dataStructure/dataStructure/DataStructure';
-import BlogHome from './blog/blog/BlogHome'
-import Rodemap from './blog/blog/Rodemap'
+import BlogHome from './explore/explore/BlogHome'
+import Rodemap from './explore/explore/Rodemap'
 import Post from './editor/Post';
 import EditHeader from './editor/EditHeader';
 import ComingSoon from './ComingSoon/ComingSoon';
@@ -40,6 +40,9 @@ import Codeforses from './contest/Codeforses';
 import Leedcode from './contest/Leedcode';
 
 import ReactGA from "react-ga"; // 14.8k (gzipped: 4.9k)
+import WebDevelopment from './web/WebDevelopment/WebDevelopment';
+import JobHome from './job/JobHome';
+import Oops from './core/Oops/Oops';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -66,10 +69,22 @@ function App() {
      <Router>
       <Header theme={theme} toggleTheme={toggleTheme} /> 
         <Routes>
+
+          {/* ========= Pagrs ============== */}
           <Route path='/' element = {<Homepage/> }/>
-          <Route path='/dataStructure' element = {<DataStructure/> }/>
           <Route path='/explore' element = {<BlogHome /> }/>
           <Route path='/rodemap' element = {<Rodemap /> }/>
+          <Route path='/post' element = {<Post /> }/>
+          <Route path='/edith' element = {<EditHeader /> }/>
+          <Route path='/soon' element = {<ComingSoon /> }/>
+          <Route path='/codechef' element = {<Codechef /> }/>
+          <Route path='/codeforces' element = {<Codeforses /> }/>
+          <Route path='/leedcode' element = {<Leedcode /> }/>
+          <Route path='/job-home' element = {<JobHome /> }/>
+
+          {/* ========== Sub Pages =========== */}
+          <Route path='/dataStructure' element = {<DataStructure/> }/>
+
 
           {/* ========== Array Routing ============= */}
           <Route path='/array-basic-questions' element = {<A1basicinfo /> }/>
@@ -100,14 +115,11 @@ function App() {
           <Route path='/string-basic-questions' element = {<A0basicinfostring/> }/>
 
 
-          {/* ========== Pages ================== */}
-          <Route path='/post' element = {<Post /> }/>
-          <Route path='/edith' element = {<EditHeader /> }/>
-          <Route path='/soon' element = {<ComingSoon /> }/>
-          <Route path='/codechef' element = {<Codechef /> }/>
-          <Route path='/codeforces' element = {<Codeforses /> }/>
-          <Route path='/leedcode' element = {<Leedcode /> }/>
+          {/* ========== web Development */}
+          <Route path='/web-development' element = {<WebDevelopment/> }/>
 
+          {/* ========= core ========= */}
+          <Route path='/oops' element = {<Oops/> }/>
 
         </Routes>
       </Router>
@@ -117,20 +129,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-      // <Hero theme={theme} /> 
-      // <Counter/>
-      // <Services/>
-      // <About/>
-      // <Team/>
-      // <Blog/>
-      // <Testimonial/>
-      // <Newsletter/>
-      // <Footer/> 
-      // <Home/>

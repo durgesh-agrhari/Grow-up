@@ -42,13 +42,13 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/array-basic-questions' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Web</NavLink></li>
+                            <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeClassName='navactive'>Web</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/codechef' className='menu__link' activeClassName='navactive'>Contest</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Job</NavLink></li>
+                            <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeClassName='navactive'>Job</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Core/IT</NavLink></li>
+                            <li className='menu__item'><NavLink to='/oops' className='menu__link' activeClassName='navactive'>Core</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/explore' className='menu__link' activeClassName='navactive'>Explore</NavLink></li>
                     </ul> 

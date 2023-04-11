@@ -11,9 +11,9 @@ const Hero = ({theme}) => {
             <div className='hero__wrapper'>
                 <div className='hero__content'>
                     <div className='left1'>
-                        <h2>We're Creating Perfect</h2>
-                        <h2>Digital Products To</h2>
-                        <h2 className='highlight'>Promot Your Barnd</h2>
+                        <h2>We're Creating Perfect DSA</h2>
+                        <h2>Course for fresher Students</h2>
+                        <h2 className='highlight'>Placemaent Rodemap 100 %</h2>
                     </div> <br/>
                     <p className='discription'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi unde, veniam corrupti illum possimus adipisci.</p>
                     
