@@ -68,7 +68,7 @@ function App() {
         <Routes>
           <Route path='/' element = {<Homepage/> }/>
           <Route path='/dataStructure' element = {<DataStructure/> }/>
-          <Route path='/blog' element = {<BlogHome /> }/>
+          <Route path='/explore' element = {<BlogHome /> }/>
           <Route path='/rodemap' element = {<Rodemap /> }/>
 
           {/* ========== Array Routing ============= */}
