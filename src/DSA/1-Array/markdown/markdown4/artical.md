@@ -1,7 +1,18 @@
-####Delete elelemt in an array
+###Example:-
+<Code language="cpp">
+// C++ program to implement Delete element in an array.
+Input:  arr[] = {3, 1, 2, 5, 90}, x = 2, size = 5, capacity = 5
+Output: arr[] = {3, 1, 5, 90}, size = 4, capacity = 5
+
+Input:  arr[] = {3, 1, 2}, x = 2, size = 3, capacity = 3
+Output: arr[] = {3, 1}, size = 2, capacity = 3
+
+</Code> <br/><br/>
+
+* Delete elelemt in an array<br/>
 
 <Code language="cpp">
-// C++ program to implement Dublicates element in an array.
+// C++ program to implement Delete element in an array.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -33,12 +44,12 @@ int main() {
 ###Output<br/><br/>
 If you execute the above program, then you will get the following result.<br/>
 
-1 2 7 8 9<br/><br/>
+1 2 7 8 9<br/><br/><br/>
 
-Delete elelemt in an array <br/>
+* Delete elelemt in an array <br/>
 
 <Code language="cpp">
-// C++ program to implement Dublicates element in an array.
+// C++ program to implement Delete element in an array.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -58,6 +69,9 @@ int main() {
   return 0;
 }
 </Code>
-
 <br/><br/>
+
+###Output<br/><br/>
+Duplicate element found: 4<br/>
+Duplicate element found: 6<br/>
 

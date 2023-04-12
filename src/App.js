@@ -5,8 +5,6 @@ import Header from './components/Header/Header';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Homepage from './homepage/Homepage';
 import DataStructure from './courses/dataStructure/dataStructure/DataStructure';
-import BlogHome from './explore/explore/BlogHome'
-import Rodemap from './explore/explore/Rodemap'
 import Post from './editor/Post';
 import EditHeader from './editor/EditHeader';
 import ComingSoon from './ComingSoon/ComingSoon';
@@ -43,6 +41,7 @@ import ReactGA from "react-ga"; // 14.8k (gzipped: 4.9k)
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
 import Oops from './core/Oops/Oops';
+import Explore from './explore/Explore';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -72,8 +71,6 @@ function App() {
 
           {/* ========= Pagrs ============== */}
           <Route path='/' element = {<Homepage/> }/>
-          <Route path='/explore' element = {<BlogHome /> }/>
-          <Route path='/rodemap' element = {<Rodemap /> }/>
           <Route path='/post' element = {<Post /> }/>
           <Route path='/edith' element = {<EditHeader /> }/>
           <Route path='/soon' element = {<ComingSoon /> }/>
@@ -81,6 +78,7 @@ function App() {
           <Route path='/codeforces' element = {<Codeforses /> }/>
           <Route path='/leedcode' element = {<Leedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
+          <Route path='/explore' element = {<Explore /> }/>
 
           {/* ========== Sub Pages =========== */}
           <Route path='/dataStructure' element = {<DataStructure/> }/>

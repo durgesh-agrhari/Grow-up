@@ -17,17 +17,17 @@ const D4Deletearraye = () => {
         In this tutorial, we are going to learn how to delete elements from the given range. Let's see the steps to solve the problem.
         <br/><br/>
         1: Initialize the array and range to delete the elements from.
-        <br/><br/>
+        <br/>
         2: Initialize a new index variable.
-        <br/><br/>
+        <br/>
         3: Iterate over the array.
-        <br/><br/>
+        <br/>
         4: If the current index is not in the given range, then update the element in the array with a new index variable
-        <br/><br/>
+        <br/>
         5: Increment the new index.
         <br/><br/>
         6: Return the new index.
-        </p><br/><br/>
+        </p><br/>
 
         <Post4/>
       </div>

@@ -5,7 +5,7 @@ import './editor.css'
 
 const Post3 = () => {
 
-    const [postContent, setPostContent] = useState("#Hello")
+    const [postContent, setPostContent] = useState("#Loding...")
 
     useEffect(() => {
         import("../markdown/markdown3/artical.md")

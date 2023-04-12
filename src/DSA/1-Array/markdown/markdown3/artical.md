@@ -28,21 +28,32 @@ int main()
     return 0;
 }
 </Code>
+<br/><br/>
 
-<br/>
-<p>
-In this example, we first initialize an array arr with some elements. We then loop through the array and count the frequency of each element using two nested loops.
-</p>
+###Output<br/><br/>
+1 occurs 1 times.<br/>
+2 occurs 2 times.<br/>
+3 occurs 3 times.<br/>
+4 occurs 1 times.<br/>
+5 occurs 2 times.<br/><br/>
+
+
+* In this example, we first initialize an array arr with some elements. We then loop through the array and count the frequency of each element using two nested loops.
+
 
 <br/><br/>
-The outer loop goes through each element in the array, while the inner loop starts from the next element and checks if it is the same as the current element. If it is, we increment a count variable and mark the element as counted by setting it to -1. This ensures that we don't count the same element twice.
+
+* The outer loop goes through each element in the array, while the inner loop starts from the next element and checks if it is the same as the current element. If it is, we increment a count variable and mark the element as counted by setting it to -1. This ensures that we don't count the same element twice.
 <br/><br/>
-After we finish counting the occurrences of the current element, we print out its frequency using the cout statement.
+
+* After we finish counting the occurrences of the current element, we print out its frequency using the cout statement.
 <br/>	
-Note that this algorithm has a time complexity of O(n^2) in the worst case because we have two nested loops. However, if the array has a small number of distinct elements, the actual time complexity may be lower.
+
+* Note that this algorithm has a time complexity of O(n^2) in the worst case because we have two nested loops. However, if the array has a small number of distinct elements, the actual time complexity may be lower.
 
 <br/><br/>
-Frequency elelemt in an array using Map
+
+* Frequency elelemt in an array using Map
 
 <Code language="cpp">
 // C++ program to implement Dublicates element in an array.
@@ -66,15 +77,24 @@ int main()
     return 0;
 }
 
-</Code>
+</Code><br/><br/>
+
+###Output<br/><br/>
+5 occurs 2 times.<br/>
+4 occurs 1 times.<br/>
+3 occurs 3 times.<br/>
+2 occurs 2 times.<br/>
+1 occurs 1 times.<br/>
 
 <br/><br/>
 
-In this example, we first initialize an array arr with some elements. We then use an unordered_map to store the frequency of each element in the array. The unordered_map data structure allows for efficient lookup and insertion of key-value pairs. 
+* In this example, we first initialize an array arr with some elements. We then use an unordered_map to store the frequency of each element in the array. The unordered_map data structure allows for efficient lookup and insertion of key-value pairs. 
 <br/><br/>
-We then loop through the array and increment the frequency of each element using the ++ operator on the corresponding value in the unordered_map. Finally, we loop through the unordered_map and print out the frequency of each element using the first and second members of each key-value pair.
+
+* We then loop through the array and increment the frequency of each element using the ++ operator on the corresponding value in the unordered_map. Finally, we loop through the unordered_map and print out the frequency of each element using the first and second members of each key-value pair.
 <br/><br/>
-Note that this algorithm has a time complexity of O(n) because we loop through the array once to count the frequency of each element.
+
+* Note that this algorithm has a time complexity of O(n) because we loop through the array once to count the frequency of each element.
 
 
 
