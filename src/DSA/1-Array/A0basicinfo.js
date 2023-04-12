@@ -59,6 +59,8 @@ const A0basicinfo = () => {
         <h3>Disadvantages of using arrays: </h3> <br/>
         <p className='pp'>You can’t change the size i.e. once you have declared the array you can’t change its size because of static memory allocation. Here Insertion(s) and deletion(s) are difficult as the elements are stored in consecutive memory locations and the shifting operation is costly too.</p><br/><br/>
 
+        <h3>Decleration of array</h3>
+
       </div>
       <RightSidebar />
     </div>
