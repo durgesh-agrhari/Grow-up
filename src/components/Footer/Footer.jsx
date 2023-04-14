@@ -95,6 +95,7 @@ const Footer = () => {
                 </div>
 
             </div>
+            <hr className='line'/>
             <div className='team__member-social'>
                 <span><button className='socal' onClick={()=> newTab('https://www.youtube.com/@GrowupCode')} ><i class="ri-youtube-line"></i></button></span>
 

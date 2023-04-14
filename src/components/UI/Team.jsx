@@ -55,7 +55,7 @@ const Team = () => {
                     teamMembers.map((item,index) => (
                         <div className='team__item' key={index}>
                         <div className="team__img">
-                            <img src={item.imgUrl} alt="" />
+                            <img className='ceo' src={item.imgUrl} alt="" />
                         </div>
                         <div className="team__details">
                             <h4>{item.name}</h4>
