@@ -10,15 +10,15 @@ const Subnav = () => {
         <nav >
             <ul className='home-links'>
                 <li className='tx'>
-                    <NavLink to='/codechef' className={activeLink} > Codechef Solutions </NavLink>
+                    <NavLink to='/codechef-contest-solution' className={activeLink} > Codechef Solutions </NavLink>
                 </li>
 
                 <li className='tx'>
-                    <NavLink to='/codeforces' className={activeLink}>Codeforses Solutions </NavLink>
+                    <NavLink to='/codeforces-contest-solution' className={activeLink}>Codeforses Solutions </NavLink>
                 </li>
 
                 <li className='tx'>
-                    <NavLink to='/leedcode' className={activeLink}>Leedcode Solutions </NavLink>
+                    <NavLink to='/leedcode-contest-solution' className={activeLink}>Leedcode Solutions </NavLink>
                 </li>
 
             </ul>

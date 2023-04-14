@@ -1,34 +1,47 @@
 import React from 'react'
 import "../../style/team.css"
-import teamImg1 from "../../images/team-01.png"
-import teamImg2 from "../../images/team-02.png"
-import teamImg3 from "../../images/team-03.png"
-import teamImg4 from "../../images/team-04.png"
+import teamImg1 from "../../images/team-1.jpeg"
+import teamImg2 from "../../images/team-2.jpeg"
+import teamImg3 from "../../images/c1.png"
+import teamImg4 from "../../images/c2.jpg"
 
 const teamMembers = [
     {
         imgUrl: teamImg1,
-        name: 'Curtteny Hurry',
-        position: 'Product developer',
+        imgUrlc: teamImg3,
+        name: 'Durgesh Agrhari ',
+        position: 'CEO at Growup Code',
+        working: 'Work in @Allen',
+        socal1:'https://www.linkedin.com/in/durgesh-agrhari-b1a4341b4/',
+        socal2: 'https://twitter.com/DurgeshAgrhari1',
+        socal3:'https://www.instagram.com/durgeshagrahari11/',
     },
     {
         imgUrl: teamImg2,
-        name: 'Curtteny Hurry',
-        position: 'Product developer',
+        imgUrlc: teamImg4,
+        name: 'Himanshu Shingh',
+        position: 'Manager Director at Growup Code',
+        working: 'Work in @Amazon',
+        socal1:'https://www.linkedin.com/in/himanshu-626283174/',
+        socal2: 'https://www.linkedin.com/in/himanshu-626283174/',
+        socal3:'https://www.instagram.com/___himanshu___singh/',
     },
-    {
-        imgUrl: teamImg3,
-        name: 'Curtteny Hurry',
-        position: 'Product developer',
-    },
-    {
-        imgUrl: teamImg4,
-        name: 'Curtteny Hurry',
-        position: 'Product developer',
-    },
+    // {
+    //     imgUrl: teamImg3,
+    //     name: 'Curtteny Hurry',
+    //     position: 'Product developer',
+    // },
+    // {
+    //     imgUrl: teamImg4,
+    //     name: 'Curtteny Hurry',
+    //     position: 'Product developer',
+    // },
 ]
 
 const Team = () => {
+    // const newTab=url=>{
+    //     window.open(url)
+    // }
   return (
     <section>
         <div className='container'>
@@ -47,10 +60,19 @@ const Team = () => {
                         <div className="team__details">
                             <h4>{item.name}</h4>
                             <p className="discription">{item.position}</p>
-                            <div className='team__member-social'>
-                                <span><i class="ri-linkedin-fill"></i></span>
-                                <span><i class="ri-twitter-line"></i></span>
+                            <p className="discription">{item.working}</p>
+                            <div className="team__img-c">
+                                <img className='cc' src={item.imgUrlc} alt="" />
                             </div>
+
+                            <div className='team__member-social'>
+
+                                <span><a className='socal'href={item.socal1} target='blank'> <i class="ri-linkedin-fill"></i></a></span>
+
+                                <span><a className='socal'href={item.socal2} target='blank' ><i class="ri-twitter-line"></i></a></span>
+
+                                <span><a className='socal'href={item.socal3} target='blank' ><i class="ri-instagram-line"></i></a></span>
+                        </div>
                         </div>
                         </div>
                     ))

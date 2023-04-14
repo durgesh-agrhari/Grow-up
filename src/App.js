@@ -74,9 +74,9 @@ function App() {
           <Route path='/post' element = {<Post /> }/>
           <Route path='/edith' element = {<EditHeader /> }/>
           <Route path='/soon' element = {<ComingSoon /> }/>
-          <Route path='/codechef' element = {<Codechef /> }/>
-          <Route path='/codeforces' element = {<Codeforses /> }/>
-          <Route path='/leedcode' element = {<Leedcode /> }/>
+          <Route path='/codechef-contest-solution' element = {<Codechef /> }/>
+          <Route path='/codeforces-contest-solution' element = {<Codeforses /> }/>
+          <Route path='/leedcode-contest-solution' element = {<Leedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
 

@@ -3,61 +3,64 @@ import './footer.css'
 
 const quickLinks01 = [
     {
-        path:"#",
-        display:"Marketing"
+        path:"/codechef-contest-solution",
+        display:"CodeChef"
     },
     {
-        path:"#",
-        display:"Analites"
+        path:"/codeforces-contest-solution",
+        display:"CodeForces"
     },
     {
-        path:"#",
-        display:"Tester"
+        path:"/leedcode-contest-solution",
+        display:"LeedCode"
     },
 ]
 
 const quickLinks02 = [
     {
-        path:"#",
-        display:"Array"
+        path:"/array-basic-questions",
+        display:"DSA"
     },
     {
-        path:"#",
-        display:"String"
+        path:"/web-development",
+        display:"Web"
     },
     {
-        path:"#",
-        display:"Stack"
+        path:"/job-home",
+        display:"Job"
     },
 ]
 
 const quickLinks03 = [
     {
-        path:"#",
-        display:"Java"
+        path:"/array-basic-questions",
+        display:"Array"
+    },
+    {
+        path:"/string-basic-questions",
+        display:"String"
     },
     {
         path:"#",
-        display:"Analites"
-    },
-    {
-        path:"#",
-        display:"Tester"
+        display:"Sorting"
     },
 ]
 const Footer = () => {
 
     const Year = new Date().getFullYear()
 
+    const newTab=url=>{
+        window.open(url)
+    }
   return (
     <footer className='footer'>
         <div className="container">
             <div className="footer__wrapper">
                 <div className="footer__logo">
-                    <h2>Digency</h2>
+                    <h2>Growup Code</h2>
                     <p className="discription">Grow with us </p>
 
-                    <p className='small__text discription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sint, eligendi repellendus iure incidunt excepturi explicabo aliquid soluta delectus veniam.</p>
+                    <p className='small__text discription'>Making learning easier and more convenient for you. Data Structure. Data structures are the problem - solving pillars of coding.</p>
                 </div>
 
                 <div className="footer__quick-link">
@@ -91,6 +94,17 @@ const Footer = () => {
                     </ul>
                 </div>
 
+            </div>
+            <div className='team__member-social'>
+                <span><button className='socal' onClick={()=> newTab('https://www.youtube.com/@GrowupCode')} ><i class="ri-youtube-line"></i></button></span>
+
+                <span><button className='socal' onClick={()=> newTab('https://www.linkedin.com/company/growup-code/')}> <i class="ri-linkedin-fill"></i></button></span>
+
+                <span><button className='socal' onClick={()=> newTab('https://twitter.com/GrowupCode')}><i class="ri-twitter-line"></i></button></span>
+
+                <span><button className='socal' onClick={()=> newTab('https://www.instagram.com/growupcode/')}><i class="ri-instagram-line"></i></button></span>
+
+                <span><button className='socal' onClick={()=> newTab('https://www.facebook.com/profile.php?id=100091595381812')}><i class="ri-facebook-fill"></i></button></span>
             </div>
             <p className='copyright'>Copyright {Year} , developed by Durgesh Agrhari. All rights reserved</p>
         </div>

@@ -3,20 +3,20 @@ import "../../style/counter.css"
 
 const counterData=[
     {
-        number: '5k+',
-        text: 'Students'
+        number: '2.5k+',
+        text: 'Linkedin'
     },
     {
-        number: '40+',
-        text: 'Happy '
+        number: '1.8K+',
+        text: 'Instagram'
     },
     {
-        number: '80+',
-        text: 'Courser'
+        number: '16K+',
+        text: 'YouTube'
     },
     {
-        number: '30+',
-        text: 'Projects'
+        number: '500+',
+        text: 'Happy'
     },
 ]
 

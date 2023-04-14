@@ -44,7 +44,7 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeClassName='navactive'>Web</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/codechef' className='menu__link' activeClassName='navactive'>Contest</NavLink></li>
+                            <li className='menu__item'><NavLink to='/codechef-contest-solution' className='menu__link' activeClassName='navactive'>Contest</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeClassName='navactive'>Job</NavLink></li>
 
