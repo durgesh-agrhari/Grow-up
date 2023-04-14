@@ -1,7 +1,7 @@
 .team__content{
     text-align: center;
     margin-bottom: 50px;
-    margin-top: -180px;
+    margin-top: -150px;
 }
 .team__item{
     width: 25%;
@@ -32,6 +32,10 @@
     border-radius: 3px;
     padding: 1px 1px 1px 1px;
 }
+
+.light-theme .cc{
+    border: solid 2px rgb(180, 180, 192);   
+}
 .team__img img{
     width: 100%;
     height: 200px;
@@ -57,12 +61,18 @@
     justify-content: center;
 }
 .team__member-social span{
-    padding: 5px;
+    padding: 8px 4px 8px 4px;
     background: var(--icon-bg);
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.light-theme .team__member-social span{
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
 
 /* //koti bhi content colom me ho row me karan ho to yese kare */
 .team__wrapper{
