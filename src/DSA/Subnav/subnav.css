@@ -1,11 +1,15 @@
 .subnav12{
     border-top: solid 4px rgb(1, 118, 1);
-    background-color: rgb(164, 172, 175);
+    background-color: rgb(92, 98, 94);
     margin-top: 10px;
     margin-left: 8px;
     margin-right: 8px;  
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+}
+
+.light-theme .subnav12{
+ background-color: rgb(191, 195, 198);   
 }
 
 .hh{
@@ -21,7 +25,7 @@
 }
 
 @media only screen and (max-width: 992px){
-    .subnav{
+    .subnav12{
         width: 100%;
         height: 100px;
     }

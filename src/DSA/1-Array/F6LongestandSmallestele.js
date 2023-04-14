@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post6 from './editer1/Post6'
 
 const F6LongestandSmallestele = () => {
   return (
@@ -12,11 +13,16 @@ const F6LongestandSmallestele = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>6: Find Longest and Smallest element in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p className='pp'>
+        In an array, the longest element refers to the element with the largest value, while the smallest element refers to the element with the smallest value.<br/><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        * For example, consider the array [3, 7, 2, 9, 5]. <br/>
+        In this case, the smallest element is 2, <br/>
+        and the longest element is 9.<br/><br/>
+
+        * Finding the longest and smallest elements in an array is a common problem in programming, and can be solved by iterating over the array and keeping track of the current smallest and longest elements.<br/><br/>
+        </p>
+        <Post6/>
       </div>
       <RightSidebar />
     </div>

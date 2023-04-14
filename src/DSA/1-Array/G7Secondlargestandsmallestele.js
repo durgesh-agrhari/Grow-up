@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post7 from './editer1/Post7'
 
 const G7Secondlargestandsmallestele = () => {
   return (
@@ -12,11 +13,18 @@ const G7Secondlargestandsmallestele = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>7: Find Second Largest and Smallest element in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p className='pp'>
+        In an array, the second largest element refers to the element with the second-highest value, while the second smallest element refers to the element with the second-lowest value.<br/><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        * For example, consider the array [3, 7, 2, 9, 5]. 
+        In this case, the second smallest element is 3 (after 2), 
+        and the second largest element is 7 (after 9).<br/><br/>
+
+        * Finding the second largest and second smallest elements in an array is a common problem in programming, and can be solved by iterating over the array and keeping track of the current largest, second largest, smallest, and second smallest elements. Here's an example C++ code to find the second largest and second smallest elements in an array:  <br/><br/>
+        </p><br/>
+        
+        <Post7/>
+  
       </div>
       <RightSidebar />
     </div>

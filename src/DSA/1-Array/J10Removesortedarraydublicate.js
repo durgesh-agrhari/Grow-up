@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post10 from './editer1/Post10'
 
 const J10Removesortedarraydublicate = () => {
   return (
@@ -11,16 +12,14 @@ const J10Removesortedarraydublicate = () => {
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>10: Remove sorted array dublicate in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <h3>10: Remove dublicate element in sorted array</h3><br/>
+        <p className='pp'>Removing duplicate elements from a sorted array involves removing any element that appears more than once, while preserving the order of the remaining elements in the array. In other words, if the array is sorted, then all duplicate elements will be adjacent to each other. </p><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <Post10/>
+        
       </div>
       <RightSidebar />
     </div>
-
     </div>
   )
 }

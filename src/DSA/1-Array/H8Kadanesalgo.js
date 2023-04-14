@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post8 from './editer1/Post8'
 
 const H8Kadanesalgo = () => {
   return (
@@ -11,12 +12,17 @@ const H8Kadanesalgo = () => {
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>8: Find Kadanes algo in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <h3>8: Implement Kadanes algo in an Array || Maximum subarray sum in given array </h3><br/>
+        <p className='pp'>
+        * Kadane's algorithm is a popular dynamic programming algorithm used to find the maximum sum subarray in an array of integers.<br/><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        * The algorithm works by iterating over the array and maintaining two variables: the current maximum subarray sum and the current maximum subarray sum ending at the current index.<br/><br/>
+         * At each index, the algorithm updates these variables based on whether adding the current element to the maximum subarray sum ending at the previous index would result in a larger or smaller sum.<br/><br/>
+
+        Here's an example C++ code for Kadane's algorithm:<br/><br/>
+        </p><br/>
+        <Post8/>
+     
       </div>
       <RightSidebar />
     </div>
