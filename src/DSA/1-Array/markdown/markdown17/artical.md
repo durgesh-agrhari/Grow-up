@@ -1,16 +1,15 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input: arr1[] = { 1, 3, 4, 5}, arr2[] = {2, 4, 6, 8} 
+Output: arr3[] = {1, 2, 3, 4, 4, 5, 6, 8}
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input: arr1[] = { 5, 8, 9}, arr2[] = {4, 7, 8} 
+Output: arr3[] = {4, 5, 7, 8, 8, 9} 
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 1: 
+
 
 <Code language="cpp">
 // C++ program to implement Delete element in an array.
@@ -18,116 +17,56 @@ Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
 using namespace std;
 #include <bits/stdc++.h>
 using namespace std;
-
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
-
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
-}
-
-// Driver code.
-int main()
-{
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
-<br/>
-###Output<br/><br/>
-2<br/><br/><br/>
-
-
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
+// C++ program to merge two sorted arrays/
+#include<bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
+void mergeArrays(int arr1[], int arr2[], int n1,
+							int n2, int arr3[])
 {
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
+	int i = 0, j = 0, k = 0;
+	// traverse the arr1 and insert its element in arr3
+	while(i < n1){
+	arr3[k++] = arr1[i++];
 	}
-	return max_so_far;
+	// now traverse arr2 and insert in arr3
+	while(j < n2){
+	arr3[k++] = arr2[j++];
+	}
+	// sort the whole array arr3
+	sort(arr3, arr3+n1+n2);
 }
 
-// Driver Code
+// Driver code
 int main()
 {
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
+	int arr1[] = {1, 3, 5, 7};
+	int n1 = sizeof(arr1) / sizeof(arr1[0]);
 
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
+	int arr2[] = {2, 4, 6, 8};
+	int n2 = sizeof(arr2) / sizeof(arr2[0]);
+
+	int arr3[n1+n2];
+	mergeArrays(arr1, arr2, n1, n2, arr3);
+
+	cout << "Array after merging" <<endl;
+	for (int i=0; i < n1+n2; i++)
+		cout << arr3[i] << " ";
+
 	return 0;
 }
 
+
 </Code>
-<br/>
+
 ###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
+Array after merging<br/>
+1 2 3 4 5 6 7 8 <br/><br/>
+Time Complexity : O((m+n) log(m+n)) , the whole size of arr3 is m+n<br/>
+Auxiliary Space: O(1), No extra space is used<br/><br/>
 
+Method 2 (O(n1 * n2) Time and O(n1+n2) Extra Space) <br/><br/>
 
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
-    }
-    return max_so_far;
-}
-
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
-    return 0;
-}
-
-</Code>
-<br/><br/>
-
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
-
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
-
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
-
+Create an array arr3[] of size n1 + n2.<br/>
+Copy all n1 elements of arr1[] to arr3[]<br/>
+Traverse arr2[] and one by one insert elements (like insertion sort) of arr3[] to arr1[]. This step take O(n1 * n2) time.<br/><br/>

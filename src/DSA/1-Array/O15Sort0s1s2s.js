@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post15 from './editer1/Post15'
 
 const O15Sort0s1s2s = () => {
   return (
@@ -12,11 +13,11 @@ const O15Sort0s1s2s = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>15: Sort 0s 1s 2s in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p>Given an array A[] consisting of only 0s, 1s, and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.<br/><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        This problem is also the same as the famous “Dutch National Flag problem”. The problem was proposed by Edsger Dijkstra. The problem is as follows:</p><br/>
+
+        <Post15/>
       </div>
       <RightSidebar />
     </div>

@@ -1,133 +1,102 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input: arr[] = {2, 0, 2}
+Output: 2
+Explanation: The structure is like below.
+We can trap 2 units of water in the middle gap.
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input: arr[]   = {3, 0, 2, 0, 4}
+Output: 7
+Explanation: Structure is like below.
+We can trap “3 units” of water between 3 and 2,
+“1 unit” on top of bar 2 and “3 units” between 2 and 4.
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 1: Trapping rain Water in an Array<br/>
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+// C++ program to implementation of the approach
 #include <bits/stdc++.h>
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
+// C++ implementation of the approach
+// Function to return the maximum
+// water that can be stored
+int maxWater(int arr[], int n)
 {
-	int sum =0;
-    int msum = INT_MIN;
+	// To store the maximum water
+	// that can be stored
+	int res = 0;
 
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
+	// For every element of the array
+	for (int i = 1; i < n - 1; i++) {
+
+		// Find the maximum element on its left
+		int left = arr[i];
+		for (int j = 0; j < i; j++)
+			left = max(left, arr[j]);
+
+		// Find the maximum element on its right
+		int right = arr[i];
+		for (int j = i + 1; j < n; j++)
+			right = max(right, arr[j]);
+
+		// Update the maximum water
+		res = res + (min(left, right) - arr[i]);
+	}
+
+	return res;
 }
 
-// Driver code.
+// Driver code
 int main()
 {
-	int arr[] = { -1, 2, -3, -2, 1 };
+	int arr[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
-	kadanesalgo(arr, n);
+	cout << maxWater(arr, n);
+
 	return 0;
 }
+
 
 </Code>
 
 <br/>
 ###Output<br/><br/>
-2<br/><br/><br/>
+6<br/><br/>
+Complexity Analysis: <br/><br/>
+
+Time Complexity: O(N2). There are two nested loops traversing the array.<br/>
+Space Complexity: O(1). No extra space is required.<br/><br/><br/>
 
 
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Here's the C++ code to solve the problem of trapping rainwater in an array using the two-pointer approach, without using vector:<br/><br/>
+
+* Solution 2: Trapping rain Water in an Array<br/>
+
 
 <Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
-using namespace std;
-
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
+int trap(int height[], int n) {
+    int left = 0, right = n - 1;
+    int left_max = 0, right_max = 0;
+    int result = 0;
+    while (left <= right) {
+        if (height[left] <= height[right]) {
+            left_max = max(left_max, height[left]);
+            result += left_max - height[left];
+            left++;
+        }
+        else {
+            right_max = max(right_max, height[right]);
+            result += right_max - height[right];
+            right--;
+        }
     }
-    return max_so_far;
-}
-
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
-    return 0;
+    return result;
 }
 
 </Code>
-<br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
-
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
-
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
-
+This function takes an array of non-negative integers representing the heights of walls and its size n, and returns the amount of rainwater that can be trapped between them. The algorithm is the same as in the previous answer, but the function uses a plain C-style array and its size n.

@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post19 from './editer1/Post19'
 
 const S19StockbyandSell = () => {
   return (
@@ -12,11 +13,11 @@ const S19StockbyandSell = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>19: Stock by and Sell in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
+        <p>
+        Stock Buy and Sell is a problem in computer science that involves finding the maximum profit that can be earned by buying and selling a stock at different prices. Given an array of stock prices for each day, the goal is to find the maximum profit that can be earned by buying and selling the stock once.
+        </p><br/>
         
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
-
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <Post19/>
       </div>
       <RightSidebar />
     </div>

@@ -1,133 +1,140 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input: {0, 1, 2, 0, 1, 2}
+Output: {0, 0, 1, 1, 2, 2}
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input: {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1}
+Output: {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2}
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+Follow the steps below to solve the given problem:<br/><br/>
+
+1 Keep three indices low = 1, mid = 1, and high = N and there are four ranges, 1 to low (the range containing 0), low to mid (the range containing 1), mid to high (the range containing unknown elements) and high to N (the range containing 2).<br/><br/>
+2 Traverse the array from start to end and mid is less than high. (Loop counter is i)
+If the element is 0 then swap the element with the element at index low and update low = low + 1 and mid = mid + 1<br/><br/>
+3 If the element is 1 then update mid = mid + 1<br/><br/>
+4 If the element is 2 then swap the element with the element at index high and update high = high – 1 and update i = i – 1. As the swapped element is not processed
+Print the array.<br/><br/><br/>
+
+* Solution 1:  Sort 0s 1s 2s in an Array<br/><br/>
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+// C++ program to sort an array
+// with 0, 1 and 2 in a single pass
 #include <bits/stdc++.h>
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
+// Function to sort the input array,
+// the array is assumed
+// to have values in {0, 1, 2}
+void sort012(int a[], int arr_size)
 {
-	int sum =0;
-    int msum = INT_MIN;
+	int lo = 0;
+	int hi = arr_size - 1;
+	int mid = 0;
 
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
+	// Iterate till all the elements
+	// are sorted
+	while (mid <= hi) {
+		switch (a[mid]) {
+
+		// If the element is 0
+		case 0:
+			swap(a[lo++], a[mid++]);
+			break;
+
+		// If the element is 1 .
+		case 1:
+			mid++;
+			break;
+
+		// If the element is 2
+		case 2:
+			swap(a[mid], a[hi--]);
+			break;
+		}
+	}
 }
 
-// Driver code.
+// Function to print array arr[]
+void printArray(int arr[], int arr_size)
+{
+	// Iterate and print every element
+	for (int i = 0; i < arr_size; i++)
+		cout << arr[i] << " ";
+}
+
+// Driver Code
 int main()
 {
-	int arr[] = { -1, 2, -3, -2, 1 };
+	int arr[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
-	kadanesalgo(arr, n);
+	sort012(arr, n);
+
+	printArray(arr, n);
+
 	return 0;
 }
+
+// This code is contributed by Shivi_Aggarwal
 
 </Code>
 
 <br/>
 ###Output<br/><br/>
-2<br/><br/><br/>
+0 0 0 0 0 1 1 1 1 1 2 2 <br/><br/>
+Time Complexity: O(n), Only one traversal of the array is needed.<br/>
+Space Complexity: O(1), No extra space is required<br/><br/><br/>
 
 
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 2:  Sort 0s 1s 2s in an Array<br/><br/>
 
 <Code language="cpp">
 // C++ program to print largest contiguous array sum
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
+void sort012(int arr[], int n) {
+    int low = 0, mid = 0, high = n - 1;
+    while (mid <= high) {
+        switch (arr[mid]) {
+            case 0:
+                swap(arr[low], arr[mid]);
+                low++;
+                mid++;
+                break;
+            case 1:
+                mid++;
+                break;
+            case 2:
+                swap(arr[mid], arr[high]);
+                high--;
+                break;
+        }
     }
-    return max_so_far;
 }
 
-// Main function
 int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+    int arr[] = {0, 1, 2, 0, 1, 2, 0, 1, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
+    sort012(arr, n);
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
     return 0;
 }
 
 </Code>
+
 <br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+* In this code, the sort012 function takes an integer array arr of size n as input and sorts it in-place. The function uses three pointers - low, mid, and high - to partition the array into three parts, such that all elements less than arr[low] are 0s, all elements greater than arr[high] are 2s, and all elements between arr[low] and arr[high] are 1s.<br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
+* The function uses a switch statement to move elements around based on their values. If arr[mid] is 0, it is swapped with arr[low] and low and mid are incremented. If arr[mid] is 1, mid is simply incremented. If arr[mid] is 2, it is swapped with arr[high] and high is decremented.<br/><br/>
 
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+* The main function creates an example array, calls the sort012 function to sort it, and then prints out the sorted array. The output of the above code would be:<br/><br/>
 
+###Output<br/>
+0 0 0 1 1 1 2 2 2

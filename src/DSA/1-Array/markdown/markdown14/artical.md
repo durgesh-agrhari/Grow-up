@@ -1,133 +1,129 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
-
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input: arr[] = {1, 2, 0, 4, 3, 0, 5, 0} 
+Output: 0 0 0 2 4 3 5 1 
+Input: arr[] = {1, 2, 0, 0, 0, 3, 6}; 
+Output: 0 0 0 2 3 6 1 
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 1: Moveall Zero to Beginning in an Array || Brute Force <br/>
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-#include <bits/stdc++.h>
+
+#include<bits/stdc++.h>
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
+void zerosToEnd(int arr[],int n) {
 
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
+        int temp[n];
+        int k=0;
+        for (int i=0;i<n;i++){
+            if (arr[i]!=0){
+                temp[k]=arr[i];
+                k++;
+            }
         }
-        if(sum < 0){
-            sum =0;
+        while (k<n){
+            temp[k]=0;
+            k++;
+        }
+        for(int i=0;i<n;i++)
+        {
+            cout<<temp[i]<<" ";
         }
     }
-    cout<<msum<<endl;
-}
 
-// Driver code.
-int main()
-{
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
-<br/>
-###Output<br/><br/>
-2<br/><br/><br/>
-
-
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
-using namespace std;
-
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
-    }
-    return max_so_far;
-}
-
-// Main function
 int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
-    return 0;
+      int arr[] ={ 1,2,0,1,0,4,0};
+       zerosToEnd(arr,7);
+}
+
+
+</Code>
+<br/>
+###Output<br/><br/>
+ 1 2 1 4 0 0 0<br/><br/>
+Time complexity: o(n)<br/>
+
+Space complexity: o(n)<br/><br/><br/><br/>
+
+
+* Solution 2: Moveall Zero to Beginning in an Array <br/><br/><br/>
+
+Approach: Traverse the array from left to right and move all the elements which are not equal to 1 at the beginning and then put 1’s in the rest of the indices at the end of the array. <br/><br/>
+Now, find the index of the last element which is not equal to 1 say lastInd and then starting from this index to the beginning of the array push all the elements which are not equal to 0 in the end till lastInd and then put 0’s in the beginning.
+Below is the implementation of the above approach: <br/><br/>
+
+<Code language="cpp">
+// C++ implementation of the approach
+#include <bits/stdc++.h>
+using namespace std;
+
+// Utility function to print the contents of an array
+void printArr(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+		cout << arr[i] << " ";
+}
+
+// Function that pushes all the zeros to the start and ones
+// to the end of an array
+void pushBinaryToBorder(int arr[], int n)
+{
+	// To store the count of elements which are not equal to 1
+	int count1 = 0;
+	// Traverse the array and calculate count of elements
+	// which are not 1
+	for (int i = 0; i < n; i++)
+		if (arr[i] != 1)
+			arr[count1++] = arr[i];
+
+	// Now all non-ones elements have been shifted to front
+	// and 'count1' is set as index of first 1. Make all
+	// elements 1 from count to end.
+	while (count1 < n)
+		arr[count1++] = 1;
+	// Initialize lastNonBinary position to zero
+	int lastNonOne = 0;
+
+	// Traverse the array and pull non-zero elements to the
+	// required indices
+	for (int i = n - 1; i >= 0; i--) {
+		// Ignore the 1's
+		if (arr[i] == 1)
+			continue;
+		// Mark the position Of last NonBinary integer
+		if (!lastNonOne)
+			lastNonOne = i;
+		// Place non-zero element to their required indices
+		if (arr[i] != 0)
+			arr[lastNonOne--] = arr[i];
+	}
+
+	// Put zeros to start of array
+	while (lastNonOne >= 0)
+		arr[lastNonOne--] = 0;
+}
+
+// Driver code
+int main()
+{
+	int arr[] = { 1, 2, 0, 0, 0, 3, 6 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	pushBinaryToBorder(arr, n);
+	printArr(arr, n);
+	return 0;
 }
 
 </Code>
-<br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+<br/>
+###Output<br/><br/>
+0 0 0 2 3 6 1<br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
+* Time Complexity: O(N), where N represents the size of the given array.<br/>
 
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+* Auxiliary Space: O(1), no extra space is required, so it is a constant.<br/>
+
 

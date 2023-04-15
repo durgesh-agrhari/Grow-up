@@ -1,4 +1,4 @@
-import Markdown7 from 'markdown-to-jsx'
+import Markdown11 from 'markdown-to-jsx'
 import React, { useEffect, useState } from 'react'
 import Code from './Code'
 import './editor.css'
@@ -8,7 +8,7 @@ const Post3 = () => {
     const [postContent, setPostContent] = useState("#Loding...")
 
     useEffect(() => {
-        import("../markdown/markdown7/artical.md")
+        import("../markdown/markdown11/artical.md")
         .then( res => {
             fetch(res.default)
             .then(response => response.text())
@@ -20,7 +20,7 @@ const Post3 = () => {
     <article className='article'>
         <div className='containerp'>
             <div className='post-wrapper'>
-                <Markdown7 options={{
+                <Markdown11 options={{
                     overrides: {
                         Code: {
                             component: Code
@@ -28,7 +28,7 @@ const Post3 = () => {
                     }
                 }}>
                     {postContent}
-                </Markdown7>
+                </Markdown11>
             </div>
         </div>
     </article>

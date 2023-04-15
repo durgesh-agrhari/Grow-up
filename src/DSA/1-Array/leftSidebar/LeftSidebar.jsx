@@ -71,7 +71,7 @@ const Leftsidebar = () => {
                 <p className='active1'>13: Two sum in an array</p>
             </NavLink>
 
-            <NavLink to='/kadanesalgo' className='side-nav-links' activeClassName='active'>
+            <NavLink to='/moveallZerotoBeginning' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>14: Move all Zero to Beginning in an array</p>
             </NavLink>
 

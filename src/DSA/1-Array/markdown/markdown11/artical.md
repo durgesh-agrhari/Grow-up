@@ -1,133 +1,101 @@
-###Example:-
-<Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
-
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
-
-</Code> <br/><br/>
-
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+Solution 1 : Find Max and Min elelemt in an array
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+// C++ program to Find Smallest and Longest element in an array.
 #include <bits/stdc++.h>
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
-
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
-}
-
-// Driver code.
 int main()
 {
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
-<br/>
-###Output<br/><br/>
-2<br/><br/><br/>
-
-
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
-using namespace std;
-
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
+    int n;
+    cin>>n; 
+    int arr[n];
+    for(int i=0; i<n; i++)
+    {
+        cin>>arr[i];
     }
-    return max_so_far;
-}
 
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
+    int min = arr[0];
+    int max = arr[0];
+    //foe finding min element in an array
+    for(int i=1; i<n; i++)
+    {
+        if(arr[i]<min)
+        {
+            min =arr[i];
+        }
+    }
+    //foe finding max element in an array
+    for(int i=1; i<n; i++)
+    {
+        if(arr[i]>max)
+        {
+            max =arr[i];
+        }
+    }
+
+    cout<<"Min Element = "<<min<<endl;
+    cout<<"Max Element = "<<max<<endl;
     return 0;
 }
+
 
 </Code>
 <br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+###Inpute<br/><br/>
+5<br/>
+1 2 12 4 5<br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
+###Output
+Min Element = 1<br/>
+Max Element = 12<br/><br/>
 
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
+Solution 2 : Find Smallest and Longest in an array <br/><br/>
+
+<Code language="cpp">
+// C++ program to implement Dublicates element in an array.
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to find the smallest element in an array
+int findSmallest(int arr[], int n) {
+    int smallest = INT_MAX;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] < smallest)
+            smallest = arr[i];
+    }
+    return smallest;
+}
+
+// Function to find the longest element in an array
+int findLongest(int arr[], int n) {
+    int longest = INT_MIN;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > longest)
+            longest = arr[i];
+    }
+    return longest;
+}
+
+// Main function
+int main() {
+    int arr[] = { 3, 8, 2, 5, 1, 4 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int smallest = findSmallest(arr, n);
+    int longest = findLongest(arr, n);
+    cout << "Smallest element: " << smallest << endl;
+    cout << "Longest element: " << longest << endl;
+    return 0;
+}
+
+
+</Code>
+
+<br/><br/>
+
+* In this example code, we define two functions findSmallest and findLongest to find the smallest and longest element in the array, respectively.<br/><br/>
+
+ * We initialize the smallest and longest variables to INT_MAX and INT_MIN from the climits header file, respectively, to make sure that any value in the array will be smaller or greater than these initial values. <br/><br/>
  
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
-
+ * We then iterate over the array and compare each element with the current smallest or longest element. Finally, we call the two functions in the main function with an example array and print the results.<br/><br/>

@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post14 from './editer1/Post14'
 
 const N14MoveallZerotoBeginning = () => {
   return (
@@ -12,11 +13,11 @@ const N14MoveallZerotoBeginning = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>14: Moveall Zero to Beginning in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p className='pp'>
+        Given an array arr[] of random integers, the task is to push all the zero’s in the array to the start and all the one’s to the end of the array. Note that the order of all the other elements should be the same.
+        </p><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <Post14/>
       </div>
       <RightSidebar />
     </div>

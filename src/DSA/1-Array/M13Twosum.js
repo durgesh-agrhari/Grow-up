@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post13 from './editer1/Post13'
 
 const M13Twosum = () => {
   return (
@@ -12,11 +13,14 @@ const M13Twosum = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>13: Find Two sum in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p className='pp'>
+        "Two sum in an Array" is a problem in computer science where we are given an array of integers and a target value, and we need to find two numbers in the array that add up to the target value.<br/><br/>
 
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        Given an array A[] of n numbers and another number x, the task is to check whether or not there exist two elements in A[] whose sum is exactly x. 
+
+        </p><br/>
+        
+        <Post13/>
       </div>
       <RightSidebar />
     </div>

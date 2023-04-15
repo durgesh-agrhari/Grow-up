@@ -4,6 +4,8 @@ import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 
+import Post11 from './editer1/Post11'
+
 const K11MinandMaxelement = () => {
   return (
     <div className='subb'>
@@ -12,11 +14,11 @@ const K11MinandMaxelement = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>11: Find Min and Max element in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
-
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p className='pp'>In an array, the minimum (Min) element refers to the smallest value that is present in the array, while the maximum (Max) element refers to the largest value present in the array.<br/><br/>
+        Algo...<br/>
+        To find the minimum and maximum element in an array, you can traverse the array and compare each element with the current minimum and maximum values. Initially, you can set the minimum and maximum values to the first element of the array, and then iterate through the rest of the elements, updating the minimum and maximum values as you go along.
+        </p><br/>
+        <Post11/>
       </div>
       <RightSidebar />
     </div>

@@ -3,6 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
+import Post16 from './editer1/Post16'
 
 const P16KthLargestandsmallest = () => {
   return (
@@ -12,11 +13,10 @@ const P16KthLargestandsmallest = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>16: Kth Largest and smallest in an Array</h3><br/>
-        <p>Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. </p><br/>
-        
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
-
-        <p>Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.</p> <br/>
+        <p>
+        To find the Kth largest and smallest elements in an array in C++, you can use the nth_element algorithm from the (algorithm) library. Here's an example implementation:
+        </p><br/>
+        <Post16/>
       </div>
       <RightSidebar />
     </div>

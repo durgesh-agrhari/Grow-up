@@ -1,133 +1,53 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input: arr[] = {7, 10, 4, 3, 20, 15}, K = 3 
+Output: 7
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
-
+Input: arr[] = {7, 10, 4, 3, 20, 15}, K = 4 
+Output: 10 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+
+* To find the kth largest and smallest elements in an array in C++ without using the greater function, you can use the following code:<br/><br/>
+
+* Solution 1: <br/>
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-#include <bits/stdc++.h>
-using namespace std;
-
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
-
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
-}
-
-// Driver code.
-int main()
-{
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
-<br/>
-###Output<br/><br/>
-2<br/><br/><br/>
-
-
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
+//Kth longest ele
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
-    }
-    return max_so_far;
-}
-
-// Main function
 int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
+    int arr[] = { 5, 3, 9, 1, 7 };
+    int k = 3;
+
+    // find kth smallest element
+    nth_element(arr, arr + k - 1, arr + 5);
+    cout << k << "th smallest element is " << arr[k - 1] << endl;
+
+    // find kth largest element
+    nth_element(arr, arr, arr + 5 - k);
+    cout << k << "th largest element is " << arr[5 - k] << endl;
+
     return 0;
 }
 
+
 </Code>
+
+
+
 <br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+* This code is very similar to the previous example, but instead of using the greater function, we use a different range of indices for the third argument of the nth_element() function to find the kth largest element. Specifically, we use arr + 5 - k instead of arr + 5 for the third argument.<br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
-
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
+* To understand why this works, consider that the nth_element() function rearranges the elements in the array such that the kth smallest element is at index k - 1, and all the elements before it are less than or equal to it, and all the elements after it are greater than or equal to it.<br/><br/>
  
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+ * So, to find the kth largest element, we can rearrange the elements such that the kth largest element is at index 5 - k, and all the elements before it are greater than or equal to it, and all the elements after it are less than or equal to it. Therefore, we can use arr as the second argument and arr + 5 - k as the third argument to nth_element() to achieve this result.<br/><br/>
+
+* Note that, as before, this code assumes that the array has at least k elements. If the array has fewer than k elements, the code may produce incorrect results.<br/><br/>
+
+
+
+
 

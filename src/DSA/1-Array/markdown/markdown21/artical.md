@@ -1,133 +1,132 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input : A[]={3, 3, 4, 2, 4, 4, 2, 4, 4}
+Output : 4
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input : A[] = {3, 3, 4, 2, 4, 4, 2, 4}
+Output : No Majority Element
 
-</Code> <br/><br/>
+</Code> <br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Explanation: The frequency of 4 is 5 which is greater than the half of the size of the array size. 
+* Explanation: There is no element whose frequency is greater than the half of the size of the array size.<br/><br/><br/>
+
+
+* Solution 1:  Majority element in an Array<br/>
 
 <Code language="cpp">
 // C++ program to implement Delete element in an array.
 #include <bits/stdc++.h>
-using namespace std;
-#include <bits/stdc++.h>
+// C++ program to find Majority
+// C++ program to find Majority
+// element in an array
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
+// Function to find Majority element
+// in an array
+void findMajority(int arr[], int n)
 {
-	int sum =0;
-    int msum = INT_MIN;
+	int maxCount = 0;
+	int index = -1; // sentinels
+	for (int i = 0; i < n; i++) {
+		int count = 0;
+		for (int j = 0; j < n; j++) {
+			if (arr[i] == arr[j])
+				count++;
+		}
 
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
+		// update maxCount if count of
+		// current element is greater
+		if (count > maxCount) {
+			maxCount = count;
+			index = i;
+		}
+	}
+
+	// if maxCount is greater than n/2
+	// return the corresponding element
+	if (maxCount > n / 2)
+		cout << arr[index] << endl;
+
+	else
+		cout << "No Majority Element" << endl;
 }
 
-// Driver code.
+// Driver code
 int main()
 {
-	int arr[] = { -1, 2, -3, -2, 1 };
+	int arr[] = { 1, 1, 2, 1, 3, 5, 1 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
-	kadanesalgo(arr, n);
+	// Function calling
+	findMajority(arr, n);
+
 	return 0;
 }
+
 
 </Code>
 
 <br/>
 ###Output<br/><br/>
-2<br/><br/><br/>
+1<br/><br/>
+Time Complexity: O(n*n), A nested loop is needed where both the loops traverse the array from start to end.<br/><br/>
+Auxiliary Space: O(1), No extra space is required.<br/><br/>
 
 
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 2:  Majority element in an Array<br/><br/>
+
+The majority element in an array is the element that appears more than half of the array's size. For example, in the array [2, 3, 4, 2, 2, 2, 5, 2, 1], the majority element is 2 because it appears 5 times, which is more than half of the array's size of 9.<br/><br/>
+
+One way to find the majority element in an array is to use the Boyer-Moore Voting Algorithm. This algorithm has a time complexity of O(n) and a space complexity of O(1).<br/><br/>
+
+The algorithm works as follows:<br/><br/>
+
+1: Initialize two variables, candidate and count, to None and 0, respectively.<br/>
+
+2: Iterate through the array. For each element:<br/>
+
+a. If the count is 0, set the candidate to the current element.<br/>
+
+b. If the current element is the same as the candidate, increment the count.<br/>
+
+c. If the current element is different from the candidate, decrement the count.<br/>
+
+3: The candidate is the majority element.<br/><br/> 
 
 <Code language="cpp">
 // C++ program to print largest contiguous array sum
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
+int majority_element(int* nums, int size) {
+    int candidate = 0, count = 0;
+    for (int i = 0; i < size; i++) {
+        if (count == 0) {
+            candidate = nums[i];
+            count = 1;
+        } else if (candidate == nums[i]) {
+            count++;
+        } else {
+            count--;
+        }
     }
-    return max_so_far;
+    return candidate;
 }
 
-// Main function
 int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
+    int nums[] = {2, 3, 4, 2, 2, 2, 5, 2, 1};
+    int size = sizeof(nums) / sizeof(int);
+    int majority = majority_element(nums, size);
+    cout << "The majority element is: " << majority << endl;
     return 0;
 }
 
 </Code>
+<br/>
 <br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+* This code uses a regular C-style array to represent the array. The majority_element() function takes a pointer to the array and its size as arguments, and returns the majority element. The main() function creates an example array, gets its size, calls the majority_element() function, and prints the result.<br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
-
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+* Note that in this code, we calculate the size of the array using sizeof(nums) / sizeof(int), which gives us the number of bytes that the array takes up divided by the size of an integer. This is a standard way to get the size of an array in C++, but it only works for arrays declared on the stack (i.e., not dynamically allocated arrays). If you're using a dynamically allocated array, you'll need to keep track of its size separately.
 

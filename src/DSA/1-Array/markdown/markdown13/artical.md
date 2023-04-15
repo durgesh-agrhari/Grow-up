@@ -1,133 +1,112 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
-
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input: arr[] = {0, -1, 2, -3, 1}, x= -2
+Output: Yes
+Explanation:  If we calculate the sum of the output,1 + (-3) = -2
+Input: arr[] = {1, -2, 1, 0, 5}, x = 0
+Output: No
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 1: Find Two sum in an Array <br/>
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
+// C++ program for the above approach
 #include <bits/stdc++.h>
-using namespace std;
-#include <bits/stdc++.h>
-using namespace std;
 
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
-
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
-}
-
-// Driver code.
-int main()
-{
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
-<br/>
-###Output<br/><br/>
-2<br/><br/><br/>
-
-
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
+// Function to find and print pair
+bool chkPair(int A[], int size, int x)
 {
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
+	for (int i = 0; i < (size - 1); i++) {
+		for (int j = (i + 1); j < size; j++) {
+			if (A[i] + A[j] == x) {
+				return 1;
+			}
+		}
 	}
-	return max_so_far;
-}
 
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
 	return 0;
 }
+
+// Driver code
+int main()
+{
+	int A[] = { 0, -1, 2, -3, 1 };
+	int x = -2;
+	int size = sizeof(A) / sizeof(A[0]);
+
+	if (chkPair(A, size, x)) {
+		cout << "Yes" << endl;
+	}
+	else {
+		cout << "No" << x << endl;
+	}
+
+	return 0;
+}
+
+// This code is contributed by Samim Hossain Mondal.
+
+</Code>
+
+<br/>
+###Output<br/><br/>
+Yes<br/><br/>
+Time Complexity: O(N2), Finding pair for every element in the array of size N.<br/>
+Auxiliary Space: O(1)<br/><br/><br/>
+
+
+* Solution 2: Find Two sum in an Array <br/>
+
+<Code language="cpp">
+// C++ program to check if given array
+// has 2 elements whose sum is equal
+// to the given value
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to check if array has 2 elements
+// whose sum is equal to the given value
+bool hasArrayTwoCandidates(int A[], int arr_size, int sum)
+{
+	int l, r;
+	sort(A, A + arr_size);
+	l = 0;
+	r = arr_size - 1;
+	while (l < r) {
+		if (A[l] + A[r] == sum)
+			return 1;
+		else if (A[l] + A[r] < sum)
+			l++;
+		else // A[l] + A[r] > sum
+			r--;
+	}
+	return 0;
+}
+
+int main()
+{
+	int A[] = { 1, 4, 45, 6, 10, -8 };
+	int n = 16;
+	int arr_size = sizeof(A) / sizeof(A[0]);
+
+	// Function calling
+	if (hasArrayTwoCandidates(A, arr_size, n))
+		cout << "Yes";
+	else
+		cout << "No";
+
+	return 0;
+}
+
 
 </Code>
 <br/>
 ###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
-    }
-    return max_so_far;
-}
-
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
-    return 0;
-}
-
-</Code>
-<br/><br/>
-
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
-
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
-
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+Yes<br/><br/>
+Time Complexity: O(NlogN), Time complexity for sorting the array<br/>
+Auxiliary Space: O(1)<br/><br/>
 
