@@ -4,7 +4,7 @@ import "../../style/services.css"
 const serviceData = [
     {
         icon: 'ri-apps-line',
-        title: 'App Deelopment',
+        title: 'DSA Course',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
     {
@@ -14,12 +14,12 @@ const serviceData = [
     },
     {
         icon: 'ri-store-3-line',
-        title: 'React Deelopment',
+        title: 'Job Search',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
     {
         icon: 'ri-bar-chart-2-line',
-        title: 'Node Deelopment',
+        title: 'Video Tutorials',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
 ]

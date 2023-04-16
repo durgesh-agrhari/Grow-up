@@ -40,25 +40,25 @@ const Explore = () => {
 
                 <ul className='home-links'>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink} > DSA Placement 100% </NavLink>
+                        <NavLink to='' className={activeLink} > DSA Placement 100% </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Array Basic Questions</NavLink>
+                        <NavLink to='' className={activeLink}>Array Basic Questions</NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Codechef Contest solutions </NavLink>
+                        <NavLink to='' className={activeLink}>Codechef Contest solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Codeforces Contest Solutions </NavLink>
+                        <NavLink to='' className={activeLink}>Codeforces Contest Solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>LeedCode Contest Solutions </NavLink>
+                        <NavLink to='' className={activeLink}>LeedCode Contest Solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Learn Web Development </NavLink>
+                        <NavLink to='' className={activeLink}>Learn Web Development </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Leran MERN Stack Compleate </NavLink>
+                        <NavLink to='' className={activeLink}>Leran MERN Stack Compleate </NavLink>
                     </li>
                 </ul>
 
@@ -88,25 +88,25 @@ const Explore = () => {
 
                 <ul className='home-links'>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink} > DSA Placement 100% </NavLink>
+                        <NavLink to='' className={activeLink} > DSA Placement 100% </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Array Basic Questions</NavLink>
+                        <NavLink to='' className={activeLink}>Array Basic Questions</NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Codechef Contest solutions </NavLink>
+                        <NavLink to='' className={activeLink}>Codechef Contest solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Codeforces Contest Solutions </NavLink>
+                        <NavLink to='' className={activeLink}>Codeforces Contest Solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>LeedCode Contest Solutions </NavLink>
+                        <NavLink to='' className={activeLink}>LeedCode Contest Solutions </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Learn Web Development </NavLink>
+                        <NavLink to='' className={activeLink}>Learn Web Development </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='/' className={activeLink}>Leran MERN Stack Compleate </NavLink>
+                        <NavLink to='' className={activeLink}>Leran MERN Stack Compleate </NavLink>
                     </li>
                 </ul>
             </div>

@@ -5,22 +5,22 @@ import "../style/services.css"
 const serviceData = [
     {
         icon: 'ri-apps-line',
-        title: 'App Deelopment',
+        title: 'Full time job',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
     {
         icon: 'ri-code-s-slash-line',
-        title: 'Web Deelopment',
+        title: 'Part time job',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
     {
         icon: 'ri-store-3-line',
-        title: 'React Deelopment',
+        title: 'Remote job',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
     {
         icon: 'ri-bar-chart-2-line',
-        title: 'Node Deelopment',
+        title: 'Internship',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.'
     },
 ]

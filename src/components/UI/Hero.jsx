@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../style/Hero.css"
+import { Link } from 'react-router-dom'
 
 import heroDarkImg from '../../images/hero-img.png'
 import lightImg from "../../images/light-hero-bg.jpg"
@@ -18,8 +19,8 @@ const Hero = ({theme}) => {
                     <p className='discription'>Making learning easier and more convenient for you. Data Structure. Data structures are the problem - solving pillars of coding.</p>
                     
                     <div className='hero__btns'>
-                        <button className='primary__btn'>Get Started Now</button>
-                        <button className='secondary__btn'>Discover More</button>
+                        <button className='primary__btn'> <Link to='/array-basic-questions' > Get Started Now</Link></button>
+                        <button className='secondary__btn'> <Link to='/explore' > Discover More </Link></button>
                     </div>
                 </div>
 

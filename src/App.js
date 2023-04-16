@@ -33,9 +33,9 @@ import S19StockbyandSell from './DSA/1-Array/S19StockbyandSell';
 import T20TrappingrainWater from './DSA/1-Array/T20TrappingrainWater';
 import U21Majorityelement from './DSA/1-Array/U21Majorityelement';
 import A0basicinfostring from './DSA/2-String/A0basicinfostring';
-import Codechef from './contest/Codechef';
-import Codeforses from './contest/Codeforses';
-import Leedcode from './contest/Leedcode';
+// import Codechef from './contest/Codechef';
+// import Codeforses from './contest/Codeforses';
+// import Leedcode from './contest/Leedcode';
 
 import ReactGA from "react-ga"; // 14.8k (gzipped: 4.9k)
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
@@ -59,6 +59,9 @@ import I9Substring from './DSA/2-String/I9Substring';
 import J10CapitalizedfirstcharacterofEachwordinStrng from './DSA/2-String/J10CapitalizedfirstcharacterofEachwordinStrng';
 import K11Deleteelementinstring from './DSA/2-String/K11Deleteelementinstring';
 import A0basicinfoSorting from './DSA/3-Sortiong/A0basicinfoSorting';
+import AAACodechef from './contest/Codechef/AAACodechef';
+import AAACodeforses from './contest/Codeforces/AAACodeforses';
+import AAALeedcode from './contest/Leetcode/AAALeedcode';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -91,9 +94,9 @@ function App() {
           <Route path='/post' element = {<Post /> }/>
           <Route path='/edith' element = {<EditHeader /> }/>
           <Route path='/soon' element = {<ComingSoon /> }/>
-          <Route path='/codechef-contest-solution' element = {<Codechef /> }/>
-          <Route path='/codeforces-contest-solution' element = {<Codeforses /> }/>
-          <Route path='/leedcode-contest-solution' element = {<Leedcode /> }/>
+          <Route path='/codechef-contest-solution' element = {<AAACodechef/> }/>
+          <Route path='/codeforces-contest-solution' element = {<AAACodeforses /> }/>
+          <Route path='/leedcode-contest-solution' element = {<AAALeedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
 

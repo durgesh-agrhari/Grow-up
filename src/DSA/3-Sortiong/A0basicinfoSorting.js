@@ -23,7 +23,7 @@ const A0basicinfoSorting = () => {
 
         <h2 className='s'> <u> -: Sorting :- </u></h2>
       
-        <h3>What is Sorting ? </h3><br/>
+        <h3>What is Sorting ? Comming soon </h3><br/>
         
         <p className='pp'>An array is a collection of elements, typically of the same data type, stored in a contiguous block of memory, and identified by an index or a key. In programming, arrays are used to store and manipulate a large number of data items efficiently.
           <br/><br/>

@@ -13,31 +13,31 @@ const Subnav = () => {
                     <NavLink to='/web-development' className={activeLink} >Web-Development</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>HTML </NavLink>
+                    <NavLink to='' className={activeLink}>HTML </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>CSS </NavLink>
+                    <NavLink to='' className={activeLink}>CSS </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>JavaScript </NavLink>
+                    <NavLink to='' className={activeLink}>JavaScript </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Bootstrap </NavLink>
+                    <NavLink to='' className={activeLink}>Bootstrap </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>ReactJs </NavLink>
+                    <NavLink to='' className={activeLink}>ReactJs </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>NodeJs </NavLink>
+                    <NavLink to='' className={activeLink}>NodeJs </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Express </NavLink>
+                    <NavLink to='' className={activeLink}>Express </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>MongoDB </NavLink>
+                    <NavLink to='' className={activeLink}>MongoDB </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Redux </NavLink>
+                    <NavLink to='' className={activeLink}>Redux </NavLink>
                 </li>
             </ul>
         </nav>
