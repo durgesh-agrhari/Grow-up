@@ -4,12 +4,15 @@
 /* css variables */
 :root {
   --primary-color: #379cf6;
+  /* --primary-color: rgb(6, 177, 6); */
   --heading-color: #fff;
   --btn-primary-bg: #379cf6;
+  /* --btn-primary-bg: green; */
   --btn-secondary-bg: #090238;
   --team-card-bg: #1b2352;
   --link-color: #fff;
   --link-active: #379cf6;
+  /* --link-active: green; */
   
   --card-bg: linear-gradient(
     45deg,
@@ -41,10 +44,13 @@
   --body-bg: rgb(255, 255, 255);
   --heading-color: #0c123d;
   --btn-secondary-bg: #816aff;
+  /* --btn-secondary-bg: green; */
   --btn-primary-bg: #fff;
   --primary-color: #816aff;
+  /* --primary-color: green; */
   --counter-color: #fff;
   --counter-section-bg: #816aff;
+  /* --counter-section-bg: green; */
   --link-color: #0c123d;
   --link-active: #816aff
   --newsletter-bg: linear-gradient(

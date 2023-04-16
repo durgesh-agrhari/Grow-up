@@ -46,6 +46,19 @@ import Sidenav from './tutorials/Sidenav/Sidenav'
 import Video from './tutorials/Video/Video';
 import Videotute from './tutorials/Video/Videotute';
 import Home from './tutorials/Sidenav/Home';
+import Scroller from './scroller/Scroller';
+import A1ReverseString from './DSA/2-String/A1ReverseString';
+import B2lengthofString from './DSA/2-String/B2lengthofString';
+import C3countWordinString from './DSA/2-String/C3countWordinString';
+import D4PalendromeString from './DSA/2-String/D4PalendromeString';
+import E5RemoveVowel from './DSA/2-String/E5RemoveVowel';
+import F6RemoveSpace from './DSA/2-String/F6RemoveSpace';
+import G7removeDublicates from './DSA/2-String/G7removeDublicates';
+import H8countFrequency from './DSA/2-String/H8countFrequency';
+import I9Substring from './DSA/2-String/I9Substring';
+import J10CapitalizedfirstcharacterofEachwordinStrng from './DSA/2-String/J10CapitalizedfirstcharacterofEachwordinStrng';
+import K11Deleteelementinstring from './DSA/2-String/K11Deleteelementinstring';
+import A0basicinfoSorting from './DSA/3-Sortiong/A0basicinfoSorting';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -90,6 +103,7 @@ function App() {
           <Route path='/video' element = {<Video/> }/>
           <Route path='/videotute' element = {<Videotute/> }/>
           <Route path='/home' element = {<Home/> }/>
+          <Route path='/scroller' element = {<Scroller/> }/>
 
 
 
@@ -120,6 +134,20 @@ function App() {
                  
           {/* ================== String =============== */}
           <Route path='/string-basic-questions' element = {<A0basicinfostring/> }/>
+          <Route path='/reverse-element-string' element = {<A1ReverseString/> }/>
+          <Route path='/length-of-string' element = {<B2lengthofString/> }/>
+          <Route path='/count-Word-in-string' element = {<C3countWordinString/> }/>
+          <Route path='/check-palendrome-string' element = {<D4PalendromeString/> }/>
+          <Route path='/remove-vowel-string' element = {<E5RemoveVowel/> }/>
+          <Route path='/remove-space-string' element = {<F6RemoveSpace/> }/>
+          <Route path='/remove-dublicates-string' element = {<G7removeDublicates/> }/>
+          <Route path='/count-frequency-string' element = {<H8countFrequency/> }/>
+          <Route path='/find-Substring-string' element = {<I9Substring/> }/>
+          <Route path='/capitalized-first-character-of-each-word-in-strng' element = {<J10CapitalizedfirstcharacterofEachwordinStrng/> }/>
+          <Route path='/delete-element-in-strng' element = {<K11Deleteelementinstring/> }/>
+
+          {/* ========== Sorting ========= */}
+          <Route path='/sorting-basic-questions' element = {<A0basicinfoSorting/> }/>
 
 
           {/* ========== web Development */}

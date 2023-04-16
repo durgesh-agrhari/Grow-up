@@ -19,48 +19,48 @@ const Leftsidebar = () => {
                 <p className='active1'>0: Basic String</p>
             </NavLink>
 
-            <NavLink to='/reverseelementinanarray' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Reverse element in an strin</p>
+            <NavLink to='/reverse-element-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1' >1: Reverse element in String</p>
             </NavLink> 
 
-            <NavLink to='/bublicateselement' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>2: Dublicate element in an array</p>
+            <NavLink to='/length-of-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>2: Length of string </p>
             </NavLink>           
 
-            <NavLink to='/frequencyinanarray' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>3: Frequency in an array</p>
+            <NavLink to='/count-Word-in-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>3: Count the word in string</p>
             </NavLink>
 
-            <NavLink to='/deletearrayeelement' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>4: Delete array element</p>
+            <NavLink to='/check-palendrome-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>4: Check String is palendrome</p>
             </NavLink>
 
-            <NavLink to='/palendromearray' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>5: Palendrome in an array</p>
+            <NavLink to='/remove-vowel-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>5:  Remove vowel in string</p>
             </NavLink>
 
-            <NavLink to='/longestandSmallestele' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>6: Longest and Smallest element</p>
+            <NavLink to='/remove-space-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>6: Remove space in string</p>
             </NavLink>
 
-            <NavLink to='/secondlargestandsmallestele' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>7: Second largest and smallest in an array</p>
+            <NavLink to='/remove-dublicates-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>7: Remove dublicates element in string</p>
             </NavLink>
 
-            <NavLink to='/kadanesalgo' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>8: Kadanes algo in an array</p>
+            <NavLink to='/count-frequency-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>8: Connt frequency of string</p>
+            </NavLink>
+
+            <NavLink to='/find-Substring-string' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>9: Substring in string</p>
             </NavLink>
             
-            <NavLink to='/removedublicate' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>9: Remove blicate in an array</p>
+            <NavLink to='/capitalized-first-character-of-each-word-in-strng' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>10: Capitalize the first element of each word</p>
             </NavLink>
 
-            <NavLink to='/removesortedarraydublicate' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>10: Remove sorted array dublicate in an array</p>
-            </NavLink>
-
-            <NavLink to='/minandMaxelement' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>11: Find Min and Max element in an array</p>
+            <NavLink to='/delete-element-in-strng' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>11: Delete element in String</p>
             </NavLink>
         </nav>
 

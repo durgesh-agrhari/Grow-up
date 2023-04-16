@@ -1,3 +1,11 @@
+/* ::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+} */
 
 
 .left-sidebsr{ 
@@ -18,7 +26,6 @@
     color: black;
 }
 
-
 .side-nav{
     height: auto;
     max-width: 100%;
@@ -26,7 +33,6 @@
     margin: 20px 0px;
     padding: 20px 0px;
     margin: 2px 2px 2px 2px;
-    
 }
 
 .side-nav-div{
@@ -45,7 +51,6 @@
     padding-left: 10px;
     transition: 0.2s;
     padding: 10px;
-  
 }
 .sode-nav-links:hover{
     color: black;

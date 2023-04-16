@@ -22,6 +22,8 @@ const A0basicinfo = () => {
      
       <Leftsidebar />
       <div className='home-container2'>
+
+      <h2 className='s'> <u> -: Array :- </u></h2>
       
         <h3>What is array ? </h3><br/>
         

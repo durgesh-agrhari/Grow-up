@@ -20,6 +20,8 @@ const A0basicinfostring = () => {
      
       <Leftsidebar />
       <div className='home-container2'>
+
+        <h2 className='s'> <u> -: String :- </u></h2>
       
         <h3>What is string ? </h3><br/>
         
