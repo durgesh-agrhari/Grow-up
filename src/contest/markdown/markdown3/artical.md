@@ -1,83 +1,43 @@
-Frequency elelemt in an array.
+*  Row With Maximum Ones in Java
 
-<Code language="cpp">
-// C++ program to find frequency element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+{<br/><br/><br/>
+//Code here start<br/><br/>
 
-int main()
-{
-    int arr[] = {1, 2, 3, 2, 3, 3, 4, 5, 5}; // example array
-    int n = sizeof(arr)/sizeof(arr[0]); // size of array
-    // loop through the array and count the frequency of each element
-    for(int i=0; i<n; i++){
-        // ignore elements that have already been counted
-        if(arr[i] == -1) 
-            continue;
-
-        int count = 1; // initialize the count for the current element
-        for(int j=i+1; j<n; j++){
-            if(arr[j] == arr[i]){ // if we find another occurrence of the current element
-                count++; // increment the count
-                arr[j] = -1; // mark the element as counted
+class Solution {
+    public int[] rowAndMaximumOnes(int[][] mat) {
+        
+        int len = mat.length;
+        int lent = mat[0].length;
+        
+        int ans[] = new int[2];
+        int maxCount =0;
+        int row =0;
+        for(int i=0; i<len; i++)
+        {
+            int count=0;
+            for(int j=0; j<lent; j++)
+            {
+                if(mat[i][j] == 1){
+                    count++;
+                }
+            }
+            if(count>maxCount){
+                maxCount = count;
+                row=i;
             }
         }
-        // print the frequency of the current element
-        cout << arr[i] << " occurs " << count << " times." << endl;
+        ans[0] = row;
+        ans[1] = maxCount;
+        return ans;
     }
-    return 0;
+    
+}<br/><br/>
+
+//code here end <br/><br/>
+
 }
-</Code>
 
 <br/>
-<p>
-In this example, we first initialize an array arr with some elements. We then loop through the array and count the frequency of each element using two nested loops.
-</p>
-
-<br/><br/>
-The outer loop goes through each element in the array, while the inner loop starts from the next element and checks if it is the same as the current element. If it is, we increment a count variable and mark the element as counted by setting it to -1. This ensures that we don't count the same element twice.
-<br/><br/>
-After we finish counting the occurrences of the current element, we print out its frequency using the cout statement.
-<br/>	
-Note that this algorithm has a time complexity of O(n^2) in the worst case because we have two nested loops. However, if the array has a small number of distinct elements, the actual time complexity may be lower.
-
-<br/><br/>
-Frequency elelemt in an array using Map
-
-<Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    int arr[] = {1, 2, 3, 2, 3, 3, 4, 5, 5}; // example array
-    int n = sizeof(arr)/sizeof(arr[0]); // size of array
-    unordered_map<int, int> freq; // unordered_map to store frequency of each element
-
-    // loop to count frequency of each element in array
-    for(int i=0; i<n; i++)
-        freq[arr[i]]++;
-
-    // loop to print frequency of each element
-    for(auto x : freq)
-        cout << x.first << " occurs " << x.second << " times." << endl;
-
-    return 0;
-}
-
-</Code>
-
-<br/><br/>
-
-In this example, we first initialize an array arr with some elements. We then use an unordered_map to store the frequency of each element in the array. The unordered_map data structure allows for efficient lookup and insertion of key-value pairs. 
-<br/><br/>
-We then loop through the array and increment the frequency of each element using the ++ operator on the corresponding value in the unordered_map. Finally, we loop through the unordered_map and print out the frequency of each element using the first and second members of each key-value pair.
-<br/><br/>
-Note that this algorithm has a time complexity of O(n) because we loop through the array once to count the frequency of each element.
-
-
-
 
 
 
