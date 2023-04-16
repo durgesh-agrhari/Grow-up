@@ -50,6 +50,8 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/oops' className='menu__link' activeClassName='navactive'>Core</NavLink></li>
 
+                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Tutorials</NavLink></li>
+
                             <li className='menu__item'><NavLink to='/explore' className='menu__link' activeClassName='navactive'>Explore</NavLink></li>
                     </ul> 
                 </div>

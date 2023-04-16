@@ -42,6 +42,10 @@ import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
 import Oops from './core/Oops/Oops';
 import Explore from './explore/Explore';
+import Sidenav from './tutorials/Sidenav/Sidenav'
+import Video from './tutorials/Video/Video';
+import Videotute from './tutorials/Video/Videotute';
+import Home from './tutorials/Sidenav/Home';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -82,6 +86,11 @@ function App() {
 
           {/* ========== Sub Pages =========== */}
           <Route path='/dataStructure' element = {<DataStructure/> }/>
+          <Route path='/sidenav' element = {<Sidenav/> }/>
+          <Route path='/video' element = {<Video/> }/>
+          <Route path='/videotute' element = {<Videotute/> }/>
+          <Route path='/home' element = {<Home/> }/>
+
 
 
           {/* ========== Array Routing ============= */}
