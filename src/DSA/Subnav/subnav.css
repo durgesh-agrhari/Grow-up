@@ -1,4 +1,4 @@
-.subnav12{
+.subnav123{
     border-top: solid 4px rgb(1, 118, 1);
     background-color: rgb(86, 94, 89);
     margin-top: 10px;
@@ -8,7 +8,7 @@
     border-radius: 5px;
 }
 
-.light-theme .subnav12{
+.light-theme .subnav123{
  background-color: rgb(191, 195, 198);   
 }
 
@@ -25,7 +25,7 @@
 }
 
 @media only screen and (max-width: 992px){
-    .subnav12{
+    .subnav123{
         width: 100%;
         height: 100px;
     }
@@ -41,9 +41,9 @@
 
 
 @media only screen and (max-width: 768px){
-    .subnav12{
+    .subnav123{
         width: 97%;
-        height: 100px;
+        height: 110px;
     }
     .home-links{
         flex-wrap: wrap;
@@ -58,9 +58,9 @@
 
 
 @media only screen and (max-width: 576px){
-    .subnav12{
+    .subnav123{
         width: 96%;
-        height: 155px;
+        height: 170px;
     }
     .home-links{
         flex-wrap: wrap;

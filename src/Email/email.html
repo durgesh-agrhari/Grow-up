@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="email.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <center>
+  <div class="email">
+    <h1 class="hh">Subscribe for more info</h1>
+    <div class="newsletter__form">
+      <form name='submit-to-google-sheet'>
+          <input class="input" type='email' name='Email' placeholder='Email' required />
+          <button type='submit' class='secondary__btn subscribe_btn'>Subscribe Now </button>
+      </form>
+      <div class='thx'>
+        <span className='thanks' id="msg"></span>
+      </div>
+    </div>
+</div>
+</center>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnv7b4AWHdSTLbALTIxvBrVeTm7nrujgBHhrJ6Tr6M3SD5nOtHhe4wwSk2uebztSD2/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Thanks You For Subscribing ! "
+
+              // for hiding data in foem befour subscribe email
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              // for clearing data in foem befour subscribe email
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>

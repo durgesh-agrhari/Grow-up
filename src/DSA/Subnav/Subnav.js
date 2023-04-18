@@ -6,7 +6,7 @@ const activeLink = ({isActive}) => (isActive ? "activesub" : "");
 
 const Subnav = () => {
   return (
-    <div className='subnav12'>
+    <div className='subnav123'>
         <nav className='nava' >
             <ul className='home-links'>
                 <li className='tx'>
@@ -19,46 +19,46 @@ const Subnav = () => {
                     <NavLink to='/sorting-basic-questions' className={activeLink}>Sorting [6] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Pattern [11] </NavLink>
+                    <NavLink to='/' className={activeLink}>Pattern [11] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Searching </NavLink>
+                    <NavLink to='/' className={activeLink}>Searching </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Matrix </NavLink>
+                    <NavLink to='/' className={activeLink}>Matrix </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Stack </NavLink>
+                    <NavLink to='/' className={activeLink}>Stack </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Queue </NavLink>
+                    <NavLink to='/' className={activeLink}>Queue </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Linkedlist </NavLink>
+                    <NavLink to='/' className={activeLink}>Linkedlist </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Recursin </NavLink>
+                    <NavLink to='/' className={activeLink}>Recursin </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Hashing </NavLink>
+                    <NavLink to='/' className={activeLink}>Hashing </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Heap </NavLink>
+                    <NavLink to='/' className={activeLink}>Heap </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Tree </NavLink>
+                    <NavLink to='/' className={activeLink}>Tree </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Graph </NavLink>
+                    <NavLink to='/' className={activeLink}>Graph </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>DP </NavLink>
+                    <NavLink to='/' className={activeLink}>DP </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Greedy </NavLink>
+                    <NavLink to='/' className={activeLink}>Greedy </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Trie </NavLink>
+                    <NavLink to='/' className={activeLink}>Trie </NavLink>
                 </li>
             </ul>
         </nav>

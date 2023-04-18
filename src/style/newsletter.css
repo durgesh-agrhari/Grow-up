@@ -29,7 +29,6 @@
     justify-content: space-between;
     border-radius: .5rem;
 }
-
 .light-theme .newsletter{
     background:linear-gradient(
         180deg,
@@ -42,6 +41,14 @@
 .light-theme .subscribe_btn{
     background: var(--primary-color);
     color: white;
+}
+
+.thanks{
+color: rgb(6, 218, 6);
+font-size: 20px;
+margin-top: 10px;
+display: block;
+
 }
 
 @media only screen and (max-width: 992px){
