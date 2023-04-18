@@ -6,7 +6,7 @@ const activeLink = ({isActive}) => (isActive ? "activesub" : "");
 
 const Subnav = () => {
   return (
-    <div className='subnav123'>
+    <div className='subnav1'>
         <nav className='nava' >
             <ul className='home-links'>
                 <li className='tx'>
