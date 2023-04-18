@@ -36,7 +36,7 @@ const Leftsidebar = () => {
             </NavLink>
 
             <NavLink to='/palendromearray' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>5: Palendrome in an array</p>
+                <p className='active1'>5: Palen drome in an array</p>
             </NavLink>
 
             <NavLink to='/longestandSmallestele' className='side-nav-links' activeClassName='active'>
