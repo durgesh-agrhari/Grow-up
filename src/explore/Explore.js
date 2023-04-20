@@ -106,7 +106,7 @@ const Explore = () => {
                         <NavLink to='' className={activeLink}>Learn Web Development </NavLink>
                     </li>
                     <li className='exp'>
-                        <NavLink to='' className={activeLink}>Leran MERN Stack Compleate </NavLink>
+                        <NavLink to='' className={activeLink}>Leran MERN (React js) Stack Compleate </NavLink>
                     </li>
                 </ul>
             </div>
