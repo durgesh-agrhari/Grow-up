@@ -1,21 +1,21 @@
 import React from 'react'
 import "../../style/team.css"
-import teamImg1 from "../../images/team-1.jpeg"
+// import teamImg1 from "../../images/team-1.jpeg"
 import teamImg2 from "../../images/team-2.jpeg"
-import teamImg3 from "../../images/c1.png"
+// import teamImg3 from "../../images/c1.png"
 import teamImg4 from "../../images/c2.jpg"
 
 const teamMembers = [
-    {
-        imgUrl: teamImg1,
-        imgUrlc: teamImg3,
-        name: 'Durgesh Agrhari ',
-        position: 'CEO at Growup Code',
-        working: 'Work in @Allen (FPN)',
-        socal1:'https://www.linkedin.com/in/durgesh-agrhari-b1a4341b4/',
-        socal2: 'https://twitter.com/DurgeshAgrhari1',
-        socal3:'https://www.instagram.com/durgeshagrahari11/',
-    },
+    // {
+    //     imgUrl: teamImg1,
+    //     imgUrlc: teamImg3,
+    //     name: 'Durgesh Agrhari ',
+    //     position: 'CEO at Growup Code',
+    //     working: 'Work in @Allen (FPN)',
+    //     socal1:'https://www.linkedin.com/in/durgesh-agrhari-b1a4341b4/',
+    //     socal2: 'https://twitter.com/DurgeshAgrhari1',
+    //     socal3:'https://www.instagram.com/durgeshagrahari11/',
+    // },
     {
         imgUrl: teamImg2,
         imgUrlc: teamImg4,
