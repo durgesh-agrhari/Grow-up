@@ -6,11 +6,11 @@ import Subnav from '../Subnav/Subnav'
 
 import { Helmet } from 'react-helmet-async'
 
-const A0basicinfopattern = () => {
+const A0basicinfogreedy = () => {
   return (
     <div className='subb'>
       <Helmet>
-        <title>Pattern Basic Questions</title>
+        <title>Greedy Basic Questions</title>
         <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>
 
         <link rel='canonical' href='/string-basic-questions' />
@@ -21,9 +21,9 @@ const A0basicinfopattern = () => {
       <Leftsidebar />
       <div className='home-container2'>
 
-        <h2 className='s'> <u> -: Pattern :- </u></h2>
+        <h2 className='s'> <u> -: Greedy :- </u></h2>
       
-        <h3>What is Pattern ? </h3><br/>
+        <h3>What is Greedy ? </h3><br/>
         
         <p className='pp'>An array is a collection of elements, typically of the same data type, stored in a contiguous block of memory, and identified by an index or a key. 
         </p><br/> <br/>
@@ -40,4 +40,4 @@ const A0basicinfopattern = () => {
   )
 }
 
-export default A0basicinfopattern
+export default A0basicinfogreedy

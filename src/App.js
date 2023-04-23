@@ -75,6 +75,12 @@ import A0basicinfostack from './DSA/7-Stack/A0basicinfostack';
 import A0basicinfoqueue from './DSA/8-Queue/A0basicinfoqueue';
 import A0basicinfoLinkedlist from './DSA/9-Linkedlist/A0basicinfoLinkedlist';
 import A0basicinforecursion from './DSA/10-Recursion/A0basicinforecursion';
+import A0basicinfohashing from './DSA/11-Hashing/A0basicinfohashing';
+import A0basicinfoheap from './DSA/12-Heap/A0basicinfoheap';
+import A0basicinfotree from './DSA/13-Tree/A0basicinfotree';
+import A0basicinfograph from './DSA/14-Graph/A0basicinfograph';
+import A0basicinfodp from './DSA/15-Dp/A0basicinfodp';
+import A0basicinfogreedy from './DSA/16-Greedy/A0basicinfogreedy';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -196,9 +202,28 @@ function App() {
           {/* ========== Linkedlist Que ========= */}
           <Route path='/linkedlist-basic-questions' element = {<A0basicinfoLinkedlist/> }/>
 
-          {/* ========== Recursion Que ========= */}
+          {/* ========== Hashing Que ========= */}
+          <Route path='/hashing-basic-questions' element = {<A0basicinfohashing/> }/>
+
+          {/* ========== Heap Que ========= */}
+          <Route path='/heap-basic-questions' element = {<A0basicinfoheap/> }/>
+
+          {/* ========== tree Que ========= */}
+          <Route path='/tree-basic-questions' element = {<A0basicinfotree/> }/>
+          
+          {/* ========== Graph Que ========= */}
+          <Route path='/graph-basic-questions' element = {<A0basicinfograph/> }/>
+
+          {/* ========== DP Que ========= */}
+          <Route path='/dp-basic-questions' element = {<A0basicinfodp/> }/>
+
+          {/* ========== Greedy Que ========= */}
+          <Route path='/greedy-basic-questions' element = {<A0basicinfogreedy/> }/>
+
+          {/* ========== Trie Que ========= */}
           <Route path='/recursion-basic-questions' element = {<A0basicinforecursion/> }/>
 
+          
         </Routes>
       </Router>
       <Footer/>
