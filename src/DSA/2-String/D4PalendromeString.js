@@ -14,21 +14,8 @@ const D4PalendromeString = () => {
       <div className='home-container2'>
         <h3>4:How to check string is palendrome or not.</h3><br/>
         <p className='pp'>
-        In this tutorial, we are going to learn how to delete elements from the given range. Let's see the steps to solve the problem.
-        <br/><br/>
-        1: Initialize the array and range to delete the elements from.
-        <br/>
-        2: Initialize a new index variable.
-        <br/>
-        3: Iterate over the array.
-        <br/>
-        4: If the current index is not in the given range, then update the element in the array with a new index variable
-        <br/>
-        5: Increment the new index.
-        <br/><br/>
-        6: Return the new index.
-        </p><br/>
-
+        In C++, you can check whether a string is a palindrome or not using an algorithm with O(n) time complexity, where n is the length of the string.
+        </p>
         <Post4/>
       </div>
       <RightSidebar />

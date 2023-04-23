@@ -12,7 +12,7 @@ const J10CapitalizedfirstcharacterofEachwordinStrng = () => {
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>10: Capitalized-first-character-of-each-word-in-strng</h3><br/>
+        <h3>10: Capitalized first character of each word in strng</h3><br/>
         <p className='pp'>Removing duplicate elements from a sorted array involves removing any element that appears more than once, while preserving the order of the remaining elements in the array. In other words, if the array is sorted, then all duplicate elements will be adjacent to each other. </p><br/>
 
         <Post10/>

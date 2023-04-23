@@ -1,100 +1,57 @@
-<br/>
-Dublicate elelemt in an array
-
 <Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+Input: "Growupcode"
+Output: 10
 
-int main() {
-  int n=9;
-  int arr[n] = {1, 2, 3, 4, 4, 5, 6, 6, 7};
-
-  // Check for duplicates
-  for (int i = 0; i < n - 1; i++) {
-    for (int j = i + 1; j < n; j++) {
-      if (arr[i] == arr[j]) {
-        cout<<"Duplicate element found: "<<arr[i]<<endl;
-      }
-    }
-  }
-
-  return 0;
-}
+Input: "Growupcode \0 345"
+Output: 11
 </Code>
 <br/><br/>
 
-Duplicate element found: 4<br/><br/>
-Duplicate element found: 6<br/><br/>
+* In C++, you can find the length of a string in O(1) time complexity using the size() or length() member functions of the std::string class.<br/><br/>
 
-Dublicate elelemt in an array with finding length of array <br/><br/>
+* The time complexity of the size() and length() member functions of std::string is constant O(1), because the length of the string is already stored by the std::string class.<br/><br/>
+
+Solution 1: How to find length of String in cpp
 
 <Code language="cpp">
-// C++ program to implement Dublicates element in an array.
+// C++ program to Demonstrate all
+// Different methods to find length
+// of a string
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-  int arr[] = {1, 2, 3, 4, 4, 5, 6, 6, 7}; //for finding the length of array
-  int n = sizeof(arr) / sizeof(arr[0]);
+int main()
+{
+	// String obj
+	string str = "GrowupCode";
 
-  // Check for duplicates
-  for (int i = 0; i < n - 1; i++) {
-    for (int j = i + 1; j < n; j++) {
-      if (arr[i] == arr[j]) {
-        cout<<"Duplicate element found: "<<arr[i]<<endl;
-      }
-    }
-  }
+	// 1. size of string object using size() method
+	cout << str.size() << endl;
 
-  return 0;
-}
-</Code>
+	// 2. size of string object using length method
+	cout << str.length() << endl;
 
-<br/><br/>
+	// 3. size of string object using for loop
+	int count=0;
+	for (i = 0; str[i]; i++){
+	    count++;
+	}
+	cout << count << endl;
 
-Duplicate element found: 4<br/><br/>
-Duplicate element found: 6<br/><br/>
-
-
-Dublicate elelemt in an array throujgh map<br/>
-
-<Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0; i<n; i++)
-    {
-        cin>>arr[i];
-    }
-
-    map<int,int>mp;
-    for(int i=0; i<n; i++)
-    {
-        mp[arr[i]]++;
-    }
-    for(auto it = mp.begin(); it!=mp.end(); it++)
-    {
-        if(it->second>1)
-        {
-            cout<<it->first<<" ";
-        }
-    }
-    return 0;
+	return 0;
 }
 
 </Code>
-
 <br/><br/>
+###Output<br/><br/>
+10<br/>
+10<br/>
+10<br/>
+10<br/><br/>
 
-Input<br/>
-5<br/>
-1 3 2 3 1<br/><br/>
+* In this example, we declare a string str and initialize it with the value "Hello, World!". We then use the length() and size() member functions to find the length of the string, which is 13 in this case.<br/><br/>
 
-Output<br/>
-1 3<br/><br/>
+* Both length() and size() member functions have the same time complexity of O(1), so you can use either one to find the length of a string with constant time complexity.<br/><br/>
+
+Solution 2: How to find length of String in cpp<br/><br/>
+

@@ -13,21 +13,8 @@ const B2lengthofString = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>2: How to find length of String in cpp</h3><br/>
-        <p className='pp'>To find duplicate elements in an array in C++, you can use a nested loop that compares each element of the array to all the other elements to check for duplicates. Here's an example of how to implement this algorithm:</p><br/>
-
-        <h3>Example:</h3><br/>
         <p className='pp'>
-        Input : n = 7 and array[ ] = 1, 2, 3, 6, 3, 6, 1.<br/>
-        Output: 1, 3, 6.<br/><br/>
-
-        Explanation: The numbers 1 , 3 and 6 appears more
-        than once in the array.<br/><br/>
-
-        Input : n = 5 and array[ ] = 1, 2, 3, 4 ,3.<br/>
-        Output: 3.<br/><br/>
-
-        Explanation: The number 3 appears more than once
-        in the array.<br/>
+        The string is a sequence of characters or an array of characters. The declaration and definition of the string using an array of chars are similar to the declaration and definition of an array of any other data type.
         </p>
         <Post2/>
       </div>

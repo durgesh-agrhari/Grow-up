@@ -1,133 +1,113 @@
 ###Example:-
 <Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+Input : str = "growupcode"
+Output : g1 r1 o2 w1 u1 p1 c1 d1 e1
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Input : str = "elephant"
+Output : e2 l1 p1 h1 a1 n1 t1
 
 </Code> <br/><br/>
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 1: How to count frequency in string || Using Unorderd_map & Hashing 
+
+
 
 <Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
+
+// CPP implementation to print the characters and
+// frequencies in order of its occurrence
 #include <bits/stdc++.h>
 using namespace std;
 
-void kadanesalgo(int arr[], int n)
+void prCharWithFreq(string str)
 {
-	int sum =0;
-    int msum = INT_MIN;
-
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
+	// Store all characters and their
+	// frequencies using Counter function
+	map<char, int> mp;
+	for (int i = 0; i < str.length(); i++){
+		mp[str[i]]++;
     }
-    cout<<msum<<endl;
+	// Print characters and their frequencies in
+	// same order of their appearance
+    for(auto x : mp){
+        cout << x.first << " occurs " << x.second << " times." << endl;
+    }
+	cout << endl;
 }
 
-// Driver code.
 int main()
 {
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	kadanesalgo(arr, n);
+	string str = "growupcodecode";
+	prCharWithFreq(str);
 	return 0;
 }
+
+// This code is contributed by Susobhan Akhuli
 
 </Code>
 
 <br/>
 ###Output<br/><br/>
-2<br/><br/><br/>
+c occurs 2 times.<br/>
+d occurs 2 times.<br/>
+e occurs 2 times.<br/>
+g occurs 1 times.<br/>
+o occurs 3 times.<br/>
+p occurs 1 times.<br/>
+r occurs 1 times.<br/>
+u occurs 1 times.<br/>
+w occurs 1 times.<br/><br/><br/>
 
 
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+* Solution 2: Write a C++ Program to count the number of occurrences of each character in a string<br/><br/>
+
+##Algorithm:<br/><br/>
+1: Initialize the variables.<br/>
+2: Accept the input.<br/>
+3: Initialize a for loop.<br/>
+4: This for loop will be used to count the number of time each character is present.<br/>
+5: Terminate first at the end of string. <br/>
+6: Initialize another for loop to print the frequency if it is at least 1.<br/><br/><br/>
 
 <Code language="cpp">
 // C++ program to print largest contiguous array sum
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
 int main()
 {
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
+    //Initializing variables.
+    char str[100]="prepinsta";
+    int i;
+    int freq[256] = {0};
+    //Calculating frequency of each character.
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        freq[str[i]]++;
     }
-    return max_so_far;
-}
-
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
+    //Printing frequency of each character.
+    for(i = 0; i < 256; i++)
+    {
+        if(freq[i] != 0)
+        {
+           cout<<"The frequency of "<<char(i)<<" is "<<freq[i]<<endl;
+        }
+    }
     return 0;
 }
 
-</Code>
-<br/><br/>
+</Code><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
+###Output<br/><br/>
 
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+The frequency of a is 1<br/>
+The frequency of e is 1<br/>
+The frequency of i is 1<br/>
+The frequency of n is 1<br/>
+The frequency of p is 2<br/>
+The frequency of r is 1<br/>
+The frequency of s is 1<br/>
+The frequency of t is 1<br/><br/><br/>
+
 

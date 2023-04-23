@@ -14,10 +14,18 @@ const K11Deleteelementinstring = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>11: Delete element in string</h3><br/>
-        <p className='pp'>In an array, the minimum (Min) element refers to the smallest value that is present in the array, while the maximum (Max) element refers to the largest value present in the array.<br/><br/>
-        Algo...<br/>
-        To find the minimum and maximum element in an array, you can traverse the array and compare each element with the current minimum and maximum values. Initially, you can set the minimum and maximum values to the first element of the array, and then iterate through the rest of the elements, updating the minimum and maximum values as you go along.
+        <p className='pp'>
+        The function erases a part of the string content, shortening the length of the string. The characters affected depend on the member function version used: 
+        Return value : erase() returns *this. <br/><br/>
+
+        Time Complexity : O(n) , n=length of string<br/><br/>
+
+        Auxiliary Space: O(1) for all approaches<br/>
         </p><br/>
+        <p className='ppp'>
+        Syntax 1: Erases all characters in a string
+        string& string ::erase ()
+        </p>
         <Post11/>
       </div>
       <RightSidebar />

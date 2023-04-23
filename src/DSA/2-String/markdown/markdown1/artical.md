@@ -1,88 +1,89 @@
-Rreverse array element in cpp
+###Example: 
+<Code language="cpp">
+Input : s = "abc"
+Output : s = "cba"
+
+Input : s = "growupcode"
+Output : s = "edocpuworg"
+</Code> <br/>
+
+* Solution 1 : Rreverse string element in cpp ||  Using a loop
 
 <Code language="cpp">
 // C++ program to implement reverse array element.
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    int a = 0, b = n - 1;
-    while (a < b)
-    {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-        a++;
-        b--;
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    return 0;
+void reverseString(string& s) {
+   int n = s.length();  // O(1)
+   for(int i = 0; i < n/2; i++){  // O(n/2)
+      char temp = s[i];  // O(1)
+      s[i] = s[n-i-1];  // O(1)
+      s[n-i-1] = temp;  // O(1)
+   }
 }
-
-</Code>
-
-<br/>
-
-Input<br/>
-5<br/>
-1 2 3 4 5<br/>
-
-<br/><br/>
-
-Output<br/>
-5 4 3 2 1
-
-<br/><br/>
-*In C++, you can reverse the elements of an array using the std::reverse() function from the <algorithm> library. Here's an example of how to use it:
-<br/><br/>
-
-Rreverse array element in cpp
-
-<Code language="cpp">
-// C++ program to implement reverse array element.
-#include <bits/stdc++.h>
-using namespace std;
 
 int main() {
-  int arr[] = {1, 2, 3, 4, 5};
-  int n = sizeof(arr) / sizeof(arr[0]);  // Determine the length of the array
+   string s = "Hello, world!";  // O(1)
+   reverseString(s);  // O(n/2)
+   cout << s << endl; // Output: "!dlrow ,olleH"
+   return 0;
+}
 
-  // Print the original array
-  cout << "Original array: ";
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
-  }
-  cout<<endl;
+</Code><br/><br/>
 
-  // Reverse the array using std::reverse()
-  reverse(arr, arr + n);
+*Time complexity of the loop is O(n/2), which simplifies to O(n) because we only consider the dominant term. Therefore, the time complexity of this method is O(n).<br/><br/><br/>
 
-  // Print the reversed array
-  cout << "Reversed array: ";
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
-  }
-  cout<<endl;
+* Solution 2 : Rreverse string element in cpp || Using the reverse() function
 
-  return 0;
+<Code language="cpp">
+// C++ program to implement reverse array element.
+#include <bits/stdc++.h>
+using namespace std;
+
+void reverseString(string& s) {
+   reverse(s.begin(), s.end());  // O(n)
+}
+
+int main() {
+   string s = "Hello, world!";  // O(1)
+   reverseString(s);  // O(n)
+   cout << s << endl; // Output: "!dlrow ,olleH"
+   return 0;
 }
 
 
-</Code>
+</Code> <br/>
 
-<br/><br/>
+*The reverse() function has a time complexity of O(n), where n is the length of the string. Therefore, the time complexity of this method is also O(n).<br/><br/><br/>
 
-Original array: 1 2 3 4 5<br/><br/>
-Reversed array: 5 4 3 2 1<br/><br/>
+* Solution 3 : Rreverse string element in cpp || Using recursion<br/>
+
+<Code language="cpp">
+// C++ program to implement reverse array element.
+#include <bits/stdc++.h>
+using namespace std;
+
+void reverseString(string& s, int left, int right) {
+   if(left >= right){  // O(1)
+      return;  // O(1)
+   }
+   char temp = s[left];  // O(1)
+   s[left++] = s[right];  // O(1)
+   s[right--] = temp;  // O(1)
+   reverseString(s, left, right);  // O(n/2)
+}
+
+int main() {
+   string s = "Hello, world!";  // O(1)
+   reverseString(s, 0, s.length()-1);  // O(n/2)
+   cout << s << endl; // Output: "!dlrow ,olleH"
+   return 0;
+}
+
+
+</Code> <br/> <br/>
+
+* The time complexity of the recursive function is O(n/2) because each recursive call processes two characters, so there are n/2 recursive calls. Therefore, the time complexity of this method is also O(n). <br/> <br/>
+
+* All three methods have the same time complexity of O(n), where n is the length of the string. <br/> <br/>

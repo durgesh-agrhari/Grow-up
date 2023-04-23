@@ -14,13 +14,7 @@ const F6RemoveSpace = () => {
       <div className='home-container2'>
         <h3>6: Remove space in string</h3><br/>
         <p className='pp'>
-        In an array, the longest element refers to the element with the largest value, while the smallest element refers to the element with the smallest value.<br/><br/>
-
-        * For example, consider the array [3, 7, 2, 9, 5]. <br/>
-        In this case, the smallest element is 2, <br/>
-        and the longest element is 9.<br/><br/>
-
-        * Finding the longest and smallest elements in an array is a common problem in programming, and can be solved by iterating over the array and keeping track of the current smallest and longest elements.<br/><br/>
+        Given a string, remove all spaces from the string and return it. 
         </p>
         <Post6/>
       </div>

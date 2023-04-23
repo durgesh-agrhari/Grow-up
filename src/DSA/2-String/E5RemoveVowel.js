@@ -14,15 +14,7 @@ const E5RemoveVowel = () => {
       <div className='home-container2'>
         <h3>5: How to remove vowel in string</h3><br/>
         <p className='pp'>
-        A palindrome in an array is a sequence of elements in the array that reads the same forward and backward. In other words, if you reverse the sequence of elements, it will still be the same sequence.<br/><br/>
-
-        For example, consider the following array:<br/><br/>
-
-        [1, 2, 3, 2, 1]<br/><br/>
-
-        This array contains a palindrome, which is the sequence [2, 3, 2]. If you read this sequence from left to right or from right to left, it is the same.<br/>
-
-        Note that palindromes in arrays do not have to be contiguous subarrays. In the example above, the palindrome is a subsequence of the array, but it is not contiguous.<br/>
+        To remove vowels from a string in C++, you can iterate through the characters of the string and remove the vowels using the erase() function. Here is an example code:
         </p><br/>
 
         <Post5/>

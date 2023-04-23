@@ -14,11 +14,13 @@ const I9Substring = () => {
       <div className='home-container2'>
         <h3>9: Find Substring in string in C++</h3><br/>
         <p className='pp'>
-          * Removing duplicates from an array involves deleting all the repeated elements and keeping only the unique ones. <br/><br/>
-          * This is a common operation in programming, especially when working with data sets. 
-          * Given a sorted array, the task is to remove the duplicate elements from the array.
+        The substring function is used for handling string operations like strcat(), append(), etc. It generates a new string with its value initialized to a copy of a sub-string of this object. In C++, the header file which is required for  std::substr(), string functions is ‘string.h’. <br/><br/>
+        
+        The substring function takes two values pos and len as an argument and returns a newly constructed string object with its value initialized to a copy of a sub-string of this object. Copying of string starts from pos and is done till pos+len means [pos, pos+len).<br/><br/>
 
-          </p><br/><br/>
+        Syntax: <br/><br/>
+          </p>
+          <p className='ppp'> string substr (size_t pos, size_t len) const;</p>
         <Post9/>
 
       </div>

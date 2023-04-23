@@ -39,6 +39,21 @@
     color: black;
 }
 
+.ppp{
+    background: #4e4e4e7e;
+    padding: 10px 10px 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nn{
+    background: rgba(0, 128, 0, 0.58);
+    padding: 10px 10px 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 992px){
     .home-container1{
