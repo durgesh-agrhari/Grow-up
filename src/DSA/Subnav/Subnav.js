@@ -10,34 +10,34 @@ const Subnav = () => {
         <nav className='nava' >
             <ul className='home-links'>
                 <li className='tx'>
-                    <NavLink to='/array-basic-questions' className={activeLink} >Array [21]</NavLink>
+                    <NavLink to='/array-basic-questions' className={activeLink} >Array [20]</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/string-basic-questions' className={activeLink}>String [11] </NavLink>
+                    <NavLink to='/string-basic-questions' className={activeLink}>String [10] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/sorting-basic-questions' className={activeLink}>Sorting [6] </NavLink>
+                    <NavLink to='/sorting-basic-questions' className={activeLink}>Sorting [5] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/pattern-basic-questions' className={activeLink}>Pattern [11] </NavLink>
+                    <NavLink to='/pattern-basic-questions' className={activeLink}>Pattern [10] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/searching-basic-questions' className={activeLink}>Searching [11] </NavLink>
+                    <NavLink to='/searching-basic-questions' className={activeLink}>Searching [10] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Matrix </NavLink>
+                    <NavLink to='/matrix-basic-questions' className={activeLink}>Matrix[10] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Stack </NavLink>
+                    <NavLink to='/stack-basic-questions' className={activeLink}>Stack [10]</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Queue </NavLink>
+                    <NavLink to='/queue-basic-questions' className={activeLink}>Queue [10]</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Linkedlist </NavLink>
+                    <NavLink to='/linkedlist-basic-questions' className={activeLink}>Linkedlist [10] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Recursin </NavLink>
+                    <NavLink to='/recursion-basic-questions' className={activeLink}>Recursin [10] </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='/' className={activeLink}>Hashing </NavLink>

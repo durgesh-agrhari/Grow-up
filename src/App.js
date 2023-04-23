@@ -70,6 +70,11 @@ import E5quicksort from './DSA/3-Sortiong/E5quicksort';
 import F6reduxsort from './DSA/3-Sortiong/F6reduxsort';
 import A0basicinfopattern from './DSA/4-Pattern/A0basicinfopattern';
 import A0basicinfoSearching from './DSA/5-Searching/A0basicinfoSearching';
+import A0basicinfomatrix from './DSA/6-Matrix/A0basicinfomatrix';
+import A0basicinfostack from './DSA/7-Stack/A0basicinfostack';
+import A0basicinfoqueue from './DSA/8-Queue/A0basicinfoqueue';
+import A0basicinfoLinkedlist from './DSA/9-Linkedlist/A0basicinfoLinkedlist';
+import A0basicinforecursion from './DSA/10-Recursion/A0basicinforecursion';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -179,20 +184,20 @@ function App() {
           {/* ========== Searching Que ========= */}
           <Route path='/searching-basic-questions' element = {<A0basicinfoSearching/> }/>
 
-          {/* ========== Pattern que ========= */}
-          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          {/* ========== Matrix Que ========= */}
+          <Route path='/matrix-basic-questions' element = {<A0basicinfomatrix/> }/>
 
-          {/* ========== Pattern que ========= */}
-          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          {/* ========== Stack Que ========= */}
+          <Route path='/stack-basic-questions' element = {<A0basicinfostack/> }/>
 
-          {/* ========== Pattern que ========= */}
-          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          {/* ========== Queue Que ========= */}
+          <Route path='/queue-basic-questions' element = {<A0basicinfoqueue/> }/>
 
-          {/* ========== Pattern que ========= */}
-          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          {/* ========== Linkedlist Que ========= */}
+          <Route path='/linkedlist-basic-questions' element = {<A0basicinfoLinkedlist/> }/>
 
-          {/* ========== Pattern que ========= */}
-          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          {/* ========== Recursion Que ========= */}
+          <Route path='/recursion-basic-questions' element = {<A0basicinforecursion/> }/>
 
         </Routes>
       </Router>

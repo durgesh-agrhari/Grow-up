@@ -15,8 +15,8 @@ const Leftsidebar = () => {
     <div className='left-sidebsr' >
         <nav className='side-nav' >
             
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>0: Basic Pattern</p>
+            <NavLink to='/stack-basic-questions' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>0: Basic Stack</p>
             </NavLink>
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
