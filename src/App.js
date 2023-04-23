@@ -62,6 +62,14 @@ import A0basicinfoSorting from './DSA/3-Sortiong/A0basicinfoSorting';
 import AAACodechef from './contest/Codechef/AAACodechef';
 import AAACodeforses from './contest/Codeforces/AAACodeforses';
 import AAALeedcode from './contest/Leetcode/AAALeedcode';
+import A1selectionsort from './DSA/3-Sortiong/A1selectionsort';
+import B2bubblesort from './DSA/3-Sortiong/B2bubblesort';
+import C3insertionsort from './DSA/3-Sortiong/C3insertionsort';
+import D4mergesort from './DSA/3-Sortiong/D4mergesort';
+import E5quicksort from './DSA/3-Sortiong/E5quicksort';
+import F6reduxsort from './DSA/3-Sortiong/F6reduxsort';
+import A0basicinfopattern from './DSA/4-Pattern/A0basicinfopattern';
+import A0basicinfoSearching from './DSA/5-Searching/A0basicinfoSearching';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -151,6 +159,12 @@ function App() {
 
           {/* ========== Sorting ========= */}
           <Route path='/sorting-basic-questions' element = {<A0basicinfoSorting/> }/>
+          <Route path='/selection-sort-in-c++' element = {<A1selectionsort/> }/>
+          <Route path='/bubble-sort-in-c++' element = {<B2bubblesort/> }/>
+          <Route path='/insertion-sort-in-c++' element = {<C3insertionsort/> }/>
+          <Route path='/merge-sort-in-c++' element = {<D4mergesort/> }/>
+          <Route path='/quick-sort-in-c++' element = {<E5quicksort/> }/>
+          <Route path='/redux-sort-in-c++' element = {<F6reduxsort/> }/>
 
 
           {/* ========== web Development */}
@@ -158,6 +172,27 @@ function App() {
 
           {/* ========= core ========= */}
           <Route path='/oops' element = {<Oops/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+
+          {/* ========== Searching Que ========= */}
+          <Route path='/searching-basic-questions' element = {<A0basicinfoSearching/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+
+          {/* ========== Pattern que ========= */}
+          <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
 
         </Routes>
       </Router>

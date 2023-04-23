@@ -19,10 +19,10 @@ const Subnav = () => {
                     <NavLink to='/sorting-basic-questions' className={activeLink}>Sorting [6] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Pattern [11] </NavLink>
+                    <NavLink to='/pattern-basic-questions' className={activeLink}>Pattern [11] </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Searching </NavLink>
+                    <NavLink to='/searching-basic-questions' className={activeLink}>Searching [11] </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='/' className={activeLink}>Matrix </NavLink>

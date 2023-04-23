@@ -34,7 +34,7 @@ const A0basicinfo = () => {
           Is the array always of a fixed size.
         </p><br/> <br/>
 
-        <h3>Applications on Array</h3><br/>
+        <h3>Applications of Array</h3><br/>
         <p className='pp'>
         1: Storing and accessing data: Arrays are commonly used to store and access collections of data such as lists of numbers or strings.
         <br/><br/>
