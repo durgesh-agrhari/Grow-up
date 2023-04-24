@@ -14,13 +14,7 @@ const F6reduxsort = () => {
       <div className='home-container2'>
         <h3>6: How to implement redux sort in cpp</h3><br/>
         <p className='pp'>
-        In an array, the longest element refers to the element with the largest value, while the smallest element refers to the element with the smallest value.<br/><br/>
-
-        * For example, consider the array [3, 7, 2, 9, 5]. <br/>
-        In this case, the smallest element is 2, <br/>
-        and the longest element is 9.<br/><br/>
-
-        * Finding the longest and smallest elements in an array is a common problem in programming, and can be solved by iterating over the array and keeping track of the current smallest and longest elements.<br/><br/>
+        Radix sort is a sorting algorithm that sorts the elements by first grouping the individual digits of the same place value. Then, sort the elements according to their increasing/decreasing order.
         </p>
         <Post6/>
       </div>

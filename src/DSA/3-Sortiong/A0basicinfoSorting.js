@@ -35,6 +35,61 @@ const A0basicinfoSorting = () => {
           Output : 1, 2, 3, 4, 5<br/>
         </p><br/>
 
+        <h3>Sorting Algorithms:</h3><br/>
+
+        <table>
+          <tr>
+            <th>Sorting Algorithms</th>
+            <th>Best Case</th>
+            <th>Average Case</th>
+            <th>Worst Case</th>
+            <th>Stable</th>
+          </tr>
+          <tr className='sort'>
+            <td>Selection Sort</td>
+            <td>n^2</td>
+            <td>n^2</td>
+            <td>n^2</td>
+            <td>No</td>
+          </tr>
+          <tr className='sort'>
+            <td>Bubble Sort</td>
+            <td>n</td>
+            <td>n^2</td>
+            <td>n^2</td>
+            <td>Yes</td>
+          </tr>
+          <tr className='sort'>
+            <td>Insertion Sort</td>
+            <td>n</td>
+            <td>n^2</td>
+            <td>n^2</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Merge Sort</td>
+            <td>nlogn</td>
+            <td>nlogn</td>
+            <td>nlogn</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Quick Sort</td>
+            <td>nlogn</td>
+            <td>nlogn</td>
+            <td>n^2</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Heap Sort</td>
+            <td>nlogn</td>
+            <td>nlogn</td>
+            <td>nlogn</td>
+            <td>No</td>
+          </tr>
+          
+        </table>
+
         <h3>Applications of sorting</h3><br/>
         <p className='pp'>
         Sorting algorithms and priority queues are widely used in a broad variety of applications. Our purpose in this section is to briefly survey some of these applications.<br/><br/>
@@ -46,20 +101,8 @@ const A0basicinfoSorting = () => {
         2: Pointer sorting. The approach we are using is known in the classical literature as pointer sorting, so called because we process references to keys and do not move the data itself.<br/><br/>
 
         3: Keys are immutable. It stands to reason that an array might not remain sorted if a client is allowed to change the values of keys after the sort. In Java, it is wise to ensure that key values do not change by using immutable keys.
-
-        <br/><br/>
         </p><br/><br/>
 
-        <h3>Advantages of sorting: </h3><br/>
-        <p className='pp'>
-        It can be applied to files of any size.
-        Reading of the input during the run-creation step is sequential ==	&gt; Not much seeking.
-        </p><br/><br/>
-
-        <h3>Disadvantages of sorting: </h3> <br/>
-        <p className='pp'>
-        Requires extra space »N
-        </p><br/>
 
       </div>
       <RightSidebar />

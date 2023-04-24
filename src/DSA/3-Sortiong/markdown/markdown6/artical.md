@@ -1,102 +1,77 @@
-<br/>
-Solution 1 : Find Smallest and Longest elelemt in an array
+* Solution 1 : Radix Sort in C++ Programming
+  
 
 <Code language="cpp">
-// C++ program to Find Smallest and Longest element in an array.
+// Radix Sort in C++ Programming
+// Function to get the largest element from an array
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin>>n; 
-    int arr[n];
-    for(int i=0; i<n; i++)
-    {
-        cin>>arr[i];
-    }
-
-    int min = arr[0];
-    int max = arr[0];
-    //foe finding min element in an array
-    for(int i=1; i<n; i++)
-    {
-        if(arr[i]<min)
-        {
-            min =arr[i];
-        }
-    }
-    //foe finding max element in an array
-    for(int i=1; i<n; i++)
-    {
-        if(arr[i]>max)
-        {
-            max =arr[i];
-        }
-    }
-
-    cout<<"Min Element = "<<min<<endl;
-    cout<<"Max Element = "<<max<<endl;
-    return 0;
+int getMax(int array[], int n) {
+  int max = array[0];
+  for (int i = 1; i < n; i++)
+    if (array[i] > max)
+      max = array[i];
+  return max;
 }
 
+// Using counting sort to sort the elements in the basis of significant places
+void countingSort(int array[], int size, int place) {
+  const int max = 10;
+  int output[size];
+  int count[max];
 
-</Code>
-<br/><br/>
+  for (int i = 0; i < max; ++i)
+    count[i] = 0;
 
-###Inpute<br/><br/>
-5<br/>
-1 2 12 4 5<br/><br/>
+  // Calculate count of elements
+  for (int i = 0; i < size; i++)
+    count[(array[i] / place) % 10]++;
 
-###Output
-Min Element = 1<br/>
-Max Element = 12<br/><br/>
+  // Calculate cumulative count
+  for (int i = 1; i < max; i++)
+    count[i] += count[i - 1];
 
-Solution 2 : Find Smallest and Longest in an array <br/><br/>
+  // Place the elements in sorted order
+  for (int i = size - 1; i >= 0; i--) {
+    output[count[(array[i] / place) % 10] - 1] = array[i];
+    count[(array[i] / place) % 10]--;
+  }
 
-<Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the smallest element in an array
-int findSmallest(int arr[], int n) {
-    int smallest = INT_MAX;
-    for (int i = 0; i < n; i++) {
-        if (arr[i] < smallest)
-            smallest = arr[i];
-    }
-    return smallest;
+  for (int i = 0; i < size; i++)
+    array[i] = output[i];
 }
 
-// Function to find the longest element in an array
-int findLongest(int arr[], int n) {
-    int longest = INT_MIN;
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > longest)
-            longest = arr[i];
-    }
-    return longest;
+// Main function to implement radix sort
+void radixsort(int array[], int size) {
+  // Get maximum element
+  int max = getMax(array, size);
+
+  // Apply counting sort to sort elements based on place value.
+  for (int place = 1; max / place > 0; place *= 10)
+    countingSort(array, size, place);
 }
 
-// Main function
+// Print an array
+void printArray(int array[], int size) {
+  int i;
+  for (i = 0; i < size; i++)
+    cout << array[i] << " ";
+  cout << endl;
+}
+
+// Driver code
 int main() {
-    int arr[] = { 3, 8, 2, 5, 1, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int smallest = findSmallest(arr, n);
-    int longest = findLongest(arr, n);
-    cout << "Smallest element: " << smallest << endl;
-    cout << "Longest element: " << longest << endl;
-    return 0;
+  int array[] = {121, 432, 564, 23, 1, 45, 788};
+  int n = sizeof(array) / sizeof(array[0]);
+  radixsort(array, n);
+  printArray(array, n);
 }
-
 
 </Code>
 
 <br/><br/>
+###Output<br/><br/>
 
-* In this example code, we define two functions findSmallest and findLongest to find the smallest and longest element in the array, respectively.<br/><br/>
+1 23 45 121 432 564 788<br/><br/> 
 
- * We initialize the smallest and longest variables to INT_MAX and INT_MIN from the climits header file, respectively, to make sure that any value in the array will be smaller or greater than these initial values. <br/><br/>
- 
- * We then iterate over the array and compare each element with the current smallest or longest element. Finally, we call the two functions in the main function with an example array and print the results.<br/><br/>

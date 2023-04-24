@@ -14,20 +14,10 @@ const D4mergesort = () => {
       <div className='home-container2'>
         <h3>4:How implement merge sort in cpp.</h3><br/>
         <p className='pp'>
-        In this tutorial, we are going to learn how to delete elements from the given range. Let's see the steps to solve the problem.
-        <br/><br/>
-        1: Initialize the array and range to delete the elements from.
-        <br/>
-        2: Initialize a new index variable.
-        <br/>
-        3: Iterate over the array.
-        <br/>
-        4: If the current index is not in the given range, then update the element in the array with a new index variable
-        <br/>
-        5: Increment the new index.
-        <br/><br/>
-        6: Return the new index.
-        </p><br/>
+        Merge sort is a divide and conquer algorithm that works by dividing an array into two halves, sorting them recursively, and then merging the sorted halves to produce the final sorted array. It is one of the most efficient sorting algorithms and has a time complexity of O(nlogn).<br/><br/>
+
+        Here's an example implementation of merge sort in C++:
+        </p><br/><br/>
 
         <Post4/>
       </div>

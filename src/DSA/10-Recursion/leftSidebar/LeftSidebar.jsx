@@ -1,13 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import React, { useEffect, useRef } from 'react'
 import './LeftSidebar.css'
-// import './Style.css'
-// import '../../../components/Header/Style.css'
-//import {Link } from 'react-router-dom'
 
-//import "../../../components/header/Header.scss"
-//const activeLink = ({isActive}) => (isActive ? "active" : "");
 
 const Leftsidebar = () => {
 
@@ -63,11 +57,6 @@ const Leftsidebar = () => {
                 <p className='active1'>11: Comming Soon </p>
             </NavLink>
         </nav>
-
-        
-        {/* <span className="mobile__menu" onClick={toggleMenu}>
-            <i class="ri-menu-line"></i>
-        </span> */}
     </div>
   )
 }

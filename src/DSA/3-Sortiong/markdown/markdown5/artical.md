@@ -1,43 +1,76 @@
-Solution 1 : Palindrome array element in cpp
+Solution 1 : C++ Implementation of the Quick Sort Algorithm.
 
 <Code language="cpp">
-// C++ Program to check whether the
-// Array is palindrome or not
 
+// C++ Implementation of the Quick Sort Algorithm.
 #include <bits/stdc++.h>
 using namespace std;
 
-void palindrome(int arr[], int n)
+int partition(int arr[], int start, int end)
 {
-	// Initialise flag to zero.
-	int flag = 0;
 
-	// Loop till array size n/2.
-	for (int i = 0; i <= n / 2 && n != 0; i++) {
+	int pivot = arr[start];
 
-		// Check if first and last element are different
-		// Then set flag to 1.
-		if (arr[i] != arr[n - i - 1]) {
-			flag = 1;
-			break;
+	int count = 0;
+	for (int i = start + 1; i <= end; i++) {
+		if (arr[i] <= pivot)
+			count++;
+	}
+
+	// Giving pivot element its correct position
+	int pivotIndex = start + count;
+	swap(arr[pivotIndex], arr[start]);
+
+	// Sorting left and right parts of the pivot element
+	int i = start, j = end;
+
+	while (i < pivotIndex && j > pivotIndex) {
+
+		while (arr[i] <= pivot) {
+			i++;
+		}
+
+		while (arr[j] > pivot) {
+			j--;
+		}
+
+		if (i < pivotIndex && j > pivotIndex) {
+			swap(arr[i++], arr[j--]);
 		}
 	}
 
-	// If flag is set then print Not Palindrome
-	// else print Palindrome.
-	if (flag == 1)
-		cout << "Not Palindrome";
-	else
-		cout << "Palindrome";
+	return pivotIndex;
 }
 
-// Driver code.
+void quickSort(int arr[], int start, int end)
+{
+
+	// base case
+	if (start >= end)
+		return;
+
+	// partitioning the array
+	int p = partition(arr, start, end);
+
+	// Sorting the left part
+	quickSort(arr, start, p - 1);
+
+	// Sorting the right part
+	quickSort(arr, p + 1, end);
+}
+
 int main()
 {
-	int arr[] = { 1, 2, 3, 2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
 
-	palindrome(arr, n);
+	int arr[] = { 9, 3, 4, 2, 1, 8 };
+	int n = 6;
+
+	quickSort(arr, 0, n - 1);
+
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+
 	return 0;
 }
 
@@ -45,52 +78,6 @@ int main()
 </Code><br/>
 
 ###Output<br/><br/>
-Palindrome<br/><br/><br/>
-
-
-Solution 2 : Palendrome array element in cpp
-
-<Code language="cpp" >
-// C++ program to implement reverse array element.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to check if an array is palindrome
-bool isPalindrome(int arr[], int start, int end) {
-    while (start < end) {
-        if (arr[start] != arr[end])
-            return false;
-        start++;
-        end--;
-    }
-    return true;
-}
-
-// Function to find all palindromes in an array
-void findAllPalindromes(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = i; j < n; j++) {
-            if (isPalindrome(arr, i, j)) {
-                cout << "Palindrome found: ";
-                for (int k = i; k <= j; k++)
-                    cout << arr[k] << " ";
-                cout << endl;
-            }
-        }
-    }
-}
-int main() {
-    int arr[] = { 1, 2, 3, 2, 1 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    findAllPalindromes(arr, n);
-    return 0;
-}
-
-
-</Code>
-
-<br/><br/>
-
-* In this example code, we define a function isPalindrome to check if a sequence of the array is a palindrome or not. We then define a function findAllPalindromes to find all palindromes in the array by checking all possible sequences. Finally, we call findAllPalindromes in the main function with an example array.<br/><br/>
-
-* Note that this simpler code checks all possible sequences in the array, which may not be the most efficient way to find palindromes in a large array.<br/><br/>
+<Code language="cpp">
+1 2 3 4 8 9 
+</Code><br/><br/>

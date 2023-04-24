@@ -13,17 +13,11 @@ const E5quicksort = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>5: How to implement quick sort in cpp</h3><br/>
-        <p className='pp'>
-        A palindrome in an array is a sequence of elements in the array that reads the same forward and backward. In other words, if you reverse the sequence of elements, it will still be the same sequence.<br/><br/>
+        <p className='pp'><br/>
+        Quick sort is a divide and conquer algorithm that works by selecting a pivot element from the array, partitioning the other elements into two sub-arrays based on whether they are less than or greater than the pivot, and then recursively sorting the sub-arrays. It is one of the most efficient sorting algorithms and has an average case time complexity of O(nlogn).<br/><br/>
 
-        For example, consider the following array:<br/><br/>
-
-        [1, 2, 3, 2, 1]<br/><br/>
-
-        This array contains a palindrome, which is the sequence [2, 3, 2]. If you read this sequence from left to right or from right to left, it is the same.<br/>
-
-        Note that palindromes in arrays do not have to be contiguous subarrays. In the example above, the palindrome is a subsequence of the array, but it is not contiguous.<br/>
-        </p><br/>
+        Here's an example implementation of quick sort in C++:<br/><br/>
+        </p>
 
         <Post5/>
       </div>

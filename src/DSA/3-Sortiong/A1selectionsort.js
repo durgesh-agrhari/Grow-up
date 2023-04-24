@@ -14,26 +14,11 @@ const A1selectionsort = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>1: How to implement Selection Sorting in cpp</h3><br/>
-        <p className='pp'>To reverse an array in C++, you can use a simple algorithm that involves swapping the first and last elements of the array, the second and second-to-last elements, and so on, until the middle of the array is reached. Here's an example of how to implement this algorithm: </p><br/>
-
-        <h3>Iterative way :</h3><br/>
-
         <p className='pp'>
-          1: Initialize start and end indexes as start = 0, end = n-1 <br/>
-          2: In a loop, swap arr[start] with arr[end] and change start and end as follows :
-          start = start +1, end = end – 1<br/>
+        Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element from the unsorted part of an array and swapping it with the first element of the unsorted part. The process is repeated until the entire array is sorted.<br/><br/>
 
-          a = start, b = end (Blow).
+        Here's an example implementation of selection sort in C++:
         </p><br/>
-
-        <h3>Examples : </h3><br/>
-        <p className='pp'>
-        Input  : arr[ ] = 1, 2, 3.<br/>
-        Output : arr[ ] = 3, 2, 1.<br/><br/>
-        
-        Input :  arr[ ] = 4, 5, 1, 2.<br/>
-        Output : arr[ ] = 2, 1, 5, 4. <br/><br/>
-        </p>
         <Post1/>
 
       </div>
