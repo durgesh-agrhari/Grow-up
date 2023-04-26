@@ -6,14 +6,14 @@ import Subnav from '../Subnav/Subnav'
 import Post1 from './editer1/Post1'
 
 
-const A1ReverseString = () => {
+const A1Inputandoutput = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>1: How to reverse String in cpp</h3><br/>
+        <h3>1: How to take input and output of matrix in cpp</h3><br/>
         <p className='pp'>To reverse an array in C++, you can use a simple algorithm that involves swapping the first and last elements of the array, the second and second-to-last elements, and so on, until the middle of the array is reached. Here's an example of how to implement this algorithm: </p><br/>
 
         <h3>Iterative way :</h3><br/>
@@ -44,4 +44,4 @@ const A1ReverseString = () => {
   )
 }
 
-export default A1ReverseString
+export default A1Inputandoutput

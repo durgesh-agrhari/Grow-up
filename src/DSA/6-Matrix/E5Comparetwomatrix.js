@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post5 from './editer1/Post5'
 
-const E5RemoveVowel = () => {
+const E5Comparetwomatrix = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>5: How to remove vowel in string</h3><br/>
+        <h3>5: How to compare two matrix</h3><br/>
         <p className='pp'>
         A palindrome in an array is a sequence of elements in the array that reads the same forward and backward. In other words, if you reverse the sequence of elements, it will still be the same sequence.<br/><br/>
 
@@ -34,4 +34,4 @@ const E5RemoveVowel = () => {
   )
 }
 
-export default E5RemoveVowel
+export default E5Comparetwomatrix

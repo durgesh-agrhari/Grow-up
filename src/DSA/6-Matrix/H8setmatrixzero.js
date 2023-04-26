@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post8 from './editer1/Post8'
 
-const H8countFrequency = () => {
+const H8setmatrixzero = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>8: How to count frequency in string</h3><br/>
+        <h3>8: How to implement set matrix zero</h3><br/>
         <p className='pp'>
         * Kadane's algorithm is a popular dynamic programming algorithm used to find the maximum sum subarray in an array of integers.<br/><br/>
 
@@ -31,4 +31,4 @@ const H8countFrequency = () => {
   )
 }
 
-export default H8countFrequency
+export default H8setmatrixzero

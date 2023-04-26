@@ -19,23 +19,23 @@ const Leftsidebar = () => {
                 <p className='active1'>0: Basic Searching </p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Comming Soon</p>
+            <NavLink to='/linear-search-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1' >1: Linear Search</p>
             </NavLink> 
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>2:  Comming Soon </p>
+            <NavLink to='/binary-search-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>2: Binary Search </p>
             </NavLink>           
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>3:  Comming Soon</p>
+            <NavLink to='/fierst-and-last-occurrence-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>3: Fist and last occurrence</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>4:  Comming Soon</p>
+            <NavLink to='/floor-and-ceil-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>4: floor and ceil in sorted array</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
+            {/* <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>5:  Comming Soon</p>
             </NavLink>
 
@@ -61,7 +61,7 @@ const Leftsidebar = () => {
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>11: Comming Soon </p>
-            </NavLink>
+            </NavLink> */}
         </nav>
 
         

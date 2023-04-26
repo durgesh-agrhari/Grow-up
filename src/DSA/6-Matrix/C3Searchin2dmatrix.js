@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post3 from '../1-Array/editer1/Post3'
 
-const C3countWordinString = () => {
+const C3Searchin2dmatrix = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>3: How to Count Word in String</h3><br/>
+        <h3>3: How to search in 2D matrix</h3><br/>
         <p className='pp'>
         In the context of an array, the frequency of an element refers to the number of times it appears in the array. For example, if we have an array [1, 2, 2, 3, 3, 3], the frequency of 1 is 1, the frequency of 2 is 2, and the frequency of 3 is 3.
         <br/><br/>
@@ -38,4 +38,4 @@ const C3countWordinString = () => {
   )
 }
 
-export default C3countWordinString
+export default C3Searchin2dmatrix

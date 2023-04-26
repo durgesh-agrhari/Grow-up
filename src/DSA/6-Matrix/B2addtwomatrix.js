@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post2 from './editer1/Post2'
 
-const B2lengthofString = () => {
+const B2addtwomatrix = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>2: How to find length of String in cpp</h3><br/>
+        <h3>2: How to add two matrix in cpp</h3><br/>
         <p className='pp'>To find duplicate elements in an array in C++, you can use a nested loop that compares each element of the array to all the other elements to check for duplicates. Here's an example of how to implement this algorithm:</p><br/>
 
         <h3>Example:</h3><br/>
@@ -38,4 +38,4 @@ const B2lengthofString = () => {
   )
 }
 
-export default B2lengthofString
+export default B2addtwomatrix

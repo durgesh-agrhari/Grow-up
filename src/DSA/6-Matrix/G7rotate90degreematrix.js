@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
@@ -5,14 +6,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post7 from './editer1/Post7'
 
-const G7removeDublicates = () => {
+const G7rotate90degreematrix = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>7: How to remove dublicates element in string.</h3><br/>
+        <h3>7: How to rotate 90 degree matrix.</h3><br/>
         <p className='pp'>
         In an array, the second largest element refers to the element with the second-highest value, while the second smallest element refers to the element with the second-lowest value.<br/><br/>
 
@@ -33,4 +34,4 @@ const G7removeDublicates = () => {
   )
 }
 
-export default G7removeDublicates
+export default G7rotate90degreematrix

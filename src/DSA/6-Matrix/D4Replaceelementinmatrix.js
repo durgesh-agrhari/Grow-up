@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post4 from './editer1/Post4'
 
-const D4PalendromeString = () => {
+const D4Replaceelementinmatrix = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>4:How to check string is palendrome or not.</h3><br/>
+        <h3>4:How to Replace element in matrix.</h3><br/>
         <p className='pp'>
         In this tutorial, we are going to learn how to delete elements from the given range. Let's see the steps to solve the problem.
         <br/><br/>
@@ -38,4 +38,4 @@ const D4PalendromeString = () => {
   )
 }
 
-export default D4PalendromeString
+export default D4Replaceelementinmatrix

@@ -49,6 +49,9 @@
         margin-right: 10px;
         margin-left: -10px;
     }
+    h2{
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -60,6 +63,9 @@
         margin-right: 10px;
         margin-left: -10px;
     }
+    h2{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -70,5 +76,8 @@
         width: 70%;
         margin-right: 10px;
         margin-left: -10px;
+    }
+    h2{
+        font-size: 20px;
     }
 }

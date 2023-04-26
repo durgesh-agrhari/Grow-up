@@ -1,100 +1,58 @@
-<br/>
-Dublicate elelemt in an array
+Binary search in an array
 
 <Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
+// C++ program to Binary search in an array.
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-  int n=9;
-  int arr[n] = {1, 2, 3, 4, 4, 5, 6, 6, 7};
-
-  // Check for duplicates
-  for (int i = 0; i < n - 1; i++) {
-    for (int j = i + 1; j < n; j++) {
-      if (arr[i] == arr[j]) {
-        cout<<"Duplicate element found: "<<arr[i]<<endl;
-      }
+int binarySearch(int arr[], int n, int k)
+{
+    int start=0, end=n-1;
+    while(end>=start)
+    {
+        int mid = (start+end)/2;
+        if(arr[mid]==k)
+        {
+            return mid;
+        }
+        else if(arr[mid] > k)
+        {
+            end = mid-1;
+        }
+        else{
+            start = mid+1;
+        }
     }
-  }
-
-  return 0;
+    return -1;
 }
-</Code>
-<br/><br/>
 
-Duplicate element found: 4<br/><br/>
-Duplicate element found: 6<br/><br/>
-
-Dublicate elelemt in an array with finding length of array <br/><br/>
-
-<Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-  int arr[] = {1, 2, 3, 4, 4, 5, 6, 6, 7}; //for finding the length of array
-  int n = sizeof(arr) / sizeof(arr[0]);
-
-  // Check for duplicates
-  for (int i = 0; i < n - 1; i++) {
-    for (int j = i + 1; j < n; j++) {
-      if (arr[i] == arr[j]) {
-        cout<<"Duplicate element found: "<<arr[i]<<endl;
-      }
-    }
-  }
-
-  return 0;
-}
-</Code>
-
-<br/><br/>
-
-Duplicate element found: 4<br/><br/>
-Duplicate element found: 6<br/><br/>
-
-
-Dublicate elelemt in an array throujgh map<br/>
-
-<Code language="cpp">
-// C++ program to implement Dublicates element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    int n;
-    cin>>n;
+int main()
+{
+    int n,k;
+    cin>>n>>k;
     int arr[n];
     for(int i=0; i<n; i++)
     {
         cin>>arr[i];
     }
-
-    map<int,int>mp;
-    for(int i=0; i<n; i++)
+    int res= binarySearch(arr,n,k);
+    if(res == -1)
     {
-        mp[arr[i]]++;
-    }
-    for(auto it = mp.begin(); it!=mp.end(); it++)
-    {
-        if(it->second>1)
-        {
-            cout<<it->first<<" ";
-        }
+        cout<<"No";
+    }else{
+        cout<<"Yes";
     }
     return 0;
 }
 
-</Code>
+</Code><br/><br/>
 
-<br/><br/>
+###Input<br/>
+5 3<br/>
+1 2 3 4 5<br/><br/>
 
-Input<br/>
-5<br/>
-1 3 2 3 1<br/><br/>
+###Output<br/>
+YES<br/><br/>
 
-Output<br/>
-1 3<br/><br/>
+Time Complexity: O(log N)<br/>
+Auxiliary Space: O(1)<br/><br/>

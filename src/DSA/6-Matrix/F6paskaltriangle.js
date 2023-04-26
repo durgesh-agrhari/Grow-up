@@ -5,14 +5,14 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 import Post6 from './editer1/Post6'
 
-const F6RemoveSpace = () => {
+const F6paskaltriangle = () => {
   return (
     <div className='subb'>
     <Subnav/>
     <div className='home-container1'>
       <Leftsidebar/>
       <div className='home-container2'>
-        <h3>6: Remove space in string</h3><br/>
+        <h3>6: Paskal triangle in matrix</h3><br/>
         <p className='pp'>
         In an array, the longest element refers to the element with the largest value, while the smallest element refers to the element with the smallest value.<br/><br/>
 
@@ -31,4 +31,4 @@ const F6RemoveSpace = () => {
   )
 }
 
-export default F6RemoveSpace
+export default F6paskaltriangle

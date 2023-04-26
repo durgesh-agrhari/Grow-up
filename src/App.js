@@ -81,6 +81,18 @@ import A0basicinfotree from './DSA/13-Tree/A0basicinfotree';
 import A0basicinfograph from './DSA/14-Graph/A0basicinfograph';
 import A0basicinfodp from './DSA/15-Dp/A0basicinfodp';
 import A0basicinfogreedy from './DSA/16-Greedy/A0basicinfogreedy';
+import A1linearsearch from './DSA/5-Searching/A1linearsearch';
+import B2binarysearch from './DSA/5-Searching/B2binarysearch';
+import C3fierstandlast from './DSA/5-Searching/C3fierstandlast';
+import D4floorandceil from './DSA/5-Searching/D4floorandceil';
+import A1Inputandoutput from './DSA/6-Matrix/A1Inputandoutput';
+import B2addtwomatrix from './DSA/6-Matrix/B2addtwomatrix';
+import C3Searchin2dmatrix from './DSA/6-Matrix/C3Searchin2dmatrix';
+import D4Replaceelementinmatrix from './DSA/6-Matrix/D4Replaceelementinmatrix';
+import E5Comparetwomatrix from './DSA/6-Matrix/E5Comparetwomatrix';
+import F6paskaltriangle from './DSA/6-Matrix/F6paskaltriangle';
+import G7rotate90degreematrix from './DSA/6-Matrix/G7rotate90degreematrix';
+import H8setmatrixzero from './DSA/6-Matrix/H8setmatrixzero';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -189,9 +201,21 @@ function App() {
 
           {/* ========== Searching Que ========= */}
           <Route path='/searching-basic-questions' element = {<A0basicinfoSearching/> }/>
+          <Route path='/linear-search-in-c++' element = {<A1linearsearch/> }/>
+          <Route path='/binary-search-in-c++' element = {<B2binarysearch/> }/>
+          <Route path='/fierst-and-last-occurrence-in-c++' element = {<C3fierstandlast/> }/>
+          <Route path='/floor-and-ceil-in-c++' element = {<D4floorandceil/> }/>
 
           {/* ========== Matrix Que ========= */}
           <Route path='/matrix-basic-questions' element = {<A0basicinfomatrix/> }/>
+          <Route path='/how-to-take-input-and-output-in-matrix' element = {<A1Inputandoutput/> }/>
+          <Route path='/how-to-add-two-matrix-in-c++' element = {<B2addtwomatrix/> }/>
+          <Route path='/how-search-in-2d-matrix-in-c++' element = {<C3Searchin2dmatrix/> }/>
+          <Route path='/how-to-replace-element-in-matrix-in-c++' element = {<D4Replaceelementinmatrix/> }/>
+          <Route path='/how-to-Compare-two-in-matrix-in-c++' element = {<E5Comparetwomatrix/> }/>
+          <Route path='/how-to-paskal-triangle-in-matrix-in-c++' element = {<F6paskaltriangle/> }/>
+          <Route path='/how-to-rotate-90-degree-in-matrix-in-c++' element = {<G7rotate90degreematrix/> }/>
+          <Route path='/how-to-find-8set-matrix-zero-in-c++' element = {<H8setmatrixzero/> }/>
 
           {/* ========== Stack Que ========= */}
           <Route path='/stack-basic-questions' element = {<A0basicinfostack/> }/>
