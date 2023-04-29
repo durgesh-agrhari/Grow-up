@@ -14,14 +14,23 @@ const H8setmatrixzero = () => {
       <div className='home-container2'>
         <h3>8: How to implement set matrix zero</h3><br/>
         <p className='pp'>
-        * Kadane's algorithm is a popular dynamic programming algorithm used to find the maximum sum subarray in an array of integers.<br/><br/>
+        To set a matrix to zero in C++, you can follow these steps:<br/><br/>
 
-        * The algorithm works by iterating over the array and maintaining two variables: the current maximum subarray sum and the current maximum subarray sum ending at the current index.<br/><br/>
-         * At each index, the algorithm updates these variables based on whether adding the current element to the maximum subarray sum ending at the previous index would result in a larger or smaller sum.<br/><br/>
+        1: Create a 2D matrix of size m x n.<br/>
 
-        Here's an example C++ code for Kadane's algorithm:<br/><br/>
-        </p><br/>
+        2: Prompt the user to enter the elements of the matrix.<br/>
+
+        3: Traverse through the matrix and mark the rows and columns that contain a zero element.<br/>
+
+        4: Traverse through the matrix again and set the elements in the marked rows and columns to zero.<br/>
+
+        5: Print the updated matrix.<br/><br/>
+
+        Here's an example code snippet that sets a matrix to zero in C++:
+        </p><br/><br/>
+        <p className='ppp'>
         <Post8/>
+        </p>
      
       </div>
       <RightSidebar />

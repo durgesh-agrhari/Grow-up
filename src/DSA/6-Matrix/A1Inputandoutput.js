@@ -14,27 +14,33 @@ const A1Inputandoutput = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>1: How to take input and output of matrix in cpp</h3><br/>
-        <p className='pp'>To reverse an array in C++, you can use a simple algorithm that involves swapping the first and last elements of the array, the second and second-to-last elements, and so on, until the middle of the array is reached. Here's an example of how to implement this algorithm: </p><br/>
-
-        <h3>Iterative way :</h3><br/>
-
         <p className='pp'>
-          1: Initialize start and end indexes as start = 0, end = n-1 <br/>
-          2: In a loop, swap arr[start] with arr[end] and change start and end as follows :
-          start = start +1, end = end – 1<br/>
-
-          a = start, b = end (Blow).
+        In C++, you can take input and output of a matrix using nested loops. Here is an example code to demonstrate the process:
         </p><br/>
 
-        <h3>Examples : </h3><br/>
-        <p className='pp'>
-        Input  : arr[ ] = 1, 2, 3.<br/>
-        Output : arr[ ] = 3, 2, 1.<br/><br/>
-        
-        Input :  arr[ ] = 4, 5, 1, 2.<br/>
-        Output : arr[ ] = 2, 1, 5, 4. <br/><br/>
-        </p>
+        <p className='ppp'>
         <Post1/>
+        </p>
+
+        <p>
+        <br/>
+
+        Input<br/><br/>
+        Enter the number of rows: 3 <br/>
+        Enter the number of columns: 3<br/><br/>
+        Enter the matrix elements: <br/>
+        1 2 3 <br/>
+        4 5 6 <br/>
+        7 8 9<br/>
+
+        <br/><br/>
+
+        Output<br/><br/>
+        The matrix is:<br/>
+        1 2 3 <br/>
+        4 5 6 <br/>
+        7 8 9<br/>
+        </p>
 
       </div>
       <RightSidebar />

@@ -1,88 +1,39 @@
-Rreverse array element in cpp
+<pre><code>
 
-<Code language="cpp">
-// C++ program to implement reverse array element.
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    int a = 0, b = n - 1;
-    while (a < b)
-    {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-        a++;
-        b--;
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    return 0;
-}
-
-</Code>
-
-<br/>
-
-Input<br/>
-5<br/>
-1 2 3 4 5<br/>
-
-<br/><br/>
-
-Output<br/>
-5 4 3 2 1
-
-<br/><br/>
-*In C++, you can reverse the elements of an array using the std::reverse() function from the <algorithm> library. Here's an example of how to use it:
-<br/><br/>
-
-Rreverse array element in cpp
-
-<Code language="cpp">
-// C++ program to implement reverse array element.
+// C++ program to implement Input and output in matrix
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-  int arr[] = {1, 2, 3, 4, 5};
-  int n = sizeof(arr) / sizeof(arr[0]);  // Determine the length of the array
+    int rows, cols;
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+    cout << "Enter the number of columns: ";
+    cin >> cols;
 
-  // Print the original array
-  cout << "Original array: ";
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
-  }
-  cout<<endl;
+    // Declare the matrix square brackets
+    int matrix[rows] [cols];
 
-  // Reverse the array using std::reverse()
-  reverse(arr, arr + n);
+    // Take input from the user
+    cout << "Enter the matrix elements:" << endl;
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < cols; j++) {
+            cin >> matrix[i][j];
+        }
+    }
 
-  // Print the reversed array
-  cout << "Reversed array: ";
-  for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
-  }
-  cout<<endl;
+    // Display the matrix
+    cout << "The matrix is:" << endl;
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < cols; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
 
-  return 0;
+    return 0;
 }
+</Code></pre>
 
 
-</Code>
 
-<br/><br/>
-
-Original array: 1 2 3 4 5<br/><br/>
-Reversed array: 5 4 3 2 1<br/><br/>

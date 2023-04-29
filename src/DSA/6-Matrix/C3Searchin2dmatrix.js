@@ -3,7 +3,7 @@ import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
 import './A_array.css'
 import Subnav from '../Subnav/Subnav'
-import Post3 from '../1-Array/editer1/Post3'
+import Post3 from './editer1/Post3'
 
 const C3Searchin2dmatrix = () => {
   return (
@@ -14,22 +14,24 @@ const C3Searchin2dmatrix = () => {
       <div className='home-container2'>
         <h3>3: How to search in 2D matrix</h3><br/>
         <p className='pp'>
-        In the context of an array, the frequency of an element refers to the number of times it appears in the array. For example, if we have an array [1, 2, 2, 3, 3, 3], the frequency of 1 is 1, the frequency of 2 is 2, and the frequency of 3 is 3.
-        <br/><br/>
-        Finding the frequency of each element in an array can be useful in many applications such as data analysis, statistics, and signal processing. It allows us to better understand the distribution of values in the array and make informed decisions based on this information.
-        </p><br/>
-        <h3>Example: </h3><br/>
-        <p className='pp'>
-        Input :  arr[ ] = 10, 20, 20, 10, 10, 20, 5, 20.<br/>
-        Output : 10 3<br/>
-                20 4<br/>
-                5  1<br/>
-                <br/><br/>
-        Input : arr[ ] = 10, 20, 20.<br/>
-        Output : 10 1<br/>
-                20 2 <br/>
-        </p><br/>
+          
+          To search for an element in a 2D matrix, you can follow the following steps:<br/><br/>
+
+          1: Traverse the matrix starting from the top right corner or bottom left corner. Choose one of these corners based on whether you want to search for a smaller or larger element. For example, if you want to search for a smaller element, start at the top right corner. If you want to search for a larger element, start at the bottom left corner.<br/><br/>
+
+          2: Compare the target element with the current element in the matrix. If they are equal, return the current position.<br/><br/>
+
+          3: If the target element is greater than the current element, move to the next row (if you started at the top right corner) or the previous column (if you started at the bottom left corner).<br/><br/>
+
+          4: If the target element is smaller than the current element, move to the previous column (if you started at the top right corner) or the next row (if you started at the bottom left corner).<br/><br/>
+
+          5: Repeat steps 2 to 4 until you find the target element or reach the end of the matrix.<br/><br/>
+
+          Here's an example code snippet that implements this algorithm to search for an element in a 2D matrix:<br/><br/>
+        </p>
+        <p className='ppp'>
         <Post3/>
+        </p>
       </div>
       <RightSidebar />
     </div>

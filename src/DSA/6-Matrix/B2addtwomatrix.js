@@ -13,23 +13,19 @@ const B2addtwomatrix = () => {
       <Leftsidebar/>
       <div className='home-container2'>
         <h3>2: How to add two matrix in cpp</h3><br/>
-        <p className='pp'>To find duplicate elements in an array in C++, you can use a nested loop that compares each element of the array to all the other elements to check for duplicates. Here's an example of how to implement this algorithm:</p><br/>
-
-        <h3>Example:</h3><br/>
         <p className='pp'>
-        Input : n = 7 and array[ ] = 1, 2, 3, 6, 3, 6, 1.<br/>
-        Output: 1, 3, 6.<br/><br/>
+        To add two matrices in C++, you can follow these steps:<br/><br/>
 
-        Explanation: The numbers 1 , 3 and 6 appears more
-        than once in the array.<br/><br/>
-
-        Input : n = 5 and array[ ] = 1, 2, 3, 4 ,3.<br/>
-        Output: 3.<br/><br/>
-
-        Explanation: The number 3 appears more than once
-        in the array.<br/>
+        1: Create two matrices of the same size.<br/>
+        2: Create a third matrix to store the sum of the first two matrices.<br/>
+        3: Use nested loops to iterate through each element of the matrices and add the corresponding elements together.<br/>
+        4: Store the result in the corresponding element of the third matrix.<br/><br/>
+        Here's an example code snippet that adds two matrices:  <br/><br/>
         </p>
+
+        <p className='ppp'>
         <Post2/>
+        </p>
       </div>
       <RightSidebar />
     </div>

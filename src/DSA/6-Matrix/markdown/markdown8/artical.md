@@ -1,133 +1,116 @@
 ###Example:-
-<Code language="cpp">
-Input: [-3, -4, 5, -1, 2, -4, 6, -1]
-Output: 8
-Explanation: Subarray [5, -1, 2, -4, 6] is the max sum contiguous subarray with sum 8.
+<pre><code>
 
-Input: [-2, 3, -1, 2]
-Output: 4
-Explanation: Subarray [3, -1, 2] is the max sum contiguous subarray with sum 4.
+Examples 1:
 
-</Code> <br/><br/>
+Input: matrix=[[1,1,1],[1,0,1],[1,1,1]]
 
-* Solution 1: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
+Output: [[1,0,1],[0,0,0],[1,0,1]]
 
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-#include <bits/stdc++.h>
-using namespace std;
+Explanation: Since matrix[2][2]=0.Therfore the 2nd column and 2nd row wil be set to 0.
+ 
+Input: matrix=[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 
-void kadanesalgo(int arr[], int n)
-{
-	int sum =0;
-    int msum = INT_MIN;
+Output:[[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
-    for(int i=0; i<n; i++){
-        sum = sum + arr[i];
-        if(sum > msum){
-            msum = sum;
-        }
-        if(sum < 0){
-            sum =0;
-        }
-    }
-    cout<<msum<<endl;
-}
+Explanation:Since matrix[0][0]=0 and matrix[0][3]=0. Therefore 1st row, 1st column and 4th column will be set to 0
 
-// Driver code.
-int main()
-{
-	int arr[] = { -1, 2, -3, -2, 1 };
-	int n = sizeof(arr) / sizeof(arr[0]);
 
-	kadanesalgo(arr, n);
-	return 0;
-}
-
-</Code>
-
+</code></pre> 
 <br/>
-###Output<br/><br/>
-2<br/><br/><br/>
 
+-------------------------------
 
-* Solution 2: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to print largest contiguous array sum
-#include <bits/stdc++.h>
-using namespace std;
-
-int maxSubArraySum(int a[], int size)
-{
-	int max_so_far = INT_MIN, max_ending_here = 0;
-
-	for (int i = 0; i < size; i++) {
-		max_ending_here = max_ending_here + a[i];
-		if (max_so_far < max_ending_here)
-			max_so_far = max_ending_here;
-
-		if (max_ending_here < 0)
-			max_ending_here = 0;
-	}
-	return max_so_far;
-}
-
-// Driver Code
-int main()
-{
-	int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-	int n = sizeof(a) / sizeof(a[0]);
-
-	// Function Call
-	int max_sum = maxSubArraySum(a, n);
-	cout << "Maximum contiguous sum is " << max_sum;
-	return 0;
-}
-
-</Code>
-<br/>
-###Output<br/><br/>
-Maximum contiguous sum is 7<br/><br/><br/>
-
-
-* Solution 3: Implement Kadanes algo in an Array || Maximum subarray sum in given array<br/>
-
-<Code language="cpp">
-// C++ program to implement Delete element in an array.
-#include <bits/stdc++.h>
-using namespace std;
-
-// Function to find the maximum sum subarray using Kadane's algorithm
-int kadane(int arr[], int n) {
-    int max_so_far = arr[0];
-    int max_ending_here = arr[0];
-    for (int i = 1; i < n; i++) {
-        max_ending_here = max(max_ending_here + arr[i], arr[i]);
-        max_so_far = max(max_so_far, max_ending_here);
-    }
-    return max_so_far;
-}
-
-// Main function
-int main() {
-    int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int max_sum = kadane(arr, n);
-    cout << "Maximum sum of subarray: " << max_sum << endl;
-    return 0;
-}
-
-</Code>
 <br/><br/>
 
-* In this example code, we define a function kadane to find the maximum sum subarray using Kadane's algorithm. <br/><br/>
+* C++ program to set matrix zero in matrix. <br/>
+  
 
-* We initialize two variables max_so_far and max_ending_here to the first element of the array, and then iterate over the remaining elements of the array.<br/><br/>
+<pre><code>
 
- * At each index, we update max_ending_here to be the maximum of the current element or the sum of the current element and max_ending_here. We then update max_so_far to be the maximum of max_so_far and max_ending_here. <br/><br/>
- 
- * Finally, we call the kadane function in the main function with an example array and print the maximum sum subarray.
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int main() {
+  int m, n;
+  cout << "Enter the number of rows of the matrix: ";
+  cin >> m;
+  cout << "Enter the number of columns of the matrix: ";
+  cin >> n;
+
+  vector<vector<int>> matrix(m, vector<int>(n, 0));
+
+  cout << "Enter the elements of the matrix:\n";
+  for(int i=0; i<m; i++) {
+    for(int j=0; j<n; j++) {
+      cin >> matrix[i][j];
+    }
+  }
+
+  vector<bool> row(m, false);
+  vector<bool> col(n, false);
+
+  // Traverse through the matrix and mark the rows and columns that contain a zero element
+  for(int i=0; i<m; i++) {
+    for(int j=0; j<n; j++) {
+      if(matrix[i][j] == 0) {
+        row[i] = true;
+        col[j] = true;
+      }
+    }
+  }
+
+  // Traverse through the matrix again and set the elements in the marked rows and columns to zero
+  for(int i=0; i<m; i++) {
+    for(int j=0; j<n; j++) {
+      if(row[i] || col[j]) {
+        matrix[i][j] = 0;
+      }
+    }
+  }
+
+  // Print the updated matrix
+  cout << "The updated matrix is:\n";
+  for(int i=0; i<m; i++) {
+    for(int j=0; j<n; j++) {
+      cout << matrix[i][j] << " ";
+    }
+    cout << endl;
+  }
+
+  return 0;
+}
+
+
+</code></pre>
+
+<br/><br/>
+
+___________________________________________
+
+<br/><br/>
+
+<Code language="cpp">
+
+Input
+
+Enter the number of rows of the matrix:
+3 
+Enter the number of columns of the matrix:
+3
+Enter the elements of the matrix:
+1 2 3
+4 5 6
+7 8 9
+
+
+Output
+
+The updated matrix is:
+1 2 3 
+4 5 6 
+7 8 9
+</Code><br/>
+
+* In this example, the user is prompted to enter the number of rows and columns of the matrix, followed by the elements of the matrix. The program then creates a vector of vectors (a 2D vector) to store the matrix, and traverses through the matrix to mark the rows and columns that contain a zero element. It then traverses through the matrix again and sets the elements in the marked rows and columns to zero. Finally, the program prints the updated matrix.

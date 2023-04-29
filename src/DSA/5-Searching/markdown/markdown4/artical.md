@@ -83,7 +83,7 @@ Explanation: 19 is the largest element in
 arr[] smaller than 20
 </Code> <br/><br/>
 
-* 1 Solution 2: C++ implementation flore in a sorted array
+* 1 Solution 2: C++ implementation floor in a sorted array
  of above approach<br/>
 
 <Code language="cpp">

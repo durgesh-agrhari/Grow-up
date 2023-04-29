@@ -14,18 +14,20 @@ const E5Comparetwomatrix = () => {
       <div className='home-container2'>
         <h3>5: How to compare two matrix</h3><br/>
         <p className='pp'>
-        A palindrome in an array is a sequence of elements in the array that reads the same forward and backward. In other words, if you reverse the sequence of elements, it will still be the same sequence.<br/><br/>
+ 
+        To compare two matrices in C++, you can follow these steps:<br/><br/>
 
-        For example, consider the following array:<br/><br/>
+        1: Create two matrices of the same size and initialize them with some values.<br/>
 
-        [1, 2, 3, 2, 1]<br/><br/>
+        2:Traverse through each element of the matrices and compare the values of the corresponding elements.<br/>
 
-        This array contains a palindrome, which is the sequence [2, 3, 2]. If you read this sequence from left to right or from right to left, it is the same.<br/>
+        3: If the values of all corresponding elements are equal, the matrices are considered equal. Otherwise, they are considered unequal.<br/><br/>
 
-        Note that palindromes in arrays do not have to be contiguous subarrays. In the example above, the palindrome is a subsequence of the array, but it is not contiguous.<br/>
-        </p><br/>
-
+        Here's an example code snippet that compares two matrices:
+        </p><br/><br/>
+        <p className='ppp'>
         <Post5/>
+        </p>
       </div>
       <RightSidebar />
     </div>
