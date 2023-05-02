@@ -93,6 +93,14 @@ import E5Comparetwomatrix from './DSA/6-Matrix/E5Comparetwomatrix';
 import F6paskaltriangle from './DSA/6-Matrix/F6paskaltriangle';
 import G7rotate90degreematrix from './DSA/6-Matrix/G7rotate90degreematrix';
 import H8setmatrixzero from './DSA/6-Matrix/H8setmatrixzero';
+import A1RectanglePattern from './DSA/4-Pattern/A1RectanglePattern';
+import B2PyramidPattern from './DSA/4-Pattern/B2PyramidPattern';
+import C3PyramidPatternnum from './DSA/4-Pattern/C3PyramidPatternnum';
+import D4PalindromePyramidPattern from './DSA/4-Pattern/D4PalindromePyramidPattern';
+import E5DiamondPattern from './DSA/4-Pattern/E5DiamondPattern';
+import F6diamondpatternstarsnumbers from './DSA/4-Pattern/F6diamondpatternstarsnumbers';
+import H8PascalTriangle from './DSA/4-Pattern/H8PascalTriangle';
+import G7FloydTriangle from './DSA/4-Pattern/G7FloydTriangle';
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -198,6 +206,14 @@ function App() {
 
           {/* ========== Pattern que ========= */}
           <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
+          <Route path='/rectangle-pattern-in-c++' element = {<A1RectanglePattern/> }/>
+          <Route path='/pyramid-pattern-in-c++' element = {<B2PyramidPattern/> }/>
+          <Route path='/pyramid-pattern-in-c++-using-number' element = {<C3PyramidPatternnum/> }/>
+          <Route path='/palindrome-pyramid-pattern-in-c++-using-number-and-alphabet' element = {<D4PalindromePyramidPattern/> }/>
+          <Route path='/diamond-pattern-in-c++-using-star' element = {<E5DiamondPattern/> }/>
+          <Route path='/diamond-pattern-in-c++-using-star-and-numbers' element = {<F6diamondpatternstarsnumbers/> }/>
+          <Route path='/floyd-triangle-in-c++' element = {<G7FloydTriangle/> }/>
+          <Route path='/pascal-triangle-in-c++' element = {<H8PascalTriangle/> }/>
 
           {/* ========== Searching Que ========= */}
           <Route path='/searching-basic-questions' element = {<A0basicinfoSearching/> }/>

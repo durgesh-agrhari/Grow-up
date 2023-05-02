@@ -20,7 +20,7 @@ const Leftsidebar = () => {
             </NavLink>
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Comming Soon</p>
+                <p className='active1' >1: Stack Operations</p>
             </NavLink> 
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>

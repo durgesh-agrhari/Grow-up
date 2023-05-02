@@ -19,39 +19,39 @@ const Leftsidebar = () => {
                 <p className='active1'>0: Basic Pattern</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Comming Soon</p>
+            <NavLink to='/rectangle-pattern-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1' >1: Rectangle Pattern </p>
             </NavLink> 
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>2:  Comming Soon </p>
+            <NavLink to='/pyramid-pattern-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>2: Pyramid Pattern Star </p>
             </NavLink>           
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>3:  Comming Soon</p>
+            <NavLink to='/pyramid-pattern-in-c++-using-number' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>3: Pyramid Pattern Number</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>4:  Comming Soon</p>
+            <NavLink to='/palindrome-pyramid-pattern-in-c++-using-number-and-alphabet' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>4: Palindrome Pyramid Pattern Number & Alphabets</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>5:  Comming Soon</p>
+            <NavLink to='/diamond-pattern-in-c++-using-star' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>5: Diamond Pattern Star</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>6:  Comming Soon</p>
+            <NavLink to='/diamond-pattern-in-c++-using-star-and-numbers' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>6: Diamond Pattern Stars Numbers</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>7: Comming Soon </p>
+            <NavLink to='/floyd-triangle-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>7: Floyd's Triangle </p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>8: Comming Soon</p>
+            <NavLink to='/pascal-triangle-in-c++' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>8: Pascal's Triangle</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
+            {/* <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>9: Comming Soon</p>
             </NavLink>
             
@@ -61,7 +61,7 @@ const Leftsidebar = () => {
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>11: Comming Soon </p>
-            </NavLink>
+            </NavLink> */}
         </nav>
 
         

@@ -33,7 +33,7 @@ const A0basicinfopattern = () => {
         Overall, patterns are an important concept in C++ programming that can help you solve a wide range of problems, from simple string manipulation tasks to more advanced data analysis and machine learning tasks.
         </p><br/><br/>
 
-        <h3>Advantages of using arrays: </h3><br/>
+        <h3>Advantages of Pattern: </h3><br/>
         <p className='pp'>
         There are several advantages of using patterns in C++ programming:<br/><br/>
 

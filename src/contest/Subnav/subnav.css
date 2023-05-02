@@ -1,6 +1,6 @@
-.subnav{
-    /* border-top: solid 4px rgb(252, 255, 252); */
-    background-color: rgb(164, 172, 175);
+.subnav123{
+    border-top: solid 4px rgb(1, 118, 1);
+    background-color: rgb(86, 94, 89);
     margin-top: 10px;
     margin-left: 8px;
     margin-right: 8px;  
@@ -8,12 +8,16 @@
     border-radius: 5px;
 }
 
+.light-theme .subnav123{
+ background-color: rgb(191, 195, 198);   
+}
+
 .hh{
     text-align: center;
     margin-top: 5px;
 }
 .home-links{
-    color: rgb(218, 19, 19);
+    color: rgb(5, 137, 66);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,8 +25,9 @@
 }
 
 @media only screen and (max-width: 992px){
-    .subnav{
-        height: 50px;
+    .subnav123{
+        width: 100%;
+        height: 100px;
     }
     .home-links{
         flex-wrap: wrap;
@@ -36,8 +41,9 @@
 
 
 @media only screen and (max-width: 768px){
-    .subnav{
-        height: 80px;
+    .subnav123{
+        width: 97%;
+        height: 100px;
     }
     .home-links{
         flex-wrap: wrap;
@@ -52,9 +58,9 @@
 
 
 @media only screen and (max-width: 576px){
-    .subnav{
-        height: 80px;
-        padding-right: 0px;
+    .subnav123{
+        width: 96%;
+        height: 140px;
     }
     .home-links{
         flex-wrap: wrap;
