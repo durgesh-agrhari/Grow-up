@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import Newsletter from '../UI/Newsletter'
 
 const quickLinks01 = [
     {
@@ -53,6 +54,8 @@ const Footer = () => {
         window.open(url)
     }
   return (
+    <>
+    <Newsletter/>
     <footer className='footer'>
         <div className="container">
             <div className="footer__wrapper">
@@ -110,6 +113,7 @@ const Footer = () => {
             <p className='copyright'>Copyright {Year} , developed by Durgesh Agrhari. All rights reserved</p>
         </div>
     </footer>
+    </>
   )
 }
 

@@ -4,7 +4,6 @@ import About from '../components/UI/About'
 import Blog from '../components/UI/Blog'
 import Counter from '../components/UI/Counter'
 import Hero from '../components/UI/Hero'
-import Newsletter from '../components/UI/Newsletter'
 import Services from '../components/UI/Services'
 import Team from '../components/UI/Team'
 import Testimonial from '../components/UI/Testimonial'
@@ -31,7 +30,6 @@ const Homepage = () => {
       <Team/>
       <Blog/>
       <Testimonial/>
-      <Newsletter/>
     </div>
   )
 }
