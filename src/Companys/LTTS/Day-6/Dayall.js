@@ -7,8 +7,8 @@ const Dayall = () => {
   return (
     <div className='subb'>
     <Subnav/>
-    <div className='home-container1'>
-      <div className='home-container2'>
+    <div className='home-container1a'>
+      <div className='home-container2a'>
         <h2 className='s'> <u> -: LTTS Day-6 :- </u></h2><br/>
         
         <h3>Day 6 :-  Task L1 and L2 Activities :: Array of Structures</h3><br/>

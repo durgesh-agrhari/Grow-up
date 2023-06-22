@@ -7,8 +7,8 @@ const Lttsalla = () => {
   return (
     <div className='subb'>
     <Subnav/>
-    <div className='home-container1'>
-      <div className='home-container2'>
+    <div className='home-container1a'>
+      <div className='home-container2a'>
         <h2 className='s'> <u> -: LTTS all learning model and all tasl updated :- </u></h2>
         <h3>LTTS Learning</h3><br/>
         <p className='pp'>

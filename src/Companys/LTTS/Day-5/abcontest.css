@@ -1,4 +1,4 @@
-.home-container1{
+.home-container1a{
     min-height: 100vh;
     max-width: 12500px;
     width: 100%;
@@ -9,11 +9,11 @@
     color: white;   
 }
 
-.light-theme .home-container1{
+.light-theme .home-container1a{
     background-color: whitesmoke;
     color: black;
 }
-.home-container2{
+.home-container2a{
     margin-top: 24px;
     max-width: 1100px;
     width: calc(100% - 164px);
@@ -23,7 +23,7 @@
     margin-left: 10px;
 }
 
-.light-theme .home-container2{
+.light-theme .home-container2a{
     border: 1px solid #d6d9dc;
 }
 
@@ -37,33 +37,33 @@
 
 
 @media only screen and (max-width: 992px){
-    .home-container1{
+    .home-container1a{
         flex-wrap: wrap;
     }
-    .home-container2{
-        width: 70%;
+    .home-container2a{
+        width: 100%;
         margin-right: 10px;
         margin-left: -10px;
     }
 }
 
 @media only screen and (max-width: 768px){
-    .home-container1{
+    .home-container1a{
         flex-wrap: wrap;
     }
-    .home-container2{
-        width: 70%;
+    .home-container2a{
+        width: 100%;
         margin-right: 10px;
         margin-left: -10px;
     }
 }
 
 @media only screen and (max-width: 576px){
-    .home-container1{
+    .home-container1a{
         flex-wrap: wrap;
     }
-    .home-container2{
-        width: 70%;
+    .home-container2a{
+        width: 100%;
         margin-right: 10px;
         margin-left: -10px;
     }

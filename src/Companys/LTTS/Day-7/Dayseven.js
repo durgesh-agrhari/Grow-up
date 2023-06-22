@@ -7,8 +7,8 @@ const Dayseven = () => {
   return (
     <div className='subb'>
     <Subnav/>
-    <div className='home-container1'>
-      <div className='home-container2'>
+    <div className='home-container1a'>
+      <div className='home-container2a'>
         <h2 className='s'> <u> -: LTTS Day-7 :- </u></h2><br/>
 
         <h3>L1 and L2 Activities :: File Handling</h3><br/><br/>
