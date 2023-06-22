@@ -108,7 +108,8 @@ import Dayseven from './Companys/LTTS/Day-7/Dayseven';
 
 
 
-const TRACKING_ID = "UA-263179101-1"; //
+// const TRACKING_ID = "UA-263179101-1"; //
+const TRACKING_ID = "G-9NXWP75GY5"; //
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
