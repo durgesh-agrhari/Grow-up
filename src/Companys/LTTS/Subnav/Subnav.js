@@ -9,7 +9,7 @@ const Subnav = () => {
     <div className='subnav123'>
         <nav >
             <ul className='home-links'>
-                <li className='tx'>
+                {/* <li className='tx'>
                     <NavLink to='' className={activeLink} > Day-1 </NavLink>
                 </li>
 
@@ -23,7 +23,7 @@ const Subnav = () => {
 
                 <li className='tx'>
                     <NavLink to='' className={activeLink} > Day-4 </NavLink>
-                </li>
+                </li> */}
 
                 <li className='tx'>
                     <NavLink to='/day5' className={activeLink}> Day-5 </NavLink>
