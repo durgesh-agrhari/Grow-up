@@ -26,7 +26,7 @@ const Subnav = () => {
                 </li>
 
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}> Day-5 </NavLink>
+                    <NavLink to='/day5' className={activeLink}> Day-5 </NavLink>
                 </li>
 
                 <li className='tx'>
@@ -34,16 +34,16 @@ const Subnav = () => {
                 </li>
 
                 <li className='tx'>
-                    <NavLink to='' className={activeLink} > Day-7 </NavLink>
+                    <NavLink to='/day7' className={activeLink} > Day-7 </NavLink>
                 </li>
-
+{/* 
                 <li className='tx'>
                     <NavLink to='' className={activeLink}> Day-8 </NavLink>
                 </li>
 
                 <li className='tx'>
                     <NavLink to='' className={activeLink}> Day-9 </NavLink>
-                </li>
+                </li> */}
 
             </ul>
         </nav>

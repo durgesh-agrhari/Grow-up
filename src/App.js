@@ -103,6 +103,8 @@ import H8PascalTriangle from './DSA/4-Pattern/H8PascalTriangle';
 import G7FloydTriangle from './DSA/4-Pattern/G7FloydTriangle';
 import Lttsalla from './Companys/LTTS/Home/Lttsalla';
 import Day6 from './Companys/LTTS/Day-6/Dayall';
+import Dayfive from './Companys/LTTS/Day-5/Dayfive';
+import Dayseven from './Companys/LTTS/Day-7/Dayseven';
 
 
 
@@ -155,6 +157,8 @@ function App() {
 
           {/* Companey pages all in LTTS */}
           <Route path='/day6' element = {<Day6/> }/>
+          <Route path='/day5' element = {<Dayfive/> }/>
+          <Route path='/day7' element = {<Dayseven/> }/>
 
 
           {/* ========== Array Routing ============= */}
