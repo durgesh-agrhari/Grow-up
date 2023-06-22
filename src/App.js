@@ -101,6 +101,10 @@ import E5DiamondPattern from './DSA/4-Pattern/E5DiamondPattern';
 import F6diamondpatternstarsnumbers from './DSA/4-Pattern/F6diamondpatternstarsnumbers';
 import H8PascalTriangle from './DSA/4-Pattern/H8PascalTriangle';
 import G7FloydTriangle from './DSA/4-Pattern/G7FloydTriangle';
+import Lttsalla from './Companys/LTTS/Home/Lttsalla';
+import Day6 from './Companys/LTTS/Day-6/Dayall';
+
+
 
 const TRACKING_ID = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID);
@@ -128,7 +132,7 @@ function App() {
       <Header theme={theme} toggleTheme={toggleTheme} /> 
         <Routes>
 
-          {/* ========= Pagrs ============== */}
+          {/* ========= Pages ============== */}
           <Route path='/' element = {<Homepage/> }/>
           <Route path='/post' element = {<Post /> }/>
           <Route path='/edith' element = {<EditHeader /> }/>
@@ -138,6 +142,8 @@ function App() {
           <Route path='/leedcode-contest-solution' element = {<AAALeedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
+          <Route path='/ltts' element = {<Lttsalla/> }/>
+          
 
           {/* ========== Sub Pages =========== */}
           <Route path='/dataStructure' element = {<DataStructure/> }/>
@@ -147,6 +153,8 @@ function App() {
           <Route path='/home' element = {<Home/> }/>
           <Route path='/scroller' element = {<Scroller/> }/>
 
+          {/* Companey pages all in LTTS */}
+          <Route path='/day6' element = {<Day6/> }/>
 
 
           {/* ========== Array Routing ============= */}
