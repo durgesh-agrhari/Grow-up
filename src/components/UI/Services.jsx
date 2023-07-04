@@ -5,25 +5,25 @@ const serviceData = [
     {
         icon: 'ri-apps-line',
         title: 'DSA Course',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.',
+        desc: 'Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need.',
         link: "https://growupcode.com/array-basic-questions"
     },
     {
         icon: 'ri-code-s-slash-line',
         title: 'Web Deelopment',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.',
+        desc: 'Get access to hand-picked coding interview questions across categories & difficulty levels that will prepare you for every interview you would encounter.',
         link: "https://growupcode.com/web-development"
     },
     {
         icon: 'ri-store-3-line',
         title: 'Job Search',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.',
+        desc: 'Ace the placement interviews by being knowledgeable in all well-known data structures, popular problem-solving methods, and core computer sciences.',
         link: "https://growupcode.com/job-home"
     },
     {
         icon: 'ri-bar-chart-2-line',
         title: 'Video Tutorials',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto nisi veniam, maiores atque.',
+        desc: 'Learn in-depth conceptual overviews, how to approach an algorithm, how to implement it & how to optimize it.Learn new concepts daily & productivity.',
         link: "https://growupcode.com/soon"
     },
 ]

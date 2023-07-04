@@ -11,7 +11,7 @@ const teamMembers = [
         imgUrlc: teamImg3,
         name: 'Durgesh Agrhari ',
         position: 'Content Management at Growup Code',
-        working: 'Work in @Allen (FPN)',
+        working: 'Work in @LTTS (SDE1)',
         socal1:'https://www.linkedin.com/in/durgesh-agrhari-b1a4341b4/',
         // socal2: 'https://twitter.com/DurgeshAgrhari1',
         socal3:'https://www.instagram.com/durgeshagrahari11/',

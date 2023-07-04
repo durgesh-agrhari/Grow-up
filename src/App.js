@@ -105,6 +105,7 @@ import Lttsalla from './Companys/LTTS/Home/Lttsalla';
 import Day6 from './Companys/LTTS/Day-6/Dayall';
 import Dayfive from './Companys/LTTS/Day-5/Dayfive';
 import Dayseven from './Companys/LTTS/Day-7/Dayseven';
+import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
 
 
 
@@ -146,6 +147,7 @@ function App() {
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
           <Route path='/ltts' element = {<Lttsalla/> }/>
+          <Route path='/DSA-Need-And-Clean-SDE-Sheet' element = {<DSAneedandclean/> }/>
           
 
           {/* ========== Sub Pages =========== */}
