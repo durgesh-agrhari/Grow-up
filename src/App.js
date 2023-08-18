@@ -37,7 +37,7 @@ import A0basicinfostring from './DSA/2-String/A0basicinfostring';
 // import Codeforses from './contest/Codeforses';
 // import Leedcode from './contest/Leedcode';
 
-import ReactGA from "react-ga"; // 14.8k (gzipped: 4.9k)
+
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
 import Oops from './core/Oops/Oops';
@@ -106,11 +106,13 @@ import Day6 from './Companys/LTTS/Day-6/Dayall';
 import Dayfive from './Companys/LTTS/Day-5/Dayfive';
 import Dayseven from './Companys/LTTS/Day-7/Dayseven';
 import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
+import Javascript from './web/JavaScript/Javascript';
 
 
-
+import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
 // const TRACKING_ID = "UA-263179101-1"; //
-const TRACKING_ID = "G-9NXWP75GY5"; //
+// const TRACKING_ID = "G-9NXWP75GY5"; //
+const TRACKING_ID = "UA-274550387-1"; 
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
@@ -215,6 +217,7 @@ function App() {
 
           {/* ========== web Development */}
           <Route path='/web-development' element = {<WebDevelopment/> }/>
+          <Route path='/javascript' element = {<Javascript/> }/>
 
           {/* ========= core ========= */}
           <Route path='/oops' element = {<Oops/> }/>

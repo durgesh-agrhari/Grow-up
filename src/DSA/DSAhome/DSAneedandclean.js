@@ -4,7 +4,26 @@ import Subnav from '../Subnav/Subnav'
 import RightSidebar from './RightSidebar/RightSidebar'
 // import RightSidebar from '../../../DSA/1-Array/RightSidebar/RightSidebar'
 
+import { useEffect } from 'react'
+import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
+
+
 const DSAneedandclean = () => {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[]);
+
+  // const foodDetails = (item) => {
+  //   //intrection
+  //   ReactGA.event({
+  //     category: item.name,
+  //     action: "test action",
+  //     label: "test label",
+  //     value: item.price,
+  //   });
+  // }
+
   return (
     <div className='subb'>
     <Subnav/>

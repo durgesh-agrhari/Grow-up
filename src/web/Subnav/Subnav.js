@@ -19,7 +19,7 @@ const Subnav = () => {
                     <NavLink to='' className={activeLink}>CSS </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>JavaScript </NavLink>
+                    <NavLink to='/javascript' className={activeLink}>JavaScript </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='' className={activeLink}>Bootstrap </NavLink>
