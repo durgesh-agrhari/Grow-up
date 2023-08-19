@@ -34,6 +34,17 @@
 .light-theme .pp{
     color: black;
 }
+.url{
+    color:rgb(5, 223, 78);
+    font-size: 20px;
+}
+.ppltts{
+    background-color: #4e4e4e;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: solid 3px green;
+}
 
 
 @media only screen and (max-width: 992px){

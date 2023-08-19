@@ -110,6 +110,7 @@ import Javascript from './web/JavaScript/Javascript';
 
 
 import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
+import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
 const TRACKING_ID1 = "UA-263179101-1"; //
 ReactGA.initialize(TRACKING_ID1);
 const TRACKING_ID2 = "G-9NXWP75GY5"; //
@@ -166,6 +167,7 @@ function App() {
           <Route path='/day6' element = {<Day6/> }/>
           <Route path='/day5' element = {<Dayfive/> }/>
           <Route path='/day7' element = {<Dayseven/> }/>
+          <Route path='/ltts-all-learning-material' element = {<Lttsalllearningmaterial/> }/>
 
 
           {/* ========== Array Routing ============= */}
