@@ -110,10 +110,12 @@ import Javascript from './web/JavaScript/Javascript';
 
 
 import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
-//const TRACKING_ID = "UA-263179101-1"; //
-const TRACKING_ID = "G-9NXWP75GY5"; //
-//const TRACKING_ID = "G-E90DST4HKD"; 
-ReactGA.initialize(TRACKING_ID);
+const TRACKING_ID1 = "UA-263179101-1"; //
+ReactGA.initialize(TRACKING_ID1);
+const TRACKING_ID2 = "G-9NXWP75GY5"; //
+ReactGA.initialize(TRACKING_ID2);
+const TRACKING_ID3 = "G-E90DST4HKD"; 
+ReactGA.initialize(TRACKING_ID3);
 
 function App() {
 
