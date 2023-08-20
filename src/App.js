@@ -107,16 +107,14 @@ import Dayfive from './Companys/LTTS/Day-5/Dayfive';
 import Dayseven from './Companys/LTTS/Day-7/Dayseven';
 import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
 import Javascript from './web/JavaScript/Javascript';
-
-
-import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
 import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
-const TRACKING_ID1 = "UA-263179101-1"; //
-ReactGA.initialize(TRACKING_ID1);
-const TRACKING_ID2 = "G-9NXWP75GY5"; //
-ReactGA.initialize(TRACKING_ID2);
-const TRACKING_ID3 = "G-E90DST4HKD"; 
-ReactGA.initialize(TRACKING_ID3);
+
+
+//import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
+import ReactGA from "react-ga4";
+const TRACKING_ID = "G-PE3WVLWX2S"; //
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(document.location.pathname);
 
 function App() {
 
