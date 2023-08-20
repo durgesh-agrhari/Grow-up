@@ -116,7 +116,6 @@ const TRACKING_ID = "G-PE3WVLWX2S"; //
 ReactGA.initialize(TRACKING_ID);
 ReactGA.pageview(document.location.pathname);
 
-
 function App() {
 
   const [theme, setTheme] = useState('')
