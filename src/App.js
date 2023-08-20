@@ -37,7 +37,7 @@ import A0basicinfostring from './DSA/2-String/A0basicinfostring';
 // import Codeforses from './contest/Codeforses';
 // import Leedcode from './contest/Leedcode';
 
-import ReactGA from "react-ga"; // 14.8k (gzipped: 4.9k)
+
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
 import Oops from './core/Oops/Oops';
@@ -105,11 +105,17 @@ import Lttsalla from './Companys/LTTS/Home/Lttsalla';
 import Day6 from './Companys/LTTS/Day-6/Dayall';
 import Dayfive from './Companys/LTTS/Day-5/Dayfive';
 import Dayseven from './Companys/LTTS/Day-7/Dayseven';
+import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
+import Javascript from './web/JavaScript/Javascript';
+import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
 
 
-
-const TRACKING_ID = "UA-263179101-1"; //
+//import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
+import ReactGA from "react-ga4";
+const TRACKING_ID = "G-PE3WVLWX2S"; //
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(document.location.pathname);
+
 
 function App() {
 
@@ -145,6 +151,7 @@ function App() {
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
           <Route path='/ltts' element = {<Lttsalla/> }/>
+          <Route path='/DSA-Need-And-Clean-SDE-Sheet' element = {<DSAneedandclean/> }/>
           
 
           {/* ========== Sub Pages =========== */}
@@ -159,6 +166,7 @@ function App() {
           <Route path='/day6' element = {<Day6/> }/>
           <Route path='/day5' element = {<Dayfive/> }/>
           <Route path='/day7' element = {<Dayseven/> }/>
+          <Route path='/ltts-all-learning-material' element = {<Lttsalllearningmaterial/> }/>
 
 
           {/* ========== Array Routing ============= */}
@@ -212,6 +220,7 @@ function App() {
 
           {/* ========== web Development */}
           <Route path='/web-development' element = {<WebDevelopment/> }/>
+          <Route path='/javascript' element = {<Javascript/> }/>
 
           {/* ========= core ========= */}
           <Route path='/oops' element = {<Oops/> }/>

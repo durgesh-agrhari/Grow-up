@@ -11,7 +11,7 @@ const Lttsalla = () => {
       <div className='home-container2'>
         <h2 className='s'> <u> -: LTTS all learning model and all tasl updated :- </u></h2>
         <h3>Codeforses Contest Solution Comming soon</h3><br/>
-        <p className='pp'></p>Codeforses Contest sSolution Comming soon<br/>
+        <p className='pp'></p>Codeforses gdsjfk Contest sSolution Comming soon<br/>
 
       </div>
       <RightSidebar/>

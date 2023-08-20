@@ -10,8 +10,10 @@ const Dayfore = () => {
     <div className='home-container1'>
       <div className='home-container2'>
         <h2 className='s'> <u> -: LTTS Day-4 :- </u></h2>
+
         <h3>Codeforses Contest Solution Comming soon</h3><br/>
-        <p className='pp'></p>Codeforses Contest sSolution Comming soon<br/>
+        <h3></h3>
+        <p className='pp'></p>Codeforses Contests sSolution Comming soon<br/>
 
       </div>
       <RightSidebar/>

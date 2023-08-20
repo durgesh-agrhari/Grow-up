@@ -40,7 +40,7 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/' className='menu__link' activeClassName='navactive'  >Home</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/array-basic-questions' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
+                            <li className='menu__item'><NavLink to='/DSA-Need-And-Clean-SDE-Sheet' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/ltts' className='menu__link' activeClassName='navactive'>LTTS</NavLink></li>
 
