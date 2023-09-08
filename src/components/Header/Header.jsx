@@ -38,23 +38,23 @@ const Header = ({ theme, toggleTheme }) => {
                 <div className='navigation' ref={menuRef} onClick={toggleMenu}>
                     <ul className='menu'>
 
-                            <li className='menu__item'><NavLink to='/' className='menu__link' activeClassName='navactive'  >Home</NavLink></li>
+                            <li className='menu__item'><NavLink to='/' className='menu__link' activeclassname='navactive'  >Home</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/DSA-Need-And-Clean-SDE-Sheet' className='menu__link' activeClassName='navactive'>DSA</NavLink></li>
+                            <li className='menu__item'><NavLink to='/DSA-Need-And-Clean-SDE-Sheet' className='menu__link' activeclassname='navactive'>DSA</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/ltts' className='menu__link' activeClassName='navactive'>LTTS</NavLink></li>
+                            <li className='menu__item'><NavLink to='/ltts' className='menu__link' activeclassname='navactive'>LTTS</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeClassName='navactive'>Web</NavLink></li>
+                            <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeclassname='navactive'>Web</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/codechef-contest-solution' className='menu__link' activeClassName='navactive'>Contest</NavLink></li>
+                            <li className='menu__item'><NavLink to='/codechef-contest-solution' className='menu__link' activeclassname='navactive'>Contest</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeClassName='navactive'>Job</NavLink></li>
+                            <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeclassname='navactive'>Job</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/oops' className='menu__link' activeClassName='navactive'>Core</NavLink></li>
+                            <li className='menu__item'><NavLink to='/oops' className='menu__link' activeclassname='navactive'>Core</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeClassName='navactive'>Tutorials</NavLink></li>
+                            <li className='menu__item'><NavLink to='/soon' className='menu__link' activeclassname='navactive'>Tutorials</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/explore' className='menu__link' activeClassName='navactive'>Explore</NavLink></li>
+                            <li className='menu__item'><NavLink to='/explore' className='menu__link' activeclassname='navactive'>Explore</NavLink></li>
                     </ul> 
                 </div>
 
