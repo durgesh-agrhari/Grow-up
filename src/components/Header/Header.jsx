@@ -42,7 +42,7 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/DSA-Need-And-Clean-SDE-Sheet' className='menu__link' activeclassname='navactive'>DSA</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/ltts' className='menu__link' activeclassname='navactive'>LTTS</NavLink></li>
+                            {/* <li className='menu__item'><NavLink to='/ltts' className='menu__link' activeclassname='navactive'>LTTS</NavLink></li> */}
 
                             <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeclassname='navactive'>Web</NavLink></li>
 
