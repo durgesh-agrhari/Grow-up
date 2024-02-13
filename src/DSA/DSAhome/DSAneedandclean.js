@@ -11,6 +11,7 @@ import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
 const DSAneedandclean = () => {
 
   useEffect(() => {
+    window.scrollTo(0,0)
     ReactGA.pageview(window.location.pathname);
   },[]);
 
