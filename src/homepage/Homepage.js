@@ -15,8 +15,9 @@ const Homepage = () => {
   // const toggleTheme = () => {
   //   theme === '' ? setTheme('light-theme') : setTheme('')
   // }
-
+  
   useEffect(() => {
+    window.scrollTo(0,0)
     document.body.className = theme
   }, [theme])
 

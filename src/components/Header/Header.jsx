@@ -17,8 +17,8 @@ const Header = ({ theme, toggleTheme }) => {
             headerRef.current.classList.remove('header__shrink')
         }
     }
-
     useEffect(() => {
+        window.scrollTo(0,0)
         window.addEventListener('scroll', headerFunc)
 
         return ()=> window.removeEventListener('scroll', headerFunc)

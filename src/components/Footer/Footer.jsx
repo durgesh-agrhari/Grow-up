@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import Newsletter from '../UI/Newsletter'
+import { useEffect } from 'react'
 
 const quickLinks01 = [
     {
@@ -49,6 +50,10 @@ const quickLinks03 = [
 const Footer = () => {
 
     const Year = new Date().getFullYear()
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      },[]);
 
     const newTab=url=>{
         window.open(url)
