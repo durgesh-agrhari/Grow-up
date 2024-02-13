@@ -1,11 +1,17 @@
 import React from 'react'
 import "../../style/Hero.css"
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import heroDarkImg from '../../images/hero-img.png'
 import lightImg from "../../images/light-hero-bg.jpg"
 
 const Hero = ({theme}) => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
+
   return (
     <section className='hero__section'>
         <div className='container'>

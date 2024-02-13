@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../style/counter.css"
+import { useEffect } from 'react'
 
 const counterData=[
     {
@@ -19,6 +20,10 @@ const counterData=[
         text: 'Happy'
     },
 ]
+
+useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
 const Counter = () => {
   return (

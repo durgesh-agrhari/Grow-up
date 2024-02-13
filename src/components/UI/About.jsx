@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../style/about.css'
+import { useEffect } from 'react'
 
 import aboutImg from "../../images/about-us.jpg"
 
@@ -21,7 +22,12 @@ const chooseData = [
   },  
 ]
 
+
+
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
   return (
     <section id='about'>
         <div className='container'>

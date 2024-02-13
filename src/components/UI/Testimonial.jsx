@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../style/testimonial.css"
+import { useEffect } from 'react'
 
 import Slider from 'react-slick'
 
@@ -19,7 +20,9 @@ const Testimonial = () => {
         slidesToScroll:1,
         swipeToSlide:true,
     };
-
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
   return (
     <section>
         <div className="container">

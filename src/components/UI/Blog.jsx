@@ -3,6 +3,7 @@ import "../../style/blog.css"
 import videoImg from "../../images/video.png"
 import articleImg from "../../images/article.png"
 import caseStudy from "../../images/case-study.png"
+import { useEffect } from 'react'
 
 const blogData = [
     {
@@ -26,6 +27,11 @@ const blogData = [
 ]
 
 const Blog = () => {
+    
+useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <section id='blog' className='blog'>
         <div className="container">

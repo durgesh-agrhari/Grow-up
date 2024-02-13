@@ -1,6 +1,10 @@
 import React from 'react'
 import "../../style/newsletter.css"
+import { useEffect } from 'react'
 const Newsletter = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
   return (
     <section className='newsletter'>
         <div className="container">

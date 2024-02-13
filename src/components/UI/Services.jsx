@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../style/services.css"
+import { useEffect } from 'react'
 
 const serviceData = [
     {
@@ -29,6 +30,9 @@ const serviceData = [
 ]
 
 const Services = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
   return (
     <section className='service' id='service'>
         <div className='container'>
