@@ -46,7 +46,7 @@ const Header = ({ theme, toggleTheme }) => {
 
                             <li className='menu__item'><NavLink to='/web-development' className='menu__link' activeclassname='navactive'>Web</NavLink></li>
 
-                            <li className='menu__item'><NavLink to='/codechef-contest-solution' className='menu__link' activeclassname='navactive'>Contest</NavLink></li>
+                            {/* <li className='menu__item'><NavLink to='/codechef-contest-solution' className='menu__link' activeclassname='navactive'>Contest</NavLink></li> */}
 
                             <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeclassname='navactive'>Job</NavLink></li>
 

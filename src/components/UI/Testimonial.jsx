@@ -33,21 +33,21 @@ const Testimonial = () => {
             <div className="slider__wrapper">
                 <Slider {...settings}>
                     <div className='slider__item'>
-                        <p className="discription1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aperiam neque. Enim dignissimos animi molestiae blanditiis tenetur accusamus in ratione distinctio libero commodi. Ipsam hic perferendis est placeat nulla sequi distinctio ratione totam Explicabo porro quia autem quos eaque.</p>
+                        <p className="discription1">Best DSA paid Course one could ever come across online. Affordable but got delivered more than that what it costed. Variety of question top notch Definitely better than those costing 20-25 K.</p>
 
                         <div className="customer__details">
                             <div className="customer__img">
                                 <img src={ava01} alt="testimonial" />
                             </div>
                             <div>
-                                <h5 className='customer__name'>Durgesh Agrhari</h5>
-                                <p className="discription">CEO, Workcreation</p>
+                                <h5 className='customer__name'>Aprub Goyal</h5>
+                                <p className="discription">CS Branch</p>
                             </div>
                         </div>
                     </div>
 
                     <div className='slider__item'>
-                        <p className="discription1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aperiam neque. Enim dignissimos animi molestiae blanditiis tenetur accusamus in ratione distinctio libero commodi. Ipsam hic perferendis est placeat nulla sequi distinctio ratione totam Explicabo porro quia autem quos eaque.</p>
+                        <p className="discription1">This was the best, course I ever completed. You won't believe I'm graduating from BBA, but his teaching made me start loving coding. Now just because of this course I am looking for a job in IT.</p>
 
                         <div className="customer__details">
                             <div className="customer__img">
@@ -55,21 +55,21 @@ const Testimonial = () => {
                             </div>
                             <div>
                                 <h5 className='customer__name'>Riya viakal </h5>
-                                <p className="discription">Directer, Manage and menter</p>
+                                <p className="discription">IT Branch</p>
                             </div>
                         </div>
                     </div>
 
                     <div className='slider__item'>
-                        <p className="discription1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aperiam neque. Enim dignissimos animi molestiae blanditiis tenetur accusamus in ratione distinctio libero commodi. Ipsam hic perferendis est placeat nulla sequi distinctio ratione totam Explicabo porro quia autem quos eaque.</p>
+                        <p className="discription1">Growup Code played a very important role during my placement session. All the lectures of placement related subjects like DSA OS, DBMS were available there.</p>
 
                         <div className="customer__details">
                             <div className="customer__img">
                                 <img src={ava03} alt="testimonial" />
                             </div>
                             <div>
-                                <h5 className='customer__name'>Himanshu sir</h5>
-                                <p className="discription">Manager, Project Leed</p>
+                                <h5 className='customer__name'>Rohan Goyal</h5>
+                                <p className="discription">CSE Brnach</p>
                             </div>
                         </div>
                     </div>

@@ -8,17 +8,17 @@ const chooseData = [
   {
     icon: 'ri-wifi-line',
     title: 'First working process',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur exercitationem earum? Cum omnis, libero molestias tempore totam officiis eaque?'
+    desc: 'Making learning easier and more convenient for you. Data Structure. Data structures are the problem - solving pillars of coding.'
   },
   {
     icon: 'ri-team-line',
     title: 'Discovered team',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur exercitationem earum? Cum omnis, libero molestias tempore totam officiis eaque?'
+    desc: 'Discovered team is a dynamic group of skilled professionals dedicated to uncovering innovative solutions for our clients.'
   },
   {
     icon: 'ri-time-line',
     title: '24/7 times access',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur exercitationem earum? Cum omnis, libero molestias tempore totam officiis eaque?'
+    desc: 'Enjoy round-the-clock access with our 24/7 service, ensuring convenience and support whenever you need it.'
   },  
 ]
 

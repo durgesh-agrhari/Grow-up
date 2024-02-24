@@ -21,11 +21,12 @@ const counterData=[
     },
 ]
 
-useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+
 
 const Counter = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
   return (
     <section className='counter' id='projects'>
         <div className='container'>
