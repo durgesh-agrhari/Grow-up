@@ -110,8 +110,13 @@ import Javascript from './web/JavaScript/Javascript';
 import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
 
 
+
 //import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
 import ReactGA from "react-ga4";
+
+import A1StackinSTL from './DSA/7-Stack/A1StackinSTL';
+
+
 const TRACKING_ID = "G-PE3WVLWX2S"; //
 ReactGA.initialize(TRACKING_ID);
 // ReactGA.pageview(document.location.pathname);
@@ -255,6 +260,7 @@ function App() {
 
           {/* ========== Stack Que ========= */}
           <Route path='/stack-basic-questions' element = {<A0basicinfostack/> }/>
+          <Route path='/Stack-in-STL' element = {<A1StackinSTL/> }/>
 
           {/* ========== Queue Que ========= */}
           <Route path='/queue-basic-questions' element = {<A0basicinfoqueue/> }/>

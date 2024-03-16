@@ -1,34 +1,27 @@
-Rreverse array element in cpp
+Stack in C++ STL implementation.
+
 
 <Code language="cpp">
-// C++ program to implement reverse array element.
+// C++ program to implement stack in C++.
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
+int main() {
+    stack int stack;
+    stack.push(21); // The values pushed in the stack should be of the same data which is written during declaration of stack
+    stack.push(22);
+    stack.push(24);
+    stack.push(25);
+    int num=0;
+      stack.push(num);
+    stack.pop();
+    stack.pop();
+      stack.pop();
+   
+    while(stack.empty()) {
+        cout << stack.top() <<" ";
+        stack.pop();
     }
-
-    int a = 0, b = n - 1;
-    while (a < b)
-    {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-        a++;
-        b--;
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    return 0;
 }
 
 </Code>

@@ -19,8 +19,8 @@ const Leftsidebar = () => {
                 <p className='active1'>0: Basic Stack</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Stack Operations</p>
+            <NavLink to='/Stack-in-STL' className='side-nav-links' activeClassName='active'>
+                <p className='active1' >1: Stack in C++ STL</p>
             </NavLink> 
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>

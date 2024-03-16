@@ -16,7 +16,9 @@ const RightSidebar = () => {
     <div className='right-sidebar'>
 
 <div className='widget'>
-        <h4 className='pp'>The Growup Code</h4>
+        
+<h4 className='pp'>Growup Code</h4>
+        
         <div className='right-sidebar-div-1'>
             <div className='right-sidebar-div-2'>
                 <img src={pen} alt='Pen' width='18' className='iconrr' />
@@ -38,7 +40,7 @@ const RightSidebar = () => {
             </div>
             <div className='right-sidebar-div-2'>
                 <img src={comment} alt='Pen' width='18' className='iconrr' />
-                <p className='pp'>Easy way to learn os and dbms </p>
+                <p className='pp'>Easy way to learn OS, DBMS, CN and Mysql </p>
             </div>
             <div className='right-sidebar-div-2'>
                 <img src={logo} alt='Pen' width='18' />
@@ -50,7 +52,7 @@ const RightSidebar = () => {
         <div className='right-sidebar-div-1'>
             <div className='right-sidebar-div-2'>
                 <p>10</p>
-                <p className='pp'>Zero to hero DSA Course</p>
+                <p className='pp'>Zero to hero DSA Course for beginners and advance also</p>
             </div>
             <div className='right-sidebar-div-2'>
                 <p>20</p>
@@ -61,6 +63,7 @@ const RightSidebar = () => {
                 <p className='pp'>Best Explore Ai and new technology</p>
             </div>  
         </div>
+
 
 
         {/* //tages all */}
