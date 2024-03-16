@@ -13,16 +13,16 @@ const Subnav = () => {
                     <NavLink to='/oops' className={activeLink} >Oops</NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Computer Network </NavLink>
+                    <NavLink to='/Basic-Computer-Network' className={activeLink}>Computer Network </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Operating system </NavLink>
+                    <NavLink to='/Operating-System-Basic-questions' className={activeLink}>Operating system </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>DBMS </NavLink>
+                    <NavLink to='/DBMS-Basic-questions' className={activeLink}>DBMS </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>MySqul </NavLink>
+                    <NavLink to='/Mysql-Basic-questions' className={activeLink}>MySqul </NavLink>
                 </li>
             </ul>
         </nav>

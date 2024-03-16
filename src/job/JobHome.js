@@ -30,8 +30,8 @@ const JobHome = () => {
     <section className='service' id='service'>
         <div className='container'>
             <div className='service__top-content'>
-                <h6 className='subtitle'> Jobs IT/CSE/CEO </h6>
-                <h2>Save time manage your coding skills with</h2>
+                <h6 className='subtitle'> Jobs IT/CSE/CEO/CSIT/EC </h6>
+                <h2>Save time manage your coding skills with Growup Code</h2>
                 <h2 className='highlight'> Comming Soon </h2>
             </div>
 

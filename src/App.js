@@ -40,7 +40,6 @@ import A0basicinfostring from './DSA/2-String/A0basicinfostring';
 
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
-import Oops from './core/Oops/Oops';
 import Explore from './explore/Explore';
 import Sidenav from './tutorials/Sidenav/Sidenav'
 import Video from './tutorials/Video/Video';
@@ -115,6 +114,19 @@ import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/
 import ReactGA from "react-ga4";
 
 import A1StackinSTL from './DSA/7-Stack/A1StackinSTL';
+import B2StackUsingCpp from './DSA/7-Stack/B2StackUsingCpp';
+import A0Oops from './core/Oops/A0Oops';
+import A1OopsPiller from './core/Oops/A1OopsPiller';
+import A2IMPOOps from './core/Oops/A2IMPOOps';
+import A3OopsImpQue from './core/Oops/A3OopsImpQue';
+import A0Basiccn from './core/Cn/A0Basiccn';
+import A1ImpCnQue from './core/Cn/A1ImpCnQue';
+import A0OsBasic from './core/OperatingSystem/A0OsBasic';
+import A1ImpOsQuestoins from './core/OperatingSystem/A1ImpOsQuestoins';
+import A0DBMSBasic from './core/Dbms/A0DBMSBasic';
+import A1ImpDBMSQuestoins from './core/Dbms/A1ImpDBMSQuestoins';
+import A0Mysql from './core/Mysql/A0Mysql';
+import A1ImpMysqlQuestoins from './core/Mysql/A1ImpMysqlQuestoins';
 
 
 const TRACKING_ID = "G-PE3WVLWX2S"; //
@@ -227,7 +239,22 @@ function App() {
           <Route path='/javascript' element = {<Javascript/> }/>
 
           {/* ========= core ========= */}
-          <Route path='/oops' element = {<Oops/> }/>
+          <Route path='/oops' element = {<A0Oops/> }/>
+          <Route path='/OopsPillars' element = {<A1OopsPiller/> }/>
+          <Route path='/Implementation-of-oops' element = {<A2IMPOOps/> }/>
+          <Route path='/Top-20-Oops-Importent-Questions' element = {<A3OopsImpQue/> }/>
+
+          <Route path='/Basic-Computer-Network' element = {<A0Basiccn/> }/>
+          <Route path='/Computer-Network-Importent-interview-Questions' element = {<A1ImpCnQue/> }/>
+
+          <Route path='/Operating-System-Basic-questions' element = {<A0OsBasic/> }/>
+          <Route path='/Importent-Operating-System-questions' element = {<A1ImpOsQuestoins/> }/>
+
+          <Route path='/DBMS-Basic-questions' element = {<A0DBMSBasic/> }/>
+          <Route path='/DBMS-Importent-questions' element = {<A1ImpDBMSQuestoins/> }/>
+
+          <Route path='/Mysql-Basic-questions' element = {<A0Mysql/> }/>
+          <Route path='/Mysql-Importent-questions' element = {<A1ImpMysqlQuestoins/> }/>
 
           {/* ========== Pattern que ========= */}
           <Route path='/pattern-basic-questions' element = {<A0basicinfopattern/> }/>
@@ -261,6 +288,8 @@ function App() {
           {/* ========== Stack Que ========= */}
           <Route path='/stack-basic-questions' element = {<A0basicinfostack/> }/>
           <Route path='/Stack-in-STL' element = {<A1StackinSTL/> }/>
+          <Route path='/Stack-in-STL' element = {<B2StackUsingCpp/> }/>
+
 
           {/* ========== Queue Que ========= */}
           <Route path='/queue-basic-questions' element = {<A0basicinfoqueue/> }/>

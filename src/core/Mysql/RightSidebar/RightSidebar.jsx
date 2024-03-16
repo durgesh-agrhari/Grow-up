@@ -1,7 +1,5 @@
 import React from 'react'
 import './RightSidebar.css'
-
-
 // import pen from '../../assets/pen-solid.svg'
 // import comment from '../../assets/message-solid.svg'
 // import logo from '../../assets/logo.png'
@@ -18,7 +16,7 @@ const RightSidebar = () => {
     <div className='right-sidebar'>
 
 <div className='widget'>
-       
+      
 <h4 className='pp'>Growup Code</h4>
         
         <div className='right-sidebar-div-1'>
@@ -84,6 +82,5 @@ const RightSidebar = () => {
     </div>
   )
 }
-
 
 export default RightSidebar

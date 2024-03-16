@@ -9,9 +9,9 @@ const Subnav = () => {
     <div className='subnav123'>
         <nav >
             <ul className='home-links'>
-                <li className='tx'>
+                {/* <li className='tx'>
                     <NavLink to='/web-development' className={activeLink} >Web-Development</NavLink>
-                </li>
+                </li> */}
                 <li className='tx'>
                     <NavLink to='' className={activeLink}>HTML </NavLink>
                 </li>

@@ -8,23 +8,23 @@ const Leftsidebar = () => {
   return (
     <div className='left-sidebsr' >
         <nav className='side-nav' >
-        <NavLink to='' className='side-nav-links' activeClassName='active'>
+        <NavLink to='/oops' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>0: OOPS Que</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Comming Soon</p>
+            <NavLink to='/OopsPillars' className='side-nav-links' activeClassName='active'>
+                <p className='active1' >1: Oops Pillars</p>
             </NavLink> 
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>2:  Comming Soon </p>
+            <NavLink to='/Implementation-of-oops' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>2: Implementation of oops </p>
             </NavLink>           
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1'>3:  Comming Soon</p>
+            <NavLink to='/Top-20-Oops-Importent-Questions' className='side-nav-links' activeClassName='active'>
+                <p className='active1'>3: Oops Importent Questions</p>
             </NavLink>
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
+            {/* <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>4:  Comming Soon</p>
             </NavLink>
 
@@ -54,10 +54,16 @@ const Leftsidebar = () => {
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>11: Comming Soon </p>
-            </NavLink>
+            </NavLink> */}
         </nav>
     </div>
   )
 }
 
 export default Leftsidebar
+
+
+
+
+
+
