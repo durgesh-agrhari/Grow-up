@@ -51,6 +51,7 @@ const Header = ({ theme, toggleTheme }) => {
                             <li className='menu__item'><NavLink to='/job-home' className='menu__link' activeclassname='navactive'>Job</NavLink></li>
 
                             <li className='menu__item'><NavLink to='/oops' className='menu__link' activeclassname='navactive'>Core</NavLink></li>
+                            <li className='menu__item'><NavLink to='/Best-AI-Tools-For-Coding-And-All' className='menu__link' activeclassname='navactive'>AI Tool</NavLink></li>
 
                             {/* <li className='menu__item'><NavLink to='/' className='menu__link' activeclassname='navactive'>AI</NavLink></li> */}
 

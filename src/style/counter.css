@@ -1,4 +1,4 @@
-.counter{
+    .counter{
     /* background: var(--card-bg); */
     background: var(--icon-bg);
 }
@@ -42,12 +42,18 @@
 }
 
 @media only screen and (max-width: 768px){
+    .counter__wrapper{
+        flex-direction: column;
+    }
     .counter__number{
         font-size: 1.5rem;
     }
     .counter__title{
         font-size: 1rem;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
+    }
+    .counter__item{
+        width: 50%;
     }
 }
 
@@ -55,7 +61,15 @@
     .counter__wrapper{
         flex-direction: column;
     }
-    .counter__item{
-        width: 100%;
+    .counter__number{
+        font-size: 1.5rem;
     }
+    .counter__title{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .counter__item{
+        width: 50%;
+    }
+
 }

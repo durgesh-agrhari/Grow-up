@@ -132,6 +132,13 @@ import A0Css from './web/Css/A0Css';
 import A1ImpCssQuestoins from './web/Css/A1ImpCssQuestoins';
 import A1ImpHtmlQuestoins from './web/Html/A1ImpHtmlQuestoins';
 import A0Bootstrap from './web/Bootstrap/A0Bootstrap';
+import A0Reactjs from './web/ReactJs/A0Reactjs';
+import A1ImpReactjasQuestoins from './web/ReactJs/A1ImpReactjasQuestoins';
+import A0Nodejs from './web/NodeJs/A0Nodejs';
+import A0ExpressJs from './web/ExpressJs/A0ExpressJs';
+import A0MongoDB from './web/MongoDB/A0MongoDB';
+import A0Redux from './web/Redux/A0Redux';
+import AIPopularTools from './AI-Tools/AIPopularTools';
 
 
 const TRACKING_ID = "G-PE3WVLWX2S"; //
@@ -250,6 +257,26 @@ function App() {
           <Route path='/Css-Importent-Questoins' element = {<A1ImpCssQuestoins/> }/>
 
           <Route path='/Bootstrap-Basic-Concept' element = {<A0Bootstrap/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/Reactjs-Basic-Concept' element = {<A0Reactjs/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/Nodejs-Basic-Concept' element = {<A0Nodejs/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/ExpressJs-Basic-Concept' element = {<A0ExpressJs/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/Mongodb-Basic-Concept' element = {<A0MongoDB/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/Redux-Basic-Concept' element = {<A0Redux/> }/>
+          <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          
+          {/* ========= AI TOOLS ========= */}
+          <Route path='/Best-AI-Tools-For-Coding-And-All' element = {<AIPopularTools/> }/>
 
           
 

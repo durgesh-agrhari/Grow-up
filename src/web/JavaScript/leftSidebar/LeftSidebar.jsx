@@ -20,10 +20,10 @@ const Leftsidebar = () => {
             </NavLink>
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
-                <p className='active1' >1: Comming Soon</p>
+                <p className='active1' >1: JavaScript Importent questions</p>
             </NavLink> 
 
-            <NavLink to='' className='side-nav-links' activeClassName='active'>
+            {/* <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>2: Comming Soon</p>
             </NavLink>           
 
@@ -37,10 +37,7 @@ const Leftsidebar = () => {
 
             <NavLink to='' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>5: Comming Soon</p>
-            </NavLink>
-
-
-
+            </NavLink> */}
         </nav>
     </div>
   )

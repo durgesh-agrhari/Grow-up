@@ -25,19 +25,19 @@ const Subnav = () => {
                     <NavLink to='/Bootstrap-Basic-Concept' className={activeLink}>Bootstrap </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>ReactJs </NavLink>
+                    <NavLink to='/Reactjs-Basic-Concept' className={activeLink}>ReactJs </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>NodeJs </NavLink>
+                    <NavLink to='/Nodejs-Basic-Concept' className={activeLink}>NodeJs </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Express </NavLink>
+                    <NavLink to='/ExpressJs-Basic-Concept' className={activeLink}>Express </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>MongoDB </NavLink>
+                    <NavLink to='/Mongodb-Basic-Concept' className={activeLink}>MongoDB </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Redux </NavLink>
+                    <NavLink to='/Redux-Basic-Concept' className={activeLink}>Redux </NavLink>
                 </li>
             </ul>
         </nav>
