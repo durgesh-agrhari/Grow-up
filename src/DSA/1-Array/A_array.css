@@ -142,6 +142,7 @@ table {
 
   .active-tabs{
     background: wheat;
+    color: black;
     border-bottom: 1px solid transparent;
   }
 

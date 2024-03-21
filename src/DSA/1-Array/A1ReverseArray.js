@@ -49,15 +49,15 @@ const A1ReverseArray = () => {
 
               <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                 onClick={() => toggleTab(1)}
-              >Tab 1</div>
+              ><b>C++</b></div>
 
               <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                 onClick={() => toggleTab(2)}
-              >Tab 2</div>
+              ><b>Java</b></div>
 
               <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                 onClick={() => toggleTab(3)}
-              >Tab 3</div>
+              ><b>Python</b></div>
 
             </div>
 
@@ -65,21 +65,22 @@ const A1ReverseArray = () => {
               <div className={toggleState === 1 ? "content active-content" : "content"}>
                 <h3>Content 1</h3>
                 <hr />
-                <p>Array reverse or reverse a array means changing the position of each number.</p>
+                {/* <p>Array reverse or reverse a array means changing the position of each number.</p> */}
                 <Post1 />
               </div>
 
               <div className={toggleState === 2 ? "content active-content" : "content"}>
                 <h3>Content 2</h3>
                 <hr />
-                <p>Array reverse or reverse a array means changing the position of each number.</p>
+                {/* <p>Array reverse or reverse a array means changing the position of each number.</p> */}
                 <Post1 />
               </div>
 
               <div className={toggleState === 3 ? "content active-content" : "content"}>
                 <h3>Content 3</h3>
                 <hr />
-                <p>Array reverse or reverse a array means changing the position of each number.</p>
+                {/* <p>Array reverse or reverse a array means changing the position of each number.</p> */}
+                <Post1/>
               </div>
 
             </div>

@@ -127,6 +127,11 @@ import A0DBMSBasic from './core/Dbms/A0DBMSBasic';
 import A1ImpDBMSQuestoins from './core/Dbms/A1ImpDBMSQuestoins';
 import A0Mysql from './core/Mysql/A0Mysql';
 import A1ImpMysqlQuestoins from './core/Mysql/A1ImpMysqlQuestoins';
+import A0Html from './web/Html/A0Html';
+import A0Css from './web/Css/A0Css';
+import A1ImpCssQuestoins from './web/Css/A1ImpCssQuestoins';
+import A1ImpHtmlQuestoins from './web/Html/A1ImpHtmlQuestoins';
+import A0Bootstrap from './web/Bootstrap/A0Bootstrap';
 
 
 const TRACKING_ID = "G-PE3WVLWX2S"; //
@@ -237,6 +242,16 @@ function App() {
           {/* ========== web Development */}
           <Route path='/web-development' element = {<WebDevelopment/> }/>
           <Route path='/javascript' element = {<Javascript/> }/>
+
+          <Route path='/html-basic' element = {<A0Html/> }/>
+          <Route path='/Importent-html-basic-questions' element = {<A1ImpHtmlQuestoins/> }/>
+          
+          <Route path='/css-basic' element = {<A0Css/> }/>
+          <Route path='/Css-Importent-Questoins' element = {<A1ImpCssQuestoins/> }/>
+
+          <Route path='/Bootstrap-Basic-Concept' element = {<A0Bootstrap/> }/>
+
+          
 
           {/* ========= core ========= */}
           <Route path='/oops' element = {<A0Oops/> }/>

@@ -13,16 +13,16 @@ const Subnav = () => {
                     <NavLink to='/web-development' className={activeLink} >Web-Development</NavLink>
                 </li> */}
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>HTML </NavLink>
+                    <NavLink to='/html-basic' className={activeLink}>HTML </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>CSS </NavLink>
+                    <NavLink to='/css-basic' className={activeLink}>CSS </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='/javascript' className={activeLink}>JavaScript </NavLink>
                 </li>
                 <li className='tx'>
-                    <NavLink to='' className={activeLink}>Bootstrap </NavLink>
+                    <NavLink to='/Bootstrap-Basic-Concept' className={activeLink}>Bootstrap </NavLink>
                 </li>
                 <li className='tx'>
                     <NavLink to='' className={activeLink}>ReactJs </NavLink>
