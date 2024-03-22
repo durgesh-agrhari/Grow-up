@@ -1,27 +1,27 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './LeftSidebar.css'
-// import './Style.css'
-// import '../../../components/Header/Style.css'
-//import {Link } from 'react-router-dom'
+import './Style.css'
+import '../../../components/Header/Style.css'
+// import {Link } from 'react-router-dom'
 
-//import "../../../components/header/Header.scss"
-//const activeLink = ({isActive}) => (isActive ? "active" : "");
+import "../../../components/header/Header.scss"
+const activeLink = ({isActive}) => (isActive ? "active" : "");
 
 const Leftsidebar = () => {
 
-    const arr = [
-        {
-            url: "/array-basic-questions",
-            content: "0: Basic Array"
-        },
-        {
-            url: "/reverseelementinanarray",
-            content: "1: Reverse element in an array"
-        },
+    // const arr = [
+    //     {
+    //         url: "/array-basic-questions",
+    //         content: "0: Basic Array"
+    //     },
+    //     {
+    //         url: "/reverseelementinanarray",
+    //         content: "1: Reverse element in an array"
+    //     },
 
-    ]
+    // ]
 
     return (
         <div className='' >
