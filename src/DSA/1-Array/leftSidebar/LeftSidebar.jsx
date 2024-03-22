@@ -7,7 +7,7 @@ import './LeftSidebar.css'
 // import {Link } from 'react-router-dom'
 
 // import "../../../components/header/Header.scss"
-const activeLink = ({isActive}) => (isActive ? "active" : "");
+// const activeLink = ({isActive}) => (isActive ? "active" : "");
 
 const Leftsidebar = () => {
 

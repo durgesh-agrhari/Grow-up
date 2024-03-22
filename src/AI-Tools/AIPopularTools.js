@@ -1,5 +1,4 @@
 import React from 'react'
-// import "../../style/services.css"
 import "./ai.css"
 import { Helmet } from 'react-helmet-async'
 
@@ -68,7 +67,6 @@ const AIPopularTools = () => {
     return (
 
         <div>
-             {/* import { Helmet } from 'react-helmet-async' */}
       <Helmet>
         <title>Top 10 Ai Tool coding skills</title>
         <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>
@@ -172,9 +170,6 @@ const AIPopularTools = () => {
                 </a>
                 </div>
             </div>
-
-                
-
 
             </div>
         </section>
