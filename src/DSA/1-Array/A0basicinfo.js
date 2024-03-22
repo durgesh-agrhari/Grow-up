@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet-async'
 const A0basicinfo = () => {
   return (
     <div className='subb'>
+      {/* import { Helmet } from 'react-helmet-async' */}
       <Helmet>
         <title>Array Basic Questions</title>
         <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>

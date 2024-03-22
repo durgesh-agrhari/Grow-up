@@ -11,18 +11,38 @@ import './LeftSidebar.css'
 
 const Leftsidebar = () => {
 
-  return (
-    <div className='left-sidebsr' >
-        <nav className='side-nav' >
-            
-            <NavLink to='/array-basic-questions' className='side-nav-links' activeClassName='active'>
+    const arr = [
+        {
+            url: "/array-basic-questions",
+            content: "0: Basic Array"
+        },
+        {
+            url: "/reverseelementinanarray",
+            content: "1: Reverse element in an array"
+        },
+
+    ]
+
+    return (
+        <div className='' >
+            <nav className='' >
+
+                {/* {arr.map((item, index) => (
+                    <NavLink key={index} to={item.url} className='side-nav-links' 
+                    activeClassName='active'
+                    >
+                        <p className='active1'>{item.content}</p>
+                    </NavLink>
+                ))} */}
+
+                <NavLink to='/array-basic-questions' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>0: Basic Array</p>
             </NavLink>
 
             <NavLink to='/reverseelementinanarray' className='side-nav-links' activeClassName='active'>
                 <p className='active1' >1: Reverse element in an array</p>
             </NavLink> 
-
+                
             <NavLink to='/bublicateselement' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>2: Dublicate element in an array</p>
             </NavLink>           
@@ -102,14 +122,14 @@ const Leftsidebar = () => {
             <NavLink to='/majorityelement' className='side-nav-links' activeClassName='active'>
                 <p className='active1'>21: Majority element in an array</p>
             </NavLink>
-        </nav>
+            </nav>
 
-        
-        {/* <span className="mobile__menu" onClick={toggleMenu}>
+
+            {/* <span className="mobile__menu" onClick={toggleMenu}>
             <i class="ri-menu-line"></i>
         </span> */}
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Leftsidebar

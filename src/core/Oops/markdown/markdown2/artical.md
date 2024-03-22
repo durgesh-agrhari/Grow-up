@@ -2,7 +2,7 @@ What is Object-Oriented Programming (OOP)?
 
 Answer: Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which can contain data in the form of fields (attributes or properties), and code in the form of procedures (methods or functions). OOP focuses on encapsulating data and behavior within objects, enabling modular, reusable, and maintainable code.
 
-<br/><br/>
+
 What are the four pillars of OOP?
 
 Answer: The four pillars of OOP are:

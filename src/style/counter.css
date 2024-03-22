@@ -8,9 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 8%;
 }
 .counter__item{
-    width: 33%;
+    /* width: 33%; */
     text-align: center;
 }
 .counter__number, .counter__title{
@@ -43,7 +45,7 @@
 
 @media only screen and (max-width: 768px){
     .counter__wrapper{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .counter__number{
         font-size: 1.5rem;
@@ -59,7 +61,7 @@
 
 @media only screen and (max-width: 576px){
     .counter__wrapper{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .counter__number{
         font-size: 1.5rem;

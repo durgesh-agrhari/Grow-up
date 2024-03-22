@@ -11,7 +11,7 @@ const A0MongoDB = () => {
   return (
     <div className='subb'>
       <Helmet>
-        <title>HTML Basic questions</title>
+        <title>Mongodb Basic questions</title>
         <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>
 
         <link rel='canonical' href='/string-basic-questions' />
