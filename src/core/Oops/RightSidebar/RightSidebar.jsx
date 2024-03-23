@@ -1,5 +1,5 @@
 import React from 'react'
-import './RightSidebar.css'
+import '../../../0Css/RightSidebar.css'
 
 
 // import pen from '../../assets/pen-solid.svg'

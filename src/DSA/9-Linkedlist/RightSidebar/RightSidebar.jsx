@@ -1,9 +1,9 @@
 import React from 'react'
-import './RightSidebar.css'
+
 // import pen from '../../assets/pen-solid.svg'
 // import comment from '../../assets/message-solid.svg'
 // import logo from '../../assets/logo.png'
-
+import '../../../0Css/RightSidebar.css'
 import pen from '../../../assets/pen-solid.svg'
 import comment from '../../../assets/message-solid.svg'
 import logo from '../../../assets/logo.png'

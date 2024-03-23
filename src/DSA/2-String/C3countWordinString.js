@@ -1,7 +1,7 @@
 import React from 'react'
 import Leftsidebar from './leftSidebar/LeftSidebar'
 import RightSidebar from './RightSidebar/RightSidebar'
-import './A_array.css'
+import '../../0Css/style.css'
 import Subnav from '../Subnav/Subnav'
 
 
