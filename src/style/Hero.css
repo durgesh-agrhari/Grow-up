@@ -85,9 +85,8 @@
     .discription{
         text-align: center;
     }
-    .hero__btns{
-        align-items: center;
-    }
+    
+    
     .hero__content{
         margin-top: -80px;
     }
@@ -111,8 +110,9 @@
         text-align: center;
     }
     .hero__btns{
-        align-items: center;
+        margin-left: 50px;
     }
+    
     .hero__content{
         margin-top: -50px;
     }
