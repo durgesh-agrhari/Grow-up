@@ -100,13 +100,13 @@ import E5DiamondPattern from './DSA/4-Pattern/E5DiamondPattern';
 import F6diamondpatternstarsnumbers from './DSA/4-Pattern/F6diamondpatternstarsnumbers';
 import H8PascalTriangle from './DSA/4-Pattern/H8PascalTriangle';
 import G7FloydTriangle from './DSA/4-Pattern/G7FloydTriangle';
-import Lttsalla from './Companys/LTTS/Home/Lttsalla';
-import Day6 from './Companys/LTTS/Day-6/Dayall';
-import Dayfive from './Companys/LTTS/Day-5/Dayfive';
-import Dayseven from './Companys/LTTS/Day-7/Dayseven';
+// import Lttsalla from './Companys/LTTS/Home/Lttsalla';
+// import Day6 from './Companys/LTTS/Day-6/Dayall';
+// import Dayfive from './Companys/LTTS/Day-5/Dayfive';
+// import Dayseven from './Companys/LTTS/Day-7/Dayseven';
 import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
 import Javascript from './web/JavaScript/Javascript';
-import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
+// import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
 
 
 
@@ -178,7 +178,7 @@ function App() {
           <Route path='/leedcode-contest-solution' element = {<AAALeedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
           <Route path='/explore' element = {<Explore /> }/>
-          <Route path='/ltts' element = {<Lttsalla/> }/>
+          {/* <Route path='/ltts' element = {<Lttsalla/> }/> */}
           <Route path='/DSA-Need-And-Clean-SDE-Sheet' element = {<DSAneedandclean/> }/>
           
 
@@ -191,10 +191,10 @@ function App() {
           <Route path='/scroller' element = {<Scroller/> }/>
 
           {/* Companey pages all in LTTS */}
-          <Route path='/day6' element = {<Day6/> }/>
+          {/* <Route path='/day6' element = {<Day6/> }/>
           <Route path='/day5' element = {<Dayfive/> }/>
           <Route path='/day7' element = {<Dayseven/> }/>
-          <Route path='/ltts-all-learning-material' element = {<Lttsalllearningmaterial/> }/>
+          <Route path='/ltts-all-learning-material' element = {<Lttsalllearningmaterial/> }/> */}
 
 
           {/* ========== Array Routing ============= */}
