@@ -139,6 +139,7 @@ import A0ExpressJs from './web/ExpressJs/A0ExpressJs';
 import A0MongoDB from './web/MongoDB/A0MongoDB';
 import A0Redux from './web/Redux/A0Redux';
 import AIPopularTools from './AI-Tools/AIPopularTools';
+import JavaScriptimpque from './web/JavaScript/JavaScriptimpque';
 
 
 const TRACKING_ID = "G-PE3WVLWX2S"; //
@@ -273,6 +274,8 @@ function App() {
 
           <Route path='/Redux-Basic-Concept' element = {<A0Redux/> }/>
           <Route path='/Importent-Reactjs-Questions' element = {<A1ImpReactjasQuestoins/> }/>
+
+          <Route path='/Importent-Javascript-Questions' element = {<JavaScriptimpque/> }/>
 
           
           {/* ========= AI TOOLS ========= */}

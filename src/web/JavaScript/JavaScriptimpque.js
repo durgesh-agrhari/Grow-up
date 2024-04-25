@@ -5,13 +5,13 @@ import './A_array.css'
 import Subnav from '../Subnav/Subnav'
 
 import { Helmet } from 'react-helmet-async'
-import Post1 from './editer1/Post1'
+import Post2 from './editer1/Post2'
 
-const Javascript = () => {
+const JavaScriptimpque = () => {
   return (
     <div className='subb'>
       <Helmet>
-        <title>HTML Basic questions</title>
+        <title>Html Importent questions</title>
         <meta name='description' content=' Making learning easier and more convenient for you. Data Structure. Data structures are the problem-solving pillars of coding.'/>
 
         <link rel='canonical' href='/string-basic-questions' />
@@ -22,7 +22,7 @@ const Javascript = () => {
       <Leftsidebar />
       <div className='home-container2'>
       
-      <Post1/>
+      <Post2/>
       </div>
 
       <RightSidebar />
@@ -31,4 +31,4 @@ const Javascript = () => {
   )
 }
 
-export default Javascript
+export default JavaScriptimpque
