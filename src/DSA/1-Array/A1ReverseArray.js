@@ -4,6 +4,7 @@ import RightSidebar from './RightSidebar/RightSidebar'
 import '../../0Css/style.css'
 import Subnav from '../Subnav/Subnav'
 import Post1 from './editer1/Post1'
+import Post2 from './editer1/Post2'
 
 import { useState } from 'react'
 
@@ -73,22 +74,29 @@ const A1ReverseArray = () => {
                 <h3>Content 2</h3>
                 <hr />
                 {/* <p>Array reverse or reverse a array means changing the position of each number.</p> */}
-                <Post1 />
+                <Post2 />
               </div>
 
               <div className={toggleState === 3 ? "content active-content" : "content"}>
                 <h3>Content 3</h3>
                 <hr />
                 {/* <p>Array reverse or reverse a array means changing the position of each number.</p> */}
-                <Post1/>
+                <Post1 />
               </div>
 
-            </div>
+            </div> <br />
+
+            <h3>Examples : </h3><br />
+            <p className='pp'>
+              Original array: 1 2 3 4 5<br /><br />
+
+              Reversed array: 5 4 3 2 1<br /><br />
+            </p>
 
 
           </div>
 
-          
+
 
         </div>
         <RightSidebar />

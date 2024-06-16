@@ -20,7 +20,7 @@ const Hero = ({theme}) => {
                     <div className='left1'>
                         <h2>We're Creating Perfect DSA</h2>
                         <h2>Course for fresher Students</h2>
-                        <h2 className='highlight'>Placemaent Rodemap 100 %</h2>
+                        <h2 className='highlight'>Placement Roademap 100 %</h2>
                     </div> <br/>
                     <p className='discription'>Making learning easier and more convenient for you. Data Structure. Data structures are the problem - solving pillars of coding.</p>
                     
