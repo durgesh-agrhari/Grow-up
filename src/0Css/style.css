@@ -135,15 +135,16 @@ table {
   }
 
   .content-tabs{
-    background: wheat;
-    border-bottom: 1px solid transparent;
+    background: black;
+    /* border-bottom: 1px solid transparent; */
     color: #222;
   }
 
   .active-tabs{
     background: wheat;
     color: black;
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid green;
+    border-radius: 15px;
   }
 
   .content-tabs::before{
@@ -167,11 +168,12 @@ table {
   }
 
   .content{
-    background: white;
+    background:black;
     padding: 20px;
     width: 100%;
     height: 100%;
     display: none;
+    color: white;
   }
 
   .content h2{

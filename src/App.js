@@ -4,7 +4,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Homepage from './homepage/Homepage';
-import DataStructure from './courses/dataStructure/dataStructure/DataStructure';
 import Post from './editor/Post';
 import EditHeader from './editor/EditHeader';
 import ComingSoon from './ComingSoon/ComingSoon';
@@ -32,35 +31,12 @@ import R18Inversionanarray from './DSA/1-Array/R18Inversionanarray';
 import S19StockbyandSell from './DSA/1-Array/S19StockbyandSell';
 import T20TrappingrainWater from './DSA/1-Array/T20TrappingrainWater';
 import U21Majorityelement from './DSA/1-Array/U21Majorityelement';
-import A0basicinfostring from './DSA/2-String/A0basicinfostring';
-// import Codechef from './contest/Codechef';
-// import Codeforses from './contest/Codeforses';
-// import Leedcode from './contest/Leedcode';
-
 
 import WebDevelopment from './web/WebDevelopment/WebDevelopment';
 import JobHome from './job/JobHome';
-import Explore from './explore/Explore';
-import Sidenav from './tutorials/Sidenav/Sidenav'
-import Video from './tutorials/Video/Video';
-import Videotute from './tutorials/Video/Videotute';
-import Home from './tutorials/Sidenav/Home';
-import Scroller from './scroller/Scroller';
-import A1ReverseString from './DSA/2-String/A1ReverseString';
-import B2lengthofString from './DSA/2-String/B2lengthofString';
-import C3countWordinString from './DSA/2-String/C3countWordinString';
-import D4PalendromeString from './DSA/2-String/D4PalendromeString';
-import E5RemoveVowel from './DSA/2-String/E5RemoveVowel';
-import F6RemoveSpace from './DSA/2-String/F6RemoveSpace';
-import G7removeDublicates from './DSA/2-String/G7removeDublicates';
-import H8countFrequency from './DSA/2-String/H8countFrequency';
-import I9Substring from './DSA/2-String/I9Substring';
-import J10CapitalizedfirstcharacterofEachwordinStrng from './DSA/2-String/J10CapitalizedfirstcharacterofEachwordinStrng';
-import K11Deleteelementinstring from './DSA/2-String/K11Deleteelementinstring';
+
+
 import A0basicinfoSorting from './DSA/3-Sortiong/A0basicinfoSorting';
-import AAACodechef from './contest/Codechef/AAACodechef';
-import AAACodeforses from './contest/Codeforces/AAACodeforses';
-import AAALeedcode from './contest/Leetcode/AAALeedcode';
 import A1selectionsort from './DSA/3-Sortiong/A1selectionsort';
 import B2bubblesort from './DSA/3-Sortiong/B2bubblesort';
 import C3insertionsort from './DSA/3-Sortiong/C3insertionsort';
@@ -100,14 +76,9 @@ import E5DiamondPattern from './DSA/4-Pattern/E5DiamondPattern';
 import F6diamondpatternstarsnumbers from './DSA/4-Pattern/F6diamondpatternstarsnumbers';
 import H8PascalTriangle from './DSA/4-Pattern/H8PascalTriangle';
 import G7FloydTriangle from './DSA/4-Pattern/G7FloydTriangle';
-// import Lttsalla from './Companys/LTTS/Home/Lttsalla';
-// import Day6 from './Companys/LTTS/Day-6/Dayall';
-// import Dayfive from './Companys/LTTS/Day-5/Dayfive';
-// import Dayseven from './Companys/LTTS/Day-7/Dayseven';
+
 import DSAneedandclean from './DSA/DSAhome/DSAneedandclean';
 import Javascript from './web/JavaScript/Javascript';
-// import Lttsalllearningmaterial from './Companys/LTTS/Ltts all learning material/Lttsalllearningmaterial';
-
 
 
 //import ReactGA from "react-ga"; //14.8k (gzipped: 4.9k)
@@ -174,29 +145,9 @@ function App() {
           <Route path='/post' element = {<Post /> }/>
           <Route path='/edith' element = {<EditHeader /> }/>
           <Route path='/soon' element = {<ComingSoon /> }/>
-          <Route path='/codechef-contest-solution' element = {<AAACodechef/> }/>
-          <Route path='/codeforces-contest-solution' element = {<AAACodeforses /> }/>
-          <Route path='/leedcode-contest-solution' element = {<AAALeedcode /> }/>
           <Route path='/job-home' element = {<JobHome /> }/>
-          <Route path='/explore' element = {<Explore /> }/>
-          {/* <Route path='/ltts' element = {<Lttsalla/> }/> */}
           <Route path='/DSA-Need-And-Clean-SDE-Sheet' element = {<DSAneedandclean/> }/>
-          
-
-          {/* ========== Sub Pages =========== */}
-          <Route path='/dataStructure' element = {<DataStructure/> }/>
-          <Route path='/sidenav' element = {<Sidenav/> }/>
-          <Route path='/video' element = {<Video/> }/>
-          <Route path='/videotute' element = {<Videotute/> }/>
-          <Route path='/home' element = {<Home/> }/>
-          <Route path='/scroller' element = {<Scroller/> }/>
-
-          {/* Companey pages all in LTTS */}
-          {/* <Route path='/day6' element = {<Day6/> }/>
-          <Route path='/day5' element = {<Dayfive/> }/>
-          <Route path='/day7' element = {<Dayseven/> }/>
-          <Route path='/ltts-all-learning-material' element = {<Lttsalllearningmaterial/> }/> */}
-
+  
 
           {/* ========== Array Routing ============= */}
           <Route path='/array-basic-questions' element = {<A1basicinfo /> }/>
@@ -223,19 +174,7 @@ function App() {
           <Route path='/majorityelement' element = {<U21Majorityelement/> }/>
 
                  
-          {/* ================== String =============== */}
-          <Route path='/string-basic-questions' element = {<A0basicinfostring/> }/>
-          <Route path='/reverse-element-string' element = {<A1ReverseString/> }/>
-          <Route path='/length-of-string' element = {<B2lengthofString/> }/>
-          <Route path='/count-Word-in-string' element = {<C3countWordinString/> }/>
-          <Route path='/check-palendrome-string' element = {<D4PalendromeString/> }/>
-          <Route path='/remove-vowel-string' element = {<E5RemoveVowel/> }/>
-          <Route path='/remove-space-string' element = {<F6RemoveSpace/> }/>
-          <Route path='/remove-dublicates-string' element = {<G7removeDublicates/> }/>
-          <Route path='/count-frequency-string' element = {<H8countFrequency/> }/>
-          <Route path='/find-Substring-string' element = {<I9Substring/> }/>
-          <Route path='/capitalized-first-character-of-each-word-in-strng' element = {<J10CapitalizedfirstcharacterofEachwordinStrng/> }/>
-          <Route path='/delete-element-in-strng' element = {<K11Deleteelementinstring/> }/>
+          ================== String ===============
 
           {/* ========== Sorting ========= */}
           <Route path='/sorting-basic-questions' element = {<A0basicinfoSorting/> }/>

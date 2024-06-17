@@ -2,68 +2,92 @@ import React from 'react'
 import './subnav.css'
 import { NavLink } from 'react-router-dom'
 
-const activeLink = ({isActive}) => (isActive ? "activesub" : "");
+const activeLink = ({ isActive }) => (isActive ? "activesub" : "");
 
 const Subnav = () => {
-  return (
-    <div className='subnav1'>
-        <nav className='nava' >
-            <ul className='home-links'>
-                <li className='tx'>
-                    <NavLink to='/array-basic-questions' className={activeLink} >Array</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/string-basic-questions' className={activeLink}>String</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/sorting-basic-questions' className={activeLink}>Sorting </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/pattern-basic-questions' className={activeLink}>Pattern </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/searching-basic-questions' className={activeLink}>Searching</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/matrix-basic-questions' className={activeLink}>Matrix </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/stack-basic-questions' className={activeLink}>Stack </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/queue-basic-questions' className={activeLink}>Queue </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/linkedlist-basic-questions' className={activeLink}>Linkedlist </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/recursion-basic-questions' className={activeLink}>Recursin</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/hashing-basic-questions' className={activeLink}>Hashing</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/heap-basic-questions' className={activeLink}>Heap</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/tree-basic-questions' className={activeLink}>Tree</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/graph-basic-questions' className={activeLink}>Graph</NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/dp-basic-questions' className={activeLink}>DP </NavLink>
-                </li>
-                <li className='tx'>
-                    <NavLink to='/greedy-basic-questions' className={activeLink}>Greedy </NavLink>
-                </li>
-                {/* <li className='tx'>
-                    <NavLink to='/' className={activeLink}>Trie </NavLink>
-                </li> */}
-            </ul>
-        </nav>
-    </div>
-  )
+    const subtabItem = [
+        {
+            title: 'Array',
+            link: '/array-basic-questions',
+        },
+        {
+            title: 'String',
+            link: '/string-basic-questions',
+        },
+        {
+            title: 'Sorting',
+            link: '/sorting-basic-questions',
+        },
+
+        {
+            title: 'Pattern',
+            link: 'pattern-basic-questions',
+        },
+        {
+            title: 'Searching',
+            link: '/searching-basic-questions',
+        },
+        {
+            title: 'Matrix',
+            link: '/matrix-basic-questions',
+        },
+        {
+            title: 'Stack',
+            link: '/stack-basic-questions',
+        },
+        {
+            title: 'Queue',
+            link: '/queue-basic-questions',
+        },
+        {
+            title: 'LinkedList',
+            link: '/linkedlist-basic-questions',
+        },
+        {
+            title: 'Recursion',
+            link: '/recursion-basic-questions',
+        },
+        {
+            title: 'Hashing',
+            link: '/hashing-basic-questions',
+        },
+        {
+            title: 'Heap',
+            link: '/heap-basic-questions',
+        },
+        {
+            title: 'Tree',
+            link: '/tree-basic-questions',
+        },
+        {
+            title: 'Graph',
+            link: '/graph-basic-questions',
+        },
+        {
+            title: 'DP',
+            link: '/dp-basic-questions',
+        },
+        {
+            title: 'Greedy',
+            link: '/greedy-basic-questions',
+        }
+    ]
+    return (
+        <div className='subnav1'>
+            <nav className='nava' >
+                <ul className='home-links'>
+                    {
+                        subtabItem.map((data, index) => (
+                            <li className='tx'>
+                                <NavLink to={data.link} className={activeLink} >{data.title}</NavLink>
+                            </li>
+                        ))
+                    }
+
+                </ul>
+            </nav>
+        </div>
+    )
 }
 
 export default Subnav
