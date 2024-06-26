@@ -21,7 +21,7 @@ const Subnav = () => {
 
         {
             title: 'Pattern',
-            link: 'pattern-basic-questions',
+            link: '/pattern-basic-questions',
         },
         {
             title: 'Searching',

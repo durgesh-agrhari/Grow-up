@@ -1,6 +1,6 @@
 import React from 'react'
 // import "../../style/services.css"
-import "../style/services.css"
+// import "../style/services.css"
 
 const serviceData = [
     {

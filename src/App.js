@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'; //4.5k (gzipped: 2k)
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Homepage from './homepage/Homepage';
+// import Homepage from './homepage/Homepage';
 import Post from './editor/Post';
 import EditHeader from './editor/EditHeader';
 import ComingSoon from './ComingSoon/ComingSoon';
@@ -111,6 +111,9 @@ import A0MongoDB from './web/MongoDB/A0MongoDB';
 import A0Redux from './web/Redux/A0Redux';
 import AIPopularTools from './AI-Tools/AIPopularTools';
 import JavaScriptimpque from './web/JavaScript/JavaScriptimpque';
+import Homepage from './components/homepage/Homepage';
+import A0basicinfostring from './DSA/2-String/A0basicinfostring';
+import A1ReverseString from './DSA/2-String/A1ReverseString';
 
 
 const TRACKING_ID = "G-PE3WVLWX2S"; //
@@ -175,6 +178,8 @@ function App() {
 
                  
           ================== String ===============
+          <Route path='/string-basic-questions' element = {<A0basicinfostring/> }/>
+          <Route path='/string-basic-questions' element = {<A1ReverseString/>} />
 
           {/* ========== Sorting ========= */}
           <Route path='/sorting-basic-questions' element = {<A0basicinfoSorting/> }/>

@@ -18,8 +18,7 @@ background-color: whitesmoke;
     width: 100%;
     height: 250px;
     border-radius: 5px;
-    /* background: rgb(118, 112, 112); */
-    background-image: url(../images/teambc1.jpg);
+    background-image: url(../../images/teambc1.jpg);
 }
 
 .team__img-c img{
@@ -79,8 +78,6 @@ background-color: whitesmoke;
     border-radius: 3px;
 }
 
-
-/* //koti bhi content colom me ho row me karan ho to yese kare */
 .team__wrapper{
     display: flex;
     align-items: center;

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/team.css"
+import "../style/team.css"
 import teamImg1 from "../../images/team-1.jpeg"
 import teamImg2 from "../../images/team-2.jpeg"
 import teamImg3 from "../../images/c1.png"

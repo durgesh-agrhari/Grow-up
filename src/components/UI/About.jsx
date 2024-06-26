@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/about.css'
+import '../style/about.css'
 import { useEffect } from 'react'
 
 import aboutImg from "../../images/about-us.jpg"

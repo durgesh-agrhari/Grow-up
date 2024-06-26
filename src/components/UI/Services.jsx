@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/services.css"
+import "../style/services.css"
 import { useEffect } from 'react'
 
 const serviceData = [

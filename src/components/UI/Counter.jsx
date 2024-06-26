@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/counter.css"
+import "../style/counter.css"
 import { useEffect } from 'react'
 
 const counterData=[

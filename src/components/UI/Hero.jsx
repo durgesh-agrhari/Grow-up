@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/Hero.css"
+import "../style/Hero.css"
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 

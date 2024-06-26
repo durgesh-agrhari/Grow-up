@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/testimonial.css"
+import "../style/testimonial.css"
 import { useEffect } from 'react'
 
 import Slider from 'react-slick'
